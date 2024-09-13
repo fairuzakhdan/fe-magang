@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container d-lg-flex d-sm-none d-none">
+    <div class="container d-lg-flex d-md-flex">
       <a
         href="#home"
-        class="fs-3 text-decoration-none fw-semibold text-warning bg-light rounded-pill p-2 mt-3 me-5 z-3 position-absolute"
+        class="fs-3 text-decoration-none fw-semibold text-warning bg-light rounded-pill p-2 mt-3 me-5 z-3 d-none d-lg-block position-absolute"
         >Sweet <br />
         Oven</a
       >
-      <ul class="nav justify-content-center fixed-top z-2">
+      <ul
+        class="nav justify-content-center fixed-top z-2 d-sm-none d-none d-lg-flex d-md-flex"
+      >
         <li class="nav-item">
           <a
             class="nav-link text-light fs-4 fw-semibold"
@@ -49,6 +51,58 @@
         </li>
       </ul>
     </div>
+    <nav class="navbar navbar-dark bg-dark fixed-top d-lg-none d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sweet Oven</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end w-50 text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#customers">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <section id="home" class="position-relative">
       <div class="vh-100">
@@ -87,45 +141,63 @@
       <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
         Products
       </p>
-      <div class="d-flex justify-content-center gap-3">
-        <div class="card border border-black" style="width: 18rem">
-          <img src="img/card1.jpg" class="card-img-top" alt="card1" />
-          <div
-            class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
-          >
-            <h5 class="card-title text-center">Roti Coklat</h5>
-            <!-- <p class="card-text"></p> -->
-            <a href="#" class="btn btn-dark border border-warning">30 K</a>
+      <div class="container">
+        <div class="row justify-content-center gx-5 flex-wrap m-2">
+          <div class="col-lg-3 col-sm-6 col-6 card border border-black p-0">
+            <img
+              src="img/card1.jpg"
+              class="card-img-top img-fluid"
+              alt="card1"
+            />
+            <div
+              class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
+            >
+              <h5 class="card-title text-center">Roti Coklat</h5>
+              <!-- <p class="card-text"></p> -->
+              <a href="#" class="btn btn-dark border border-warning">30 K</a>
+            </div>
           </div>
-        </div>
-        <div class="card border border-black" style="width: 18rem">
-          <img src="img/card2.jpg" class="card-img-top" alt="card1" />
-          <div
-            class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
-          >
-            <h5 class="card-title text-center">Roti Mexican Coffee</h5>
-            <!-- <p class="card-text"></p> -->
-            <a href="#" class="btn btn-dark border border-warning">30 K</a>
+          <div class="col-lg-3 col-sm-6 col-6 card border border-black p-0">
+            <img
+              src="img/card2.jpg"
+              class="card-img-top img-fluid"
+              alt="card1"
+            />
+            <div
+              class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
+            >
+              <h5 class="card-title text-center">Roti Mexican Coffee</h5>
+              <!-- <p class="card-text"></p> -->
+              <a href="#" class="btn btn-dark border border-warning">30 K</a>
+            </div>
           </div>
-        </div>
-        <div class="card border border-black" style="width: 18rem">
-          <img src="img/card3.jpg" class="card-img-top" alt="card1" />
-          <div
-            class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
-          >
-            <h5 class="card-title text-center">Putri Salju</h5>
-            <!-- <p class="card-text"></p> -->
-            <a href="#" class="btn btn-dark border border-warning">30 K</a>
+          <div class="col-lg-3 col-sm-6 col-6 card border border-black p-0">
+            <img
+              src="img/card3.jpg"
+              class="card-img-top img-fluid"
+              alt="card1"
+            />
+            <div
+              class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
+            >
+              <h5 class="card-title text-center">Putri Salju</h5>
+              <!-- <p class="card-text"></p> -->
+              <a href="#" class="btn btn-dark border border-warning">30 K</a>
+            </div>
           </div>
-        </div>
-        <div class="card border border-black" style="width: 18rem">
-          <img src="img/card4.jpg" class="card-img-top" alt="card1" />
-          <div
-            class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
-          >
-            <h5 class="card-title text-center">Roti Coklat</h5>
-            <!-- <p class="card-text"></p> -->
-            <a href="#" class="btn btn-dark border border-warning">30 K</a>
+          <div class="col-lg-3 col-sm-6 col-6 card border border-black p-0">
+            <img
+              src="img/card4.jpg"
+              class="card-img-top img-fluid"
+              alt="card1"
+            />
+            <div
+              class="card-body d-flex flex-column bg-warning align-items-center justify-content-center"
+            >
+              <h5 class="card-title text-center">Roti Coklat</h5>
+              <!-- <p class="card-text"></p> -->
+              <a href="#" class="btn btn-dark border border-warning">30 K</a>
+            </div>
           </div>
         </div>
       </div>
@@ -135,29 +207,25 @@
       <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
         About Us
       </p>
-      <div class="d-flex justify-content-center gap-2">
-        <div style="height: 450px">
-          <img src="img/about1.jpg" alt="about" class="w-100 h-75" />
-        </div>
-        <div class="bg-warning" style="height: 337px; width: 550px">
-          <p class="m-2" style="text-align: justify">
-            Selamat datang di Sweet Oven, tempat di mana cita rasa manis dan
-            kehangatan bersatu. Kami adalah toko kue lokal yang berdedikasi
-            untuk menghadirkan kebahagiaan dalam setiap gigitan. Dengan
-            bahan-bahan berkualitas tinggi dan resep yang dikembangkan dengan
-            penuh cinta, kami menciptakan kue-kue yang tak hanya lezat, tetapi
-            juga penuh kenangan manis.
-          </p>
-          <p style="text-align: justify" class="m-2">
-            Dengan tim yang berpengalaman dan penuh semangat, kami siap melayani
-            Anda dengan berbagai pilihan kue yang dapat dipesan sesuai
-            keinginan, baik untuk acara besar maupun untuk dinikmati bersama
-            orang-orang tersayang.
-          </p>
-          <p style="text-align: justify" class="m-2">
-            Terima kasih telah mempercayakan momen manis Anda kepada kami. Kami
-            berharap dapat menjadi bagian dari setiap perayaan Anda!
-          </p>
+      <div class="container">
+        <div class="row justify-content-center mx-2 gy-2">
+          <div class="col-12 col-sm-12 col-lg-6 bg-warning p-0">
+            <img src="img/about1.jpg" alt="about" class="img-fluid" />
+          </div>
+          <div class="bg-warning col-12 col-sm-12 col-lg-6">
+            <p class="m-1 pt-3" style="text-align: justify">
+              Selamat datang di Sweet Oven, tempat di mana cita rasa manis dan
+              kehangatan bersatu. Kami adalah toko kue lokal yang berdedikasi
+              untuk menghadirkan kebahagiaan dalam setiap gigitan. Dengan
+              bahan-bahan berkualitas tinggi dan resep yang dikembangkan dengan
+              penuh cinta, kami menciptakan kue-kue yang tak hanya lezat, tetapi
+              juga penuh kenangan manis.
+            </p>
+            <p class="m-1" style="text-align: justify">
+              Terima kasih telah mempercayakan momen manis Anda kepada kami.
+              Kami berharap dapat menjadi bagian dari setiap perayaan Anda!
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -166,122 +234,134 @@
       <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
         Customers
       </p>
-      <div class="d-flex justify-content-center gap-3">
-        <div class="card border border-black" style="width: 20rem">
-          <img
-            src="img/cr.png"
-            class="card-img-top img-fluid h-75"
-            alt="card1"
-          />
-          <div
-            class="card-body d-flex flex-column bg-light align-items-center justify-content-center"
-          >
-            <p class="card-text" style="text-align: justify">
-              Kuenya enak dan fresh setiap hari! Pelayanannya ramah dan cepat.
-              Sangat puas dengan kualitas dan rasa, selalu jadi pilihan favorit
-              untuk acara spesial!
-            </p>
+      <div class="container">
+        <div class="row flex-wrap justify-content-center g-4 mx-3">
+          <div class="col-lg-4 c card border border-black pt-2">
+            <img
+              src="img/cr.png"
+              class="card-img-top img-fluid h-75"
+              alt="card1"
+            />
+            <div
+              class="card-body row flex-column bg-light align-items-center justify-content-center"
+            >
+              <p class="card-text" style="text-align: justify">
+                Kuenya enak dan fresh setiap hari! Pelayanannya ramah dan cepat.
+                Sangat puas dengan kualitas dan rasa, selalu jadi pilihan
+                favorit untuk acara spesial!
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card border border-black" style="width: 20rem">
-          <img
-            src="img/cr3.jpg"
-            class="card-img-top img-fluid h-75"
-            alt="card1"
-          />
-          <div
-            class="card-body d-flex flex-column bg-light align-items-center justify-content-center"
-          >
-            <p class="card-text" style="text-align: justify">
-              Toko kue ini tidak pernah mengecewakan. Dari rasa, tekstur, hingga
-              dekorasi, semuanya sempurna. Cocok untuk hadiah maupun acara
-              spesial.
-            </p>
+          <div class="col-lg-4 card border border-black">
+            <img
+              src="img/cr3.jpg"
+              class="card-img-top img-fluid h-75 pt-2"
+              alt="card1"
+            />
+            <div
+              class="card-body row flex-column bg-light align-items-center justify-content-center"
+            >
+              <p class="card-text" style="text-align: justify">
+                Toko kue ini tidak pernah mengecewakan. Dari rasa, tekstur,
+                hingga dekorasi, semuanya sempurna. Cocok untuk hadiah maupun
+                acara spesial.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card border border-black" style="width: 20rem">
-          <img
-            src="img/cr2.jpg"
-            class="card-img-top img-fluid h-75"
-            alt="card1"
-          />
-          <div
-            class="card-body d-flex flex-column bg-light align-items-center justify-content-center"
-          >
-            <p class="card-text" style="text-align: justify">
-              Kue-kue di sini benar-benar lezat dan tampilannya cantik. Setiap
-              gigitan selalu memuaskan! Sangat direkomendasikan untuk semua
-              pecinta kue
-            </p>
+          <div class="col-lg-4 card border border-black">
+            <img
+              src="img/cr2.jpg"
+              class="card-img-top img-fluid h-75 pt-2"
+              alt="card1"
+            />
+            <div
+              class="card-body row flex-column bg-light align-items-center justify-content-center"
+            >
+              <p class="card-text" style="text-align: justify">
+                Kue-kue di sini benar-benar lezat dan tampilannya cantik. Setiap
+                gigitan selalu memuaskan! Sangat direkomendasikan untuk semua
+                pecinta kue
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Form Contact -->
     <section id="contact" class="mb-5">
       <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
         Contact
       </p>
-      <div class="d-flex justify-content-center gap-2">
-        <div style="height: 450px">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2990507209192!2d107.89364817404007!3d-7.2066837707484055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1d119852f2f%3A0x116c33498b7cab1d!2sInstitut%20Teknologi%20Garut!5e0!3m2!1sid!2sid!4v1724679044190!5m2!1sid!2sid"
-            width="450"
-            height="400"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-
-        <div class="bg-warning p-3" style="height: 400px; width: 450px">
-          <div class="mb-4 text-center">
-            <button type="button" class="btn btn-dark">Form Contact</button>
+      <div class="container">
+        <div class="row justify-content-center p-2">
+          <div
+            style="height: 450px"
+            class="col-lg-4 col-sm-12 col-12 text-center p-0"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2990507209192!2d107.89364817404007!3d-7.2066837707484055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1d119852f2f%3A0x116c33498b7cab1d!2sInstitut%20Teknologi%20Garut!5e0!3m2!1sid!2sid!4v1724679044190!5m2!1sid!2sid"
+              width="400"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-          <form method="post" action="">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">Username</span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Username"
-                aria-label="username"
-                aria-describedby="basic-addon1"
-              />
+
+          <div
+            class="bg-warning p-3 col-lg-6 col-sm-12 col-12"
+            style="height: 400px; width: 450px"
+          >
+            <div class="mb-4 text-center">
+              <a href="#" class="btn btn-dark">Form Contact</a>
             </div>
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">Email</span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Email Address"
-                aria-label="email"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">Telephone</span>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="No Telephone"
-                aria-label="telephone"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-            <div class="input-group">
-              <span class="input-group-text">Message</span>
-              <textarea class="form-control" aria-label="Message"></textarea>
-            </div>
-            <div class="mt-4">
-              <button type="button" class="btn btn-dark">Send Message</button>
-            </div>
-          </form>
+            <form method="post" action="">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Username</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  aria-label="username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email Address"
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  >Telephone</span
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="No Telephone"
+                  aria-label="telephone"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Message</span>
+                <textarea class="form-control" aria-label="Message"></textarea>
+              </div>
+              <div class="mt-4">
+                <button type="button" class="btn btn-dark">Send Message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
+
     <footer class="w-100 bg-warning pt-2">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <p class="h3 fw-semibold">Sweet Oven</p>
