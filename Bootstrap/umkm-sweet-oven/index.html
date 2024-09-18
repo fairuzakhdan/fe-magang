@@ -11,58 +11,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container d-lg-flex d-md-flex">
-      <a
-        href="#home"
-        class="fs-3 text-decoration-none fw-semibold text-warning bg-light rounded-pill p-2 mt-3 me-5 z-3 d-none d-lg-block position-absolute"
-        >Sweet <br />
-        Oven</a
-      >
-      <ul
-        class="nav justify-content-center fixed-top z-2 d-sm-none d-none d-lg-flex d-md-flex"
-      >
-        <li class="nav-item">
-          <a
-            class="nav-link text-light fs-4 fw-semibold"
-            aria-current="page"
-            href="#home"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fs-4 fw-semibold" href="#products"
-            >Products</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fs-4 fw-semibold" href="#about"
-            >About</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fs-4 fw-semibold" href="#customers"
-            >Customers</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light fs-4 fw-semibold" href="#contact"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </div>
-    <nav class="navbar navbar-dark bg-dark fixed-top d-lg-none d-md-none">
+    <nav
+      class="navbar navbar-expand-lg bg-warning fixed-top border-1 border-dark"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sweet Oven</a>
+        <a class="navbar-brand fw-semibold" href="#">SweetOven</a>
         <button
           class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#customers"
+                >Customers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-dark bg-warning fixed-top d-lg-none d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand text-black fw-semibold" href="#">SweetOven</a>
+        <button
+          class="navbar-toggler border-dark"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
         </button>
         <div
           class="offcanvas offcanvas-end w-50 text-bg-dark"
@@ -98,13 +120,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
 
-    <section id="home" class="position-relative">
+    <section id="home" class="position-relative mt-5">
       <div class="vh-100">
         <img
           src="img/bg-home.jpg"
@@ -288,7 +313,7 @@
       </div>
     </section>
 
-    <section id="contact" class="mb-5">
+    <section id="contact" >
       <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
         Contact
       </p>
@@ -362,13 +387,153 @@
       </div>
     </section>
 
+    <section id="faq" class="mb-5">
+      <p class="display-3 fw-semibold m-5 pt-5 text-white text-center">
+        FAQ
+      </p>
+      <div class="container">
+        
+        <div class="accordion bg-warning" id="accordionExample">
+          <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Apa saja jenis kue yang tersedia di toko Kami?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Kami menyediakan berbagai macam kue seperti kue ulang tahun, kue
+                pernikahan, kue tart, cupcake, dan kue-kue tradisional. Anda
+                juga dapat memilih dari berbagai varian rasa seperti cokelat,
+                vanila, red velvet, dan banyak lagi.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Apakah bisa custom kue sesuai permintaan?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Tentu saja! Kami menyediakan layanan pembuatan kue sesuai dengan
+                desain dan permintaan Anda. Anda dapat menghubungi kami melalui
+                kontak yang tersedia atau mengirimkan desain kue yang diinginkan
+                melalui website.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Apakah tersedia layanan pengiriman?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Ya, kami menyediakan layanan pengiriman kue ke seluruh wilayah
+                dalam kota. Biaya pengiriman akan dihitung berdasarkan lokasi
+                tujuan Anda.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Apakah ada promosi atau diskon?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Kami sering menawarkan promosi dan diskon spesial di berbagai
+                kesempatan, seperti hari raya atau event tertentu. Pastikan
+                untuk selalu mengecek halaman promo di website kami atau
+                mengikuti akun media sosial kami.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-warning">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Bagaimana cara memesan kue?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Anda dapat memesan kue melalui website kami dengan memilih kue
+                yang diinginkan, menyesuaikan detailnya, dan melakukan
+                pembayaran secara online. Kami juga menerima pesanan melalui
+                telepon atau WhatsApp yang tercantum di halaman kontak.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="w-100 bg-warning pt-2">
       <div class="container">
-        <div
-          class="row flex-column justify-content-center align-items-center"
-        >
+        <div class="row flex-column justify-content-center align-items-center">
           <p class="col-12 h3 fw-semibold text-center">Sweet Oven</p>
-          <ul class="row list-unstyled justify-content-center flex-row flex-wrap text-center ">
+          <ul
+            class="row list-unstyled justify-content-center flex-row flex-wrap text-center"
+          >
             <!-- <li></li> -->
             <li class="col-4 col-sm-4 col-md-1 col-lg-1">
               <a href="#home" class="text-decoration-none text-white">Home</a>
@@ -392,7 +557,9 @@
               >
             </li>
           </ul>
-          <p class="col-12  text-center">Copyright &copy; 2024 - Sweet Oven, All Rights Reserved</p>
+          <p class="col-12 text-center">
+            Copyright &copy; 2024 - Sweet Oven, All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
