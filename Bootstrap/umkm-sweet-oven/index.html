@@ -8,72 +8,72 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg bg-warning fixed-top border-1 border-dark"
+      class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg d-none d-lg-block d-sm-none d-md-block"
+      id="nav-container"
+      data-aos
     >
-      <div class="container-fluid">
-        <a class="navbar-brand fw-semibold" href="#">SweetOven</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+      <div class="container justify-content-center pe-5">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="img/logo2.png"
+            alt="logo"
+            class="img-fluid d-none d-lg-block rounded-circle"
+            style="width: 10vh"
+          />
+        </a>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-5 fw-semibold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
+              <a class="nav-link text-white" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#products"
+              <a
+                class="nav-link text-white"
+                aria-current="page"
+                href="#products"
                 >Products</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
+              <a class="nav-link text-white" aria-current="page" href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#customers"
+              <a
+                class="nav-link text-white"
+                aria-current="page"
+                href="#customers"
                 >Customers</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact"
+              <a class="nav-link text-white" aria-current="page" href="#contact"
                 >Contact</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+              <a class="nav-link text-white" aria-current="page" href="#faq"
+                >FAQ</a
+              >
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
 
-    <nav class="navbar navbar-dark bg-warning fixed-top d-lg-none d-md-none">
+    <nav class="navbar navbar-dark bg-warning fixed-top d-lg-none d-md-block">
       <div class="container-fluid">
         <a class="navbar-brand text-black fw-semibold" href="#">SweetOven</a>
         <button
@@ -84,7 +84,7 @@
           aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div
           class="offcanvas offcanvas-end w-50 text-bg-dark"
@@ -129,7 +129,7 @@
       </div>
     </nav>
 
-    <section id="home" class="position-relative mt-5">
+    <section id="home" class="position-relative">
       <div class="vh-100">
         <img
           src="img/bg-home.jpg"
@@ -151,7 +151,7 @@
           <a
             href="#products"
             class="fs-5 link-light bg-warning px-4 py-2 text-decoration-none rounded-3 text-center d-md-block"
-            >Shop Now</a
+            ><i class="bi bi-bag-fill"></i> Shop Now</a
           >
           <a
             href="#customers"
@@ -162,174 +162,180 @@
       </div>
     </section>
 
-    <section id="products">
-      <div
-        class="d-flex flex-wrap flex-column ustify-content-center m-5 pt-5 text-white text-center mx-auto row-gap-1"
-        style="width: 800px"
-      >
-        <p class="display-5 fw-semibold text-warning">Our Products</p>
-        <p class="text-warning">
-          For more than 25 years, SweetOven Bakery has been making a variety of
-          today's favorite cakes the old-fashioned way: from scratch, in small
-          batches, and using the best ingredients.
-        </p>
-      </div>
-      <div class="container">
+    <section
+      id="products"
+      class="bg-warning"
+      style="padding-top: 7%"
+    >
+    <div
+    class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
+    style="max-width: 100%; width: 100%;"
+  >
+    <p class="display-5 fw-semibold text-light">Our Products</p>
+    <p class="text-black w-75 align-self-center d-lg-block text-lg-center" style="text-align: justify;">
+      For more than 25 years, SweetOven Bakery has been making a variety of
+      today's favorite cakes the old-fashioned way: from scratch, in small
+      batches, and using the best ingredients.
+    </p>
+  </div>
+  
+  
+  
+      <div class="container" data-aos="zoom-in">
         <div class="row justify-content-center">
-          <div class="card bg-black" style="width: 23rem">
+          <div class="card bg-warning border-warning" style="width: 23rem; height: 27rem;">
             <img
               src="img/card1.jpg"
-              class="card-img-top h-50 img-fluid rounded-5"
+              class="card-img-top img-fluid rounded-5"
               alt="breadcholate"
+            style="height: 16rem;"
             />
             <div class="card-body text-white mt-2">
               <h5 class="card-title fw-semibold mt-2">Brown Bread</h5>
               <p class="card-text h4 mt-2">
-                <span class="text-warning">Rp. 75000</span>
+                <span class="text-black fw-semibold">Rp. 75000</span>
                 <span class="text-decoration-line-through">Rp. 99000</span>
               </p>
-              <a href="#" class="btn btn-warning fw-semibold mt-2">Order Now</a>
+              <a href="#" class="btn btn-dark p-2 fw-semibold mt-2"
+                >Order Now</a
+              >
             </div>
           </div>
-          <div class="card bg-black" style="width: 23rem">
+          <div class="card bg-warning border-warning" style="width: 23rem; height: 27rem;">
             <img
               src="img/card2.jpg"
-              class="card-img-top h-50 img-fluid rounded-5"
-              alt="breadCoffee"
+              class="card-img-top img-fluid rounded-5"
+              alt="breadcholate"
+            style="height: 16rem;"
             />
             <div class="card-body text-white mt-2">
               <h5 class="card-title fw-semibold mt-2">Mexican coffee bread</h5>
               <p class="card-text h4 mt-2">
-                <span class="text-warning">Rp. 75000</span>
+                <span class="text-black fw-semibold">Rp. 75000</span>
                 <span class="text-decoration-line-through">Rp. 99000</span>
               </p>
-              <a href="#" class="btn btn-warning fw-semibold mt-2">Order Now</a>
+              <a href="#" class="btn btn-dark p-2 fw-semibold mt-2"
+                >Order Now</a
+              >
             </div>
           </div>
-          <div class="card bg-black" style="width: 23rem">
+          <div class="card bg-warning border-warning" style="width: 23rem; height: 27rem;">
             <img
               src="img/card3.jpg"
-              class="card-img-top h-50 img-fluid rounded-5"
-              alt="card3"
+              class="card-img-top img-fluid rounded-5"
+              alt="breadcholate"
+            style="height: 16rem;"
             />
             <div class="card-body text-white mt-2">
               <h5 class="card-title fw-semibold mt-2">Snow Princess</h5>
               <p class="card-text h4 mt-2">
-                <span class="text-warning">Rp. 75000</span>
+                <span class="text-black fw-semibold">Rp. 75000</span>
                 <span class="text-decoration-line-through">Rp. 99000</span>
               </p>
-              <a href="#" class="btn btn-warning fw-semibold mt-2">Order Now</a>
+              <a href="#" class="btn btn-dark p-2 fw-semibold mt-2"
+                >Order Now</a
+              >
             </div>
           </div>
+        
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" data-aos="fade-right"  style="padding-top: 7%" class="mb-5">
       <div
-        class="d-flex flex-wrap flex-column ustify-content-center m-5 pt-5 text-white text-center mx-auto row-gap-1"
-        style="width: 800px"
-      >
-        <p class="display-5 fw-semibold text-warning">About Us</p>
-      </div>
+    class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
+    style="max-width: 100%; width: 100%;"
+  >
+    <p class="display-5 fw-semibold text-warning">About Us</p>
+  </div>
       <div class="container">
         <div class="row justify-content-center mx-2 gy-2">
           <div class="col-12 col-sm-12 col-lg-6 bg-warning p-0">
             <img src="img/about1.jpg" alt="about" class="img-fluid" />
           </div>
           <div class="text-warning col-12 col-sm-12 col-lg-6">
-            <p class="m-1 pt-3" style="text-align: justify">
-              Selamat datang di Sweet Oven, tempat di mana cita rasa manis, kehangatan, dan kebahagiaan berpadu sempurna. Kami adalah toko kue lokal yang berdedikasi untuk memberikan sentuhan istimewa pada setiap momen Anda melalui aneka kue lezat yang kami buat dengan sepenuh hati. Dengan menggunakan bahan-bahan berkualitas tinggi dan resep-resep istimewa yang diwariskan serta dikembangkan dengan penuh cinta, kami memastikan setiap gigitan kue dari Sweet Oven menghadirkan kenangan manis dan kebahagiaan tersendiri.
+            <p class="" style="text-align: justify">
+              Selamat datang di Sweet Oven, tempat di mana cita rasa manis, kehangatan, dan kebahagiaan menyatu sempurna. Kami adalah toko kue lokal yang berdedikasi untuk memberikan sentuhan istimewa pada setiap momen Anda melalui beragam kue lezat yang kami buat dengan sepenuh hati. Dengan bahan-bahan berkualitas tinggi dan resep-resep istimewa yang diwariskan serta dikembangkan dengan penuh cinta, kami memastikan setiap gigitan kue dari Sweet Oven menghadirkan kenangan manis dan kebahagiaan tersendiri.
             </p>
             <p class="m-1" style="text-align: justify">
-              Terima kasih telah mempercayakan momen manis Anda kepada kami.
-              Kami berharap dapat menjadi bagian dari setiap perayaan Anda!
+              Terima kasih telah mempercayakan momen-momen manis Anda kepada kami. Kami berharap dapat terus menjadi bagian dari setiap perayaan Anda!
             </p>
+            <a href="#" class="btn btn-warning mt-2 p-2">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="customers">
+    <section id="customers"  style="padding-top: 7%;" class="bg-light pb-5">
       <div
-        class="d-flex flex-wrap flex-column ustify-content-center m-5 pt-5 text-white text-center mx-auto row-gap-1"
-        style="width: 800px"
-      >
-        <p class="display-5 fw-semibold text-warning">Customers</p>
-      </div>
+      class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
+      style="max-width: 100%; width: 100%;"
+    >
+      <p class="display-5 fw-semibold text-warning">Customers</p>
+    </div>
 
-      <div class="container">
-        <div class="row flex-wrap justify-content-center g-4 mx-3">
-          <div class="col-lg-4  card border border-black pt-2 bg-warning">
-            <img
-              src="img/cr.png"
-              class="card-img-top img-fluid h-75"
-              alt="card1"
-            />
-            <div
-              class="card-body row flex-column bg-warning align-items-center justify-content-center "
-            >
-              <p class="card-text" style="text-align: justify">
-                Kuenya enak dan fresh setiap hari! Pelayanannya ramah dan cepat.
-                Sangat puas dengan kualitas dan rasa, selalu jadi pilihan
-                favorit untuk acara spesial!
-              </p>
-            </div>
+    <div class="container-fluid" data-aos="zoom-in-right">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="col-lg-4 card border border-black bg-warning">
-            <img
-              src="img/cr3.jpg"
-              class="card-img-top img-fluid h-75 pt-2"
-              alt="card1"
-            />
-            <div
-              class="card-body row flex-column bg-warning align-items-center justify-content-center"
-            >
-              <p class="card-text" style="text-align: justify">
-                Toko kue ini tidak pernah mengecewakan. Dari rasa, tekstur,
-                hingga dekorasi, semuanya sempurna. Cocok untuk hadiah maupun
-                acara spesial.
-              </p>
-            </div>
+          <div class="carousel-inner">
+              <div class="carousel-item active bg-warning pt-4 rounded-5 border border-5 border-black" data-bs-interval="10000" style="height: 300px;">
+                  <img src="img/cr.png" class="d-block rounded-circle img-fluid " alt="card1" style="width: 100px; margin: 0 auto;">
+                  <div class="d-flex flex-column carousel-caption d-md-block" style="font-size: calc(.6rem + 0.5vw);">
+                      <p>"Kuenya enak dan fresh setiap hari! Pelayanannya ramah dan cepat. Sangat puas dengan kualitas dan rasa, selalu jadi pilihan favorit untuk acara spesial"</p>
+                      <h5 class="fw-semibold text-light">Jessica - Web Designer</h5>
+                  </div>
+              </div>
+              <div class="carousel-item bg-warning pt-4 rounded-5 border border-5 border-black" data-bs-interval="10000" style="height: 300px;">
+                  <img src="img/cr3.jpg" class="d-block rounded-circle img-fluid" alt="card1" style="width: 100px; margin: 0 auto;">
+                  <div class="carousel-caption d-md-block" style="font-size: calc(.6rem + 0.5vw);">
+                      <p>"Toko kue ini tidak pernah mengecewakan. Dari rasa, tekstur, hingga dekorasi, semuanya sempurna. Cocok untuk hadiah maupun acara spesial."</p>
+                      <h5 class="fw-semibold text-light">Angel - UI/UX Designer</h5>
+                  </div>
+              </div>
+              <div class="carousel-item bg-warning pt-4 rounded-5 border border-5 border-black" data-bs-interval="10000" style="height: 300px;">
+                  <img src="img/cr21.jpg" class="d-block rounded-circle img-fluid" alt="card1" style="width: 100px; margin: 0 auto;">
+                  <div class="carousel-caption d-md-block" style="font-size: calc(.6rem + 0.5vw);">
+                      <p>"Kue-kue di sini benar-benar lezat dan tampilannya cantik. Setiap gigitan selalu memuaskan! Sangat direkomendasikan untuk semua pecinta kue."</p>
+                      <h5 class="fw-semibold text-light">Amel - Digital Marketing</h5>
+                  </div>
+              </div>
           </div>
-          <div class="col-lg-4 card border border-black bg-warning">
-            <img
-              src="img/cr2.jpg"
-              class="card-img-top img-fluid h-75 pt-2"
-              alt="card1"
-            />
-            <div
-              class="card-body row flex-column bg-warning align-items-center justify-content-center"
-            >
-              <p class="card-text" style="text-align: justify">
-                Kue-kue di sini benar-benar lezat dan tampilannya cantik. Setiap
-                gigitan selalu memuaskan! Sangat direkomendasikan untuk semua
-                pecinta kue
-              </p>
-            </div>
-          </div>
-        </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
       </div>
+  </div>
+  
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="zoom-in-down" style="padding-top: 7%;">
       <div
-        class="d-flex flex-wrap flex-column ustify-content-center m-5 pt-5 text-white text-center mx-auto row-gap-1"
-        style="width: 800px"
-      >
-        <p class="display-5 fw-semibold text-warning">Contact</p>
-      </div>
+      class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
+      style="max-width: 100%; width: 100%;"
+    >
+      <p class="display-5 fw-semibold text-warning">Contact</p>
+    </div>
 
       <div class="container">
         <div class="row justify-content-center p-0 gy-3">
           <div
             style="height: 400px"
-            class="col-lg-4 col-sm-12 col-12 text-center p-0"
+            class="col-lg-5 col-sm-12 col-12 text-center p-0"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.2990507209192!2d107.89364817404007!3d-7.2066837707484055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1d119852f2f%3A0x116c33498b7cab1d!2sInstitut%20Teknologi%20Garut!5e0!3m2!1sid!2sid!4v1724679044190!5m2!1sid!2sid"
               width="400"
-              height="400"
+              class="w-100 h-100"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -390,15 +396,16 @@
       </div>
     </section>
 
-    <section id="faq" class="mb-5">
+    <section id="faq" class="mb-5" style="padding-top: 7%">
       <div
-        class="d-flex flex-wrap flex-column ustify-content-center m-5 pt-5 text-white text-center mx-auto row-gap-1"
-        style="width: 800px"
-      >
-        <p class="display-5 fw-semibold text-warning">FAQ</p>
-      </div>
+      class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
+      style="max-width: 100%; width: 100%;"
+    >
+      <p class="display-5 fw-semibold text-warning">Frequently Asked Questions</p>
+    </div>
+    
       <div class="container">
-        <div class="accordion bg-warning" id="accordionExample">
+        <div class="accordion bg-warning" id="accordionExample" data-aos="fade-up" >
           <div class="accordion-item bg-warning">
             <h2 class="accordion-header">
               <button
@@ -561,6 +568,11 @@
                 >Contact</a
               >
             </li>
+            <li class="col-4 col-sm-4 col-md-1 col-lg-1">
+              <a href="#faq" class="text-decoration-none text-white"
+                >FAQ</a
+              >
+            </li>
           </ul>
           <p class="col-12 text-center">
             Copyright &copy; 2024 - Sweet Oven, All Rights Reserved
@@ -568,6 +580,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const nav = document.getElementById("nav-container");
+      console.log(nav);
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 600) {
+          nav.classList.add("bg-warning");
+        } else {
+          nav.classList.remove("bg-warning");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
