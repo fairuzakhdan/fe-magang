@@ -17,61 +17,89 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg d-none d-lg-block d-sm-none d-md-block bg-warning border-top border-black"
-      id="nav-container"
-      data-aos
+      class="navbar navbar-expand-lg fixed-top shadow-lg d-none d-lg-block d-sm-none d-md-block bg-warning"
     >
-      <div class="container justify-content-center">
-        <a class="navbar-brand" href="#home">
-          <img
+      <div class="container-fluid">
+        <a class="navbar-brand ps-4" href="#"
+          ><img
             src="img/logo2.png"
             alt="logo"
             class="img-fluid d-none d-lg-block rounded-circle"
             style="width: 10vh"
-          />
-        </a>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-5 fw-semibold">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#home"
+              <a
+                class="nav-link active fs-5 fw-semibold"
+                aria-current="page"
+                href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-white"
+                class="nav-link active fs-5 fw-semibold"
                 aria-current="page"
                 href="#products"
                 >Products</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#about"
+              <a
+                class="nav-link active fs-5 fw-semibold"
+                aria-current="page"
+                href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-white"
+                class="nav-link active fs-5 fw-semibold"
                 aria-current="page"
                 href="#customers"
-                >Customers</a
+                >Reviews</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#contact"
+              <a
+                class="nav-link active fs-5 fw-semibold"
+                aria-current="page"
+                href="#contact"
                 >Contact</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#faq"
+              <a
+                class="nav-link active fs-5 fw-semibold"
+                aria-current="page"
+                href="#faq"
                 >FAQ</a
               >
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </nav>
@@ -120,7 +148,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#customers">Customers</a>
+                <a class="nav-link" href="#customers">Reviews</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -296,7 +324,7 @@
         class="d-flex flex-column justify-content-center text-white text-center mx-auto p-3"
         style="max-width: 100%; width: 100%"
       >
-        <p class="display-5 fw-semibold text-black">Customers</p>
+        <p class="display-5 fw-semibold text-black">Testimonials</p>
       </div>
 
       <div class="container-fluid" data-aos="zoom-in-right">
@@ -703,7 +731,7 @@
             </li>
             <li class="col-4 col-sm-4 col-md-1 col-lg-1">
               <a href="#customers" class="text-decoration-none text-white"
-                >Customers</a
+                >Reviews</a
               >
             </li>
             <li class="col-4 col-sm-4 col-md-1 col-lg-1">
