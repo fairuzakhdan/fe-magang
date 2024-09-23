@@ -9,17 +9,21 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg p-1 fixed-top">
-      <div class="container-fluid container">
+      <div class="container-fluid mx-5 pt-1">
         <a class="navbar-brand" href="#"
           ><img
-            src="img/logoMadu.png"
+            src="img/logo-nobg.png"
             alt="logo"
             class="img-fluid"
-            style="width: 160px; height: 40px"
+            style="width: 170px; height: 50px"
         /></a>
         <button
           class="navbar-toggler"
@@ -34,10 +38,10 @@
         </button>
 
         <div
-          class="collapse navbar-collapse d-flex justify-content-end"
+          class="collapse navbar-collapse d-flex justify-content-center"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bold ">
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bold">
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="#"
                 >Home</a
@@ -60,19 +64,79 @@
             </li>
           </ul>
         </div>
+
+        <div
+        class="collapse navbar-collapse d-flex justify-content-end align-items-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bold d-flex justify-content-center align-items-center">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white fs-6 d-flex align-items-center gap-2" href="#telephone">
+              <i
+                class="bi bi-telephone-inbound-fill text-dark fs-4 rounded-circle px-2 py-1 bg-light"
+              > </i>
+               (0) 123456789
+            </a>
+          </li>
+      
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="#basket">
+              <i class="bi bi-basket2 text-white fs-3 rounded-circle"></i>
+            </a>
+          </li>
+      
+          <li class="nav-item mx-3">
+            <a class="btn btn-warning" href="#order">Order Now</a>
+          </li>
+        </ul>
+      </div>
+      
+      
       </div>
     </nav>
 
-    <section id="home" class="position-absolute end-0 overflow-hidden">
-      <div class="row">
-        <img
-          src="img/Does Honey Go Bad_.jpeg"
-          alt="bg"
-          class="img-fluid"
-          style="height: 100vh; width: 600px"
-        />
+    <section id="home" class="home bg-warning" >
+      <div
+        class="d-flex text-white justify-content-between position-absolute top-0 end-0 z-2" 
+      >
+        <div
+          class="d-flex justify-content-center align-content-center flex-wrap flex-column mx-5 p-3"
+        >
+          <p class="display-5 fw-bold">
+            Natural Honey <br />
+            & Beekeeping
+          </p>
+          <p class="fs-5" style="color: #3a2604">
+            Rasakan kemurnian dan keaslian madu kami,<br />
+            yang dihasilkan oleh lebah pilihan dari lingkungan terbaik.
+          </p>
+          <a
+            type="button"
+            class="btn px-3 py-2 fw-bold text-white"
+            href="#"
+            style="
+              width: 200px;
+              background-color: rgb(255, 187, 0);
+              text-shadow: 1px 1px rgb(124, 114, 114);
+            "
+            >Dapatkan Sekarang</a
+          >
+        </div>
+        <div class="d-flex me-3">
+          <img
+            src="img/background.jpeg"
+            alt="bg"
+            class="img-fluid rounded-bottom-pill me-3"
+            style="height: 100vh; width: 77vh; background-color: #8b6235"
+          />
+        </div>
       </div>
     </section>
+    <!-- 
+      <div
+        style="width: 500px; height: 630px; position:absolute; z-index: 1;background-color: #873e23; right: 20px;"
+        class="d-flex justify-content-center rounded-bottom-pill"
+      ></div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
