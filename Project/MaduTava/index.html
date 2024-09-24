@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg p-1 fixed-top">
+    <nav
+      class="navbar navbar-expand-lg p-1 fixed-top d-md-none d-lg-flex d-sm-none d-none"
+    >
       <div class="container-fluid mx-5 pt-1">
         <a class="navbar-brand" href="#"
           ><img
@@ -159,7 +161,7 @@
               alt="about"
               style="width: 110vh; height: 75vh"
             />
-            <div class="position-absolute mt-5 ms-5" style="left: 0; bottom: 0">
+            <div class="position-absolute mt-5 ms-5" style="left: 30px; bottom: 0">
               <img src="img/thumb.png" alt="thumb" width="200px" />
             </div>
           </div>
@@ -522,11 +524,44 @@
       </div>
     </section>
 
-    <div class="position-relative" style="background-color: #bb752b; height: 250px; margin-top: 7%;" >
-      <div  class="m-5 position-absolute " style="width: 300px; height: 200px; left: 0; bottom: 100px;">
-        <img src="img/bee.png" alt="bee" class="img-fluid " />
+    <div class="overflow-hidden position-relative">
+      <div
+        class="row justify-content-end align-items-center"
+        style="background-color: #bb752b; height: 250px; margin-top: 7%"
+      >
+        <div
+          class="col-md-3 position-absolute"
+          style="width: 300px; height: 200px; left: 0; bottom: 100px"
+        >
+          <img src="img/bee.png" alt="bee" class="img-fluid" />
+        </div>
+
+        <div class="col-md-9">
+          <div class="row column-gap-3 me-5 text-center">
+            <div class="col border border-2 py-4">
+              <img src="img/icon1.png" alt="icon1" class="img-fluid" style="width: 100px; height: 100px;">
+              <p class="fw-bold text-white">Flowers Produce Nectar and Attract Our Bees</p>
+            </div>
+            <div class="col border border-2 py-4">
+              <img src="img/icon2.png" alt="icon2" class="img-fluid" style="width: 100px; height: 100px;">
+              <p class="fw-bold text-white">Bees Collect the Nectar and Carry It to The Hive</p>
+            </div>
+            <div class="col border border-2 py-4">
+              <img src="img/icon3.png" alt="icon3" class="img-fluid" style="width: 100px; height: 100px;">
+              <p class="fw-bold text-white">Bees Seal Cells With Wax and Honey Ripens</p>
+            </div>
+            <div class="col border border-2 py-4">
+              <img src="img/icon4.png" alt="icon4" class="img-fluid" style="width: 100px; height: 100px;">
+              <p class="fw-bold text-white">We Collect the Product and Transfer</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <section id="testimoni">
+      
+    </section>
 
     <script>
       document.addEventListener("scroll", (e) => {
