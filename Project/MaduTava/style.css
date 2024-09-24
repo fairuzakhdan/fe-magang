@@ -4,6 +4,7 @@
   font-family: "Poppins";
 }
 
+
 /* nav {
     background-color: rgb(196, 138, 32);
 
@@ -11,10 +12,13 @@
 body {
   /* background-color: 
   #bb752b; */
-  height: 200vh;
+  height: 400vh;
 }
 
 .home {
   background-color: #bb752b;
 }
 
+#about, #product {
+  padding-top: 80px;
+}
