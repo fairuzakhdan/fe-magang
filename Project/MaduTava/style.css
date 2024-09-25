@@ -47,8 +47,13 @@ body {
   
 }
 
-.accordion-flush {
-  box-shadow: 0 0 15px #8a8787;
+.faq-item {
+  box-shadow: 1px 1px 5px #868585;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
   /* Menghilangkan panah default */
