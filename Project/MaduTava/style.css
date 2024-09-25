@@ -34,3 +34,34 @@ body {
 .text-natural {
   font-size: .9em;
 }
+
+
+
+.accordion-button:focus {
+  box-shadow:none;
+
+}
+.accordion-button {
+  font-size: .5em;
+  
+}
+
+.accordion-flush {
+  box-shadow: 0 0 15px #8a8787;
+}
+
+  /* Menghilangkan panah default */
+  .accordion-button::after {
+    display: none;
+  }
+  
+  /* Menambahkan ikon plus saat accordion ditutup */
+  .accordion-button.collapsed .custom-icon::before {
+    content: '\002B'; /* Karakter '+' */
+  }
+
+  /* Mengubah ikon menjadi minus saat accordion dibuka */
+  .accordion-button:not(.collapsed) .custom-icon::before {
+    content: '\2212'; /* Karakter '-' */
+  }
+
