@@ -6,14 +6,18 @@
 
 body {
   height: 800vh;
- 
 }
 
 .home {
   background-color: #bb752b;
 }
 
-#about, #product, #testimoni, #faq, #contact, #process {
+#about,
+#product,
+#testimoni,
+#faq,
+#contact,
+#process {
   padding-top: 80px;
 }
 
@@ -33,18 +37,14 @@ body {
 }
 
 .text-natural {
-  font-size: .9em;
+  font-size: 0.9em;
 }
-
-
 
 .accordion-button:focus {
-  box-shadow:none;
-
+  box-shadow: none;
 }
 .accordion-button {
-  font-size: .5em;
-  
+  font-size: 0.5em;
 }
 
 .faq-item {
@@ -56,18 +56,28 @@ body {
   -o-border-radius: 10px;
 }
 
-  /* Menghilangkan panah default */
-  .accordion-button::after {
-    display: none;
-  }
-  
-  /* Menambahkan ikon plus saat accordion ditutup */
-  .accordion-button.collapsed .custom-icon::before {
-    content: '\002B'; /* Karakter '+' */
-  }
+.accordion-button::after {
+  display: none;
+}
 
-  /* Mengubah ikon menjadi minus saat accordion dibuka */
-  .accordion-button:not(.collapsed) .custom-icon::before {
-    content: '\2212'; /* Karakter '-' */
-  }
+.accordion-button.collapsed .custom-icon::before {
+  content: "\002B"; 
+}
 
+.accordion-button:not(.collapsed) .custom-icon::before {
+  content: "\2212"; 
+}
+
+.contact-us {
+  background-color: #bb752b;
+}
+.link-contact {
+  color: #bb752b;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.teks-contact  {
+  color: #bb752b;
+}
