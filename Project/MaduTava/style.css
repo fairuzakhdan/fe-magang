@@ -4,9 +4,9 @@
   font-family: "Poppins";
 }
 
-body {
+/* body {
   height: 900vh;
-}
+} */
 
 .home {
   background-color: #bb752b;
@@ -81,3 +81,11 @@ body {
 .teks-contact  {
   color: #bb752b;
 }
+
+.text-body-contact {
+  font-size: 1.1em;
+}
+.footer {
+  background-color: #bb752b;
+}
+
