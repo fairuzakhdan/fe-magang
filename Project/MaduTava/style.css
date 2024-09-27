@@ -28,12 +28,39 @@
   background-color: #bb752b;
 }
 
+
 .d-md-flex .card {
   margin-top: 5px;
   border: none;
   box-shadow: 2px 2px 10px #bb752b;
   font-size: 1.1em;
   color: #000000;
+}
+
+.size-product {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #bb752b;
+  -webkit-border-radius: 10PX;
+  -moz-border-radius: 10PX;
+  -ms-border-radius: 10PX;
+  -o-border-radius: 10PX;
+}
+/* .size-s {
+  background-color: rgb(201, 152, 152);
+}
+.size-m {
+  background-color: rgb(88, 131, 172);
+}
+.size-l {
+  background-color: rgb(202, 196, 138);
+}
+.size-xl {
+  background-color: rgb(135, 189, 140);
+} */
+
+.modal-content {
+  background-color: #bb752b;
 }
 
 .text-natural {
@@ -88,4 +115,3 @@
 .footer {
   background-color: #bb752b;
 }
-
