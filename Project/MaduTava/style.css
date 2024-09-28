@@ -12,6 +12,20 @@
   background-color: #bb752b;
 }
 
+.sm:hover, 
+.medium:hover,
+.large:hover,
+.extraLarge:hover {
+  border: 2px solid #bb752b;
+  cursor: pointer;
+  
+}
+
+.btn-next:hover, 
+.btn-prev:hover {
+  background-color: darkgray; 
+}
+
 #about,
 #product,
 #testimoni,

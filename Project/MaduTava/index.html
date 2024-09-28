@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MaduTava</title>
+    <title>MaduLiarku</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
       <div class="container-fluid mx-5 pt-1">
         <a class="navbar-brand" href="#"
           ><img
-            src="img/logo-nobg.png"
+            src="img/madu-removebg-preview.png"
             alt="logo"
             class="img-fluid"
             style="width: 170px; height: 50px"
@@ -173,34 +173,35 @@
               >About Us</a
             >
             <p class="display-5 fw-semibold">
-              Fresh Sunflower Orginal <br />
-              Honey UpTo 58% Off.
+              Fresh Forest <br />
+              Honey Up To 58% Off
             </p>
             <p class="pe-4">
-              Selamat datang di MaduTava, tempat Anda bisa mendapatkan madu asli
-              yang 100% alami dan organik. Kami bangga menghadirkan madu
-              berkualitas tinggi yang dipanen dengan penuh perhatian, tanpa
-              tambahan bahan kimia atau pengawet. Nikmati diskon hingga 58%
-              untuk setiap pembelian. Maniskan hari Anda dengan madu terbaik
-              dari alam!
+              Selamat datang di Maduliarku, sumber madu hutan asli yang
+              diperoleh melalui dedikasi dan keberanian para pemburu madu
+              sejati. Kami menghadirkan madu berkualitas tinggi yang didapatkan
+              dari sarang lebah liar di dalam hutan belantara, melalui proses
+              perburuan yang menantang dan penuh petualangan. Nikmati diskon
+              hingga 58% untuk setiap pembelian. Rasakan manisnya madu yang
+              dihasilkan dari kerja keras dan semangat para pemburu madu hutan!
             </p>
 
             <div class="row">
               <span class="col-6 d-flex align-items-center fw-semibold">
-                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i> Best
-                Organic & Fresh Honey
+                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i> Madu
+                Hutan Liar & Segar Terbaik
               </span>
               <span class="col-6 d-flex align-items-center fw-semibold">
                 <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
-                Harvesting Nature’s Bounty
+                100% Madu Hutan Asli
               </span>
               <span class="col-6 d-flex align-items-center fw-semibold">
                 <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
-                100% Fresh & Orginal Honey
+                Hasil Perburuan Tradisional
               </span>
               <span class="col-6 d-flex align-items-center fw-semibold">
                 <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
-                High-tech Processing
+                Menghargai Dedikasi Para Pemburu
               </span>
               <span class="mt-4"
                 ><a
@@ -216,7 +217,7 @@
       </div>
     </section>
 
-    <section id="product">
+    <section id="product" >
       <div class="container">
         <div class="row">
           <div class="col-md-3 list-group">
@@ -239,23 +240,33 @@
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterPrices('all')"
+                  >All</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('40000')"
                   >Rp. 30000 - Rp. 50000</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
-                  >Rp. 50000 - Rp. 80000</a
+                  onclick="filterPrices('75000')"
+                  ><span class=" fw-bold fs-5">></span>Rp. 50000 - Rp. 100000</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
-                  >Rp. 80000 - Rp. 100000</a
+                  onclick="filterPrices('150000')"
+                  ><span class=" fw-bold fs-5">></span>Rp. 100000 - Rp. 200000</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterPrices('200000')"
                   ><span class="text-decoration-underline fw-bold fs-5">></span>
-                  Rp. 100000</a
+                  Rp. 200000</a
                 >
               </div>
               <div class="col">
@@ -269,21 +280,31 @@
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterProducts('all')"
+                  >All</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('sm')"
                   >Small (S)</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterProducts('medium')"
                   >Medium (M)</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterProducts('large')"
                   >Large (L)</a
                 >
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action"
+                  onclick="filterProducts('extraLarge')"
                   >Extra Large (XL)</a
                 >
               </div>
@@ -292,8 +313,8 @@
 
           <div class="col-md-9">
             <div class="row flex-wrap gap-1 justify-content-center">
-              <div class="col-md-2 card p-0" style="width: 13rem">
-                <img src="img/card1.png" class="card-img-top" alt="card1" />
+              <div class="col-md-2 card p-0 products large 200000" style="width: 13rem">
+                <img src="img/p1.png" class="card-img-top" alt="card1" />
 
                 <div
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
@@ -301,7 +322,7 @@
                   <div
                     class="d-flex justify-content-between align-content-between"
                   >
-                    <p class="card-text fw-bold">Raw Honey</p>
+                    <p class="card-text fw-bold">Forest Honey 1000gram</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -328,7 +349,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card1.png"
+                                      src="img/p1.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -336,14 +357,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Raw Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 120000
+                                        Rp. 225000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 150000</span
+                                          Rp. 250000</span
                                         >
                                       </h5>
                                       <img
@@ -353,29 +374,20 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Raw Honey adalah madu mentah yang
-                                        diambil langsung dari sarang lebah tanpa
-                                        melalui proses pemanasan atau
-                                        pasteurisasi. Berbeda dengan madu
-                                        komersial, Raw Honey mempertahankan
-                                        semua enzim alami, vitamin, antioksidan,
-                                        dan nutrisi yang terkandung di dalamnya,
-                                        sehingga dianggap lebih alami dan kaya
-                                        manfaat.
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
                                         <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
-                                        <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >L | 1000gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -412,22 +424,22 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 120000</p>
+                    <p class="text-danger">Rp.225000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.150000
+                      Rp.250000
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-2 card p-0" style="width: 13rem">
-                <img src="img/card2.png" class="card-img-top" alt="card2" />
+              <div class="col-md-2 card p-0 products medium 150000" style="width: 13rem">
+                <img src="img/p2.png" class="card-img-top" alt="card2" />
 
                 <div
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Buckwheat Honey</p>
+                    <p class="card-text fw-bold">Forest Honey 500gram</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -454,7 +466,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card2.png"
+                                      src="img/p2.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -462,14 +474,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Buckwheat Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 90000
+                                        Rp.125000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 99000</span
+                                          Rp.150000</span
                                         >
                                       </h5>
                                       <img
@@ -479,27 +491,21 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Berasal dari nektar tanaman gandum hitam
-                                        (buckwheat), madu ini berwarna lebih
-                                        gelap dan memiliki rasa yang lebih kuat
-                                        serta sedikit pahit. Madu Buckwheat
-                                        tinggi kandungan antioksidan,
-                                        menjadikannya pilihan baik untuk
-                                        mendukung sistem kekebalan tubuh.
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
+
                                         <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >M | 500gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -536,17 +542,17 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 90000</p>
+                    <p class="text-danger">Rp.125000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.99000
+                      Rp.150000
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-2 card p-0" style="width: 13rem">
+              <div class="col-md-2 card p-0 products medium 75000" style="width: 13rem">
                 <img
-                  src="img/card3.png"
+                  src="img/p3.png"
                   class="card-img-top img-fluid"
                   alt="card3"
                 />
@@ -555,7 +561,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Forest Honey</p>
+                    <p class="card-text fw-bold">Forest Honey 250gram</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -582,7 +588,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card3.png"
+                                      src="img/p3.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -593,11 +599,11 @@
                                         Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 80000
+                                        Rp.75000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 99000</span
+                                          Rp.90000</span
                                         >
                                       </h5>
                                       <img
@@ -607,27 +613,21 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Dihasilkan oleh lebah yang mengumpulkan
-                                        nektar dari pohon dan tanaman liar di
-                                        hutan, madu ini biasanya memiliki warna
-                                        yang lebih gelap dan rasa yang lebih
-                                        kaya. Madu hutan memiliki kandungan
-                                        mineral yang tinggi dan sering dipilih
-                                        karena kekayaan gizinya.
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
+
                                         <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >M | 250gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -664,17 +664,17 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 80000</p>
+                    <p class="text-danger">Rp.75000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.99000
+                      Rp.90000
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-2 card p-0" style="width: 13rem">
+              <div class="col-md-2 card p-0 products sm 40000" style="width: 13rem">
                 <img
-                  src="img/card4.png"
+                  src="img/p4.png"
                   class="card-img-top img-fluid"
                   alt="card4"
                 />
@@ -683,7 +683,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Pure Hill Honey</p>
+                    <p class="card-text fw-bold">Forest Honey 110gram </p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -710,7 +710,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card4.png"
+                                      src="img/p4.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -718,7 +718,7 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Pure Hill Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
                                         Rp. 40000
@@ -735,29 +735,12 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Jenis madu yang biasanya diproduksi
-                                        secara alami dari lebah yang
-                                        mengumpulkan nektar di perbukitan atau
-                                        daerah pegunungan yang kaya akan
-                                        tumbuhan liar.Pure Hill Honey
-                                        mempertahankan semua kandungan nutrisi
-                                        alaminya, termasuk enzim, vitamin, dan
-                                        antioksidan yang sangat baik untuk
-                                        kesehatan.
+                                        Madu hutan, yang juga dikenal sebagai madu liar, merupakan produk alami yang dihasilkan oleh lebah yang mengumpulkan nektar dari berbagai jenis bunga liar dan pohon di hutan. Madu ini memiliki karakteristik yang unik, baik dari segi rasa maupun warna.Madu hutan biasanya lebih gelap dan memiliki cita rasa yang lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
                                         <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
-                                        <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >S | 110gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -801,9 +784,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 card p-0" style="width: 13rem">
+              <div class="col-md-2 card p-0 products extraLarge 200000" style="width: 13rem">
                 <img
-                  src="img/card5.png"
+                  src="img/p5.png"
                   class="card-img-top img-fluid"
                   alt="card4"
                 />
@@ -812,7 +795,7 @@
                   class="d-flex flex-column align-items-between justify-content-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Wildflower Honey</p>
+                    <p class="card-text fw-bold">Forest Honey 1300gram</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -839,7 +822,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card5.png"
+                                      src="img/p5.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -847,14 +830,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Wildflower Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 99000
+                                        Rp.290000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 120000</span
+                                          Rp.350000</span
                                         >
                                       </h5>
                                       <img
@@ -864,28 +847,13 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Madu yang diproduksi oleh lebah yang
-                                        mengumpulkan nektar dari berbagai bunga
-                                        liar, Karena sumber nektarnya berasal
-                                        dari beragam jenis bunga liar yang
-                                        tumbuh secara alami di alam, rasa,
-                                        warna, dan aroma Wildflower Honey bisa
-                                        bervariasi tergantung musim dan jenis
-                                        bunga yang sedang mekar.
+                                        Madu hutan, yang juga dikenal sebagai madu liar, merupakan produk alami yang dihasilkan oleh lebah yang mengumpulkan nektar dari berbagai jenis bunga liar dan pohon di hutan. Madu ini memiliki karakteristik yang unik, baik dari segi rasa maupun warna.Madu hutan biasanya lebih gelap dan memiliki cita rasa yang lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
-                                        <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
+                                       
                                         <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >XL | 1300gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -922,16 +890,17 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 99000</p>
+                    <p class="text-danger">Rp.290000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.120000
+                      Rp.350000
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 card p-0" style="width: 13rem">
+
+              <div class="col-md-2 card p-0 products large 200000" style="width: 13rem">
                 <img
-                  src="img/card6.png"
+                  src="img/p6.png"
                   class="card-img-top img-fluid"
                   alt="card4"
                 />
@@ -940,7 +909,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Organic Honey</p>
+                    <p class="card-text fw-bold">Forest Honey Paket Ekstra</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -967,7 +936,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card6.png"
+                                      src="img/p6.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -975,14 +944,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Organic Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 75000
+                                        Rp.275000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 90000</span
+                                          Rp. 300000</span
                                         >
                                       </h5>
                                       <img
@@ -992,30 +961,15 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Madu yang dihasilkan dari lebah yang
-                                        mengumpulkan nektar dari bunga yang
-                                        ditanam secara organik. Untuk dapat
-                                        disebut sebagai madu organik, proses
-                                        budidaya tanaman yang menghasilkan
-                                        nektar harus mematuhi standar pertanian
-                                        organik, yang meliputi larangan
-                                        penggunaan pestisida sintetis,
-                                        herbisida, dan bahan kimia lainnya.
+                                        Madu hutan, yang juga dikenal sebagai madu liar, merupakan produk alami yang dihasilkan oleh lebah yang mengumpulkan nektar dari berbagai jenis bunga liar dan pohon di hutan. Madu ini memiliki karakteristik yang unik, baik dari segi rasa maupun warna.Madu hutan biasanya lebih gelap dan memiliki cita rasa yang lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
-                                        <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
+                                      
                                         <span class="size-product size-l"
-                                          >L | 2L</span
+                                          >L | 1250gram</span
                                         >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
-                                        >
+                                        
                                       </p>
                                       <p class="card-text">
                                         <small class="text-body-secondary"
@@ -1051,16 +1005,16 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 75000</p>
+                    <p class="text-danger">Rp.275000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.90000
+                      Rp.300000
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 card p-0" style="width: 13rem">
+              <div class="col-md-2 card p-0 products medium 150000" style="width: 13rem">
                 <img
-                  src="img/card7.png"
+                  src="img/p7.png"
                   class="card-img-top img-fluid"
                   alt="card4"
                 />
@@ -1069,7 +1023,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Manuka Honey</p>
+                    <p class="card-text fw-bold">Forest Honey Paket Hemat</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -1096,7 +1050,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card7.png"
+                                      src="img/p7.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -1104,14 +1058,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Manuka Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 50000
+                                        Rp. 130000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 70000</span
+                                          Rp. 150000</span
                                         >
                                       </h5>
                                       <img
@@ -1121,29 +1075,15 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Madu ini dihasilkan oleh lebah yang
-                                        menyerbuki bunga pohon Manuka. Madu
-                                        Manuka dikenal karena sifat
-                                        antibakterinya yang sangat kuat, dengan
-                                        UMF (Unique Manuka Factor) sebagai
-                                        ukuran kualitas dan kekuatannya. Sering
-                                        digunakan untuk tujuan medis seperti
-                                        penyembuhan luka dan perawatan kulit.
+                                        Madu hutan, yang juga dikenal sebagai madu liar, merupakan produk alami yang dihasilkan oleh lebah yang mengumpulkan nektar dari berbagai jenis bunga liar dan pohon di hutan. Madu ini memiliki karakteristik yang unik, baik dari segi rasa maupun warna.Madu hutan biasanya lebih gelap dan memiliki cita rasa yang lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
+                                       
                                         <span class="size-product size-m"
-                                          >M | 500ML</span
+                                          >M | 500gram</span
                                         >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
-                                        <span class="size-product size-xl"
-                                          >XL | 4L</span
-                                        >
+                                       
                                       </p>
                                       <p class="card-text">
                                         <small class="text-body-secondary"
@@ -1179,16 +1119,16 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 55000</p>
+                    <p class="text-danger">Rp. 130000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.70000
+                      Rp.150000
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 card p-0" style="width: 13rem">
+              <div class="col-md-2 card p-0 products extraLarge 200000" style="width: 13rem">
                 <img
-                  src="img/card8.jpeg"
+                  src="img/p8.png"
                   class="card-img-top img-fluid"
                   alt="card4"
                 />
@@ -1197,7 +1137,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold">Premium Honey</p>
+                    <p class="card-text fw-bold">Forest Honey Paket Super</p>
                     <div class="d-block">
                       <button
                         type="button"
@@ -1224,7 +1164,7 @@
                                 <div class="row g-0">
                                   <div class="col-md-4">
                                     <img
-                                      src="img/card8.jpeg"
+                                      src="img/p8.png"
                                       class="img-fluid rounded-start"
                                       alt="card1"
                                     />
@@ -1232,14 +1172,14 @@
                                   <div class="col-md-8">
                                     <div class="card-body">
                                       <h4 class="card-title fw-bold">
-                                        Premium Honey
+                                        Forest Honey
                                       </h4>
                                       <h5 class="text-danger">
-                                        Rp. 150000
+                                        Rp.425000
                                         <span
                                           class="text-decoration-line-through text-secondary"
                                         >
-                                          Rp. 180000</span
+                                          Rp. 465000</span
                                         >
                                       </h5>
                                       <img
@@ -1249,27 +1189,13 @@
                                         height="25px"
                                       />
                                       <p class="card-text">
-                                        Madu ini dihasilkan dari bunga
-                                        berkualitas tinggi dan diproses dengan
-                                        hati-hati untuk memastikan bahwa semua
-                                        nutrisi dan rasa alami terjaga,Memiliki
-                                        rasa yang lebih kompleks dan mendalam
-                                        dibandingkan dengan madu biasa, dengan
-                                        aroma yang lebih kuat dan khas.
+                                        Madu hutan, yang juga dikenal sebagai madu liar, merupakan produk alami yang dihasilkan oleh lebah yang mengumpulkan nektar dari berbagai jenis bunga liar dan pohon di hutan. Madu ini memiliki karakteristik yang unik, baik dari segi rasa maupun warna.Madu hutan biasanya lebih gelap dan memiliki cita rasa yang lebih kompleks.
                                       </p>
                                       <p class="fs-5 fw-bold">
                                         Size :
-                                        <span class="size-product size-s"
-                                          >S | 200ML</span
-                                        >
-                                        <span class="size-product size-m"
-                                          >M | 500ML</span
-                                        >
-                                        <span class="size-product size-l"
-                                          >L | 2L</span
-                                        >
+                                      
                                         <span class="size-product size-xl"
-                                          >XL | 4L</span
+                                          >XL | 1860gram</span
                                         >
                                       </p>
                                       <p class="card-text">
@@ -1306,9 +1232,9 @@
                   </div>
 
                   <div class="d-flex justify-content-between">
-                    <p class="text-danger">Rp. 150000</p>
+                    <p class="text-danger">Rp.425000</p>
                     <p class="text-secondary text-decoration-line-through">
-                      Rp.180000
+                      Rp.465000
                     </p>
                   </div>
                 </div>
@@ -1521,7 +1447,7 @@
                     <p class="card-text text-center">
                       “Pelayanan yang ramah dan pengiriman yang cepat membuat
                       pengalaman belanja semakin menyenangkan. Sukses Selalu
-                      MaduTava!”
+                      MaduLiarku!”
                     </p>
                     <img
                       src="img/cr4.jpeg"
@@ -1547,7 +1473,7 @@
                     <p class="card-text text-center">
                       “Harga yang ditawarkan sangat terjangkau untuk kualitas
                       yang diberikan, dan sering ada promo menarik. Sukses Terus
-                      MaduTava!”
+                      MaduLiarku!”
                     </p>
                     <img
                       src="img/cr5.jpeg"
@@ -1573,7 +1499,7 @@
                     <p class="card-text text-center">
                       "Saya sangat senang dengan madu dari toko ini! Kualitasnya
                       luar biasa rasanya alami dan pelayanan yang ramah. Terima
-                      kasih MaduTava!"
+                      kasih MaduLiarku!"
                     </p>
                     <img
                       src="img/cr6.jpeg"
@@ -1588,25 +1514,25 @@
             </div>
 
             <button
-              class="carousel-control-prev pe-5"
+              class="carousel-control-prev "
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                class="carousel-control-prev-icon p bg-black opacity-25 btn-prev" style="margin-right: 120px;"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden ">Previous</span>
             </button>
             <button
-              class="carousel-control-next ps-5"
+              class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                class="carousel-control-next-icon p bg-black opacity-25 btn-next" style="margin-left: 120px;"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
@@ -1636,22 +1562,16 @@
           <div class="row flex-column">
             <div class="col text-center">
               <img src="img/sarang.png" alt="sarang" />
-              <p class="fs-5 fw-bold">Pengumpulan Nektar</p>
+              <p class="fs-5 fw-bold">Persiapan Tim Pemburu</p>
               <p class="text-natural">
-                Lebah hidup sesuai dengan perannya di alam, dan manfaatnya dapat
-                dirasakan oleh lebih banyak orang. Lebah mengumpulkan nektar
-                dari bunga sebagai bahan utama pembuatan madu. Nektar ini kaya
-                akan gula alami yang menjadi dasar madu.
+                Proses berburu madu hutan liar dimulai dengan persiapan tim pemburu yang terdiri dari individu-individu berpengalaman. Tim ini akan melakukan briefing untuk mendiskusikan lokasi perburuan yang telah ditentukan, teknik pengambilan yang akan digunakan, serta protokol keselamatan yang harus diikuti selama berada di hutan.
               </p>
             </div>
             <div class="col text-center">
               <img src="img/panen.png" alt="panen" />
-              <p class="fs-5 fw-bold">Panen Madu</p>
+              <p class="fs-5 fw-bold">Pengolahan Madu</p>
               <p class="text-natural">
-                Panen lebah dilakukan dengan cermat untuk menjaga keseimbangan
-                ekosistem dan kesehatan. Selain menghasilkan madu berkualitas,
-                proses ini juga menghasilkan produk lain seperti lilin dan
-                propolis yang bermanfaat bagi kehidupan.
+                Madu yang telah diambil kemudian diproses untuk menghilangkan kotoran dan sisa-sisa sarang. Proses ini dilakukan dengan menyaring madu agar tetap bersih dan murni. Penting untuk menghindari pemanasan berlebih, agar sifat alami dan nutrisi yang terkandung dalam madu tetap terjaga dengan baik.
               </p>
             </div>
           </div>
@@ -1663,21 +1583,16 @@
           <div class="row flex-column">
             <div class="col text-center">
               <img src="img/nectar.png" alt="nectar" />
-              <p class="fs-5 fw-bold">Pengolahan Nektar oleh Lebah</p>
+              <p class="fs-5 fw-bold">Pencarian Sarang Lebah</p>
               <p class="text-natural">
-                Nektar yang dikumpulkan dibawa kembali ke sarang, di mana lebah
-                pekerja mengolahnya dengan enzim yang ada di dalam mulut mereka.
-                Proses ini mengubah gula kompleks dalam nektar menjadi gula
-                sederhana seperti fruktosa dan glukosa.
+                Setelah persiapan selesai, tim mulai menjelajahi hutan dengan penuh ketelitian. Mereka mencari sarang lebah liar dengan mengamati tanda-tanda kehadiran lebah, seperti suara buzzing yang khas dan aktivitas lebah yang tampak di sekitar pohon-pohon tinggi atau gua-gua tersembunyi. 
               </p>
             </div>
             <div class="col text-center">
               <img src="img/kemasan.png" alt="kemasan" />
               <p class="fs-5 fw-bold">Penyaringan dan Pengemasan</p>
               <p class="text-natural">
-                Setelah dipanen, madu disaring untuk menghilangkan kotoran
-                seperti serpihan lilin dan dikemas secara alami tanpa bahan
-                tambahan, menjaga kualitas dan kemurnian madu.
+                 Proses pengemasan dilakukan dengan menggunakan kemasan yang sesuai, seperti botol kaca atau plastik yang aman dan kedap udara. Pada setiap kemasan, label yang berisi informasi mengenai produk, asal usul, manfaat kesehatan, serta cara penyimpanan ditambahkan, sehingga konsumen dapat mengetahui lebih banyak tentang madu yang mereka beli.
               </p>
             </div>
           </div>
@@ -1867,12 +1782,12 @@
               <p class="display-6 fw-bold">Come Discuss With Us</p>
               <p>
                 Come discuss with us See what we can offer you. Contact us now,
-                and start making something extraordinary with MaduTava
+                and start making something extraordinary with MaduLiarku
               </p>
             </div>
             <div class="col-3 d-flex align-items-center justify-content-center">
               <a
-                href="https://wa.me/6285732268223"
+                href="https://wa.me/6285931099065"
                 target="_blank"
                 class="link-contact rounded-2 fw-bold fs-5"
                 >CONTACT US MORE
@@ -1883,10 +1798,10 @@
             <div class="col-md-7">
               <p class="fs-2 fw-bold">Lokasi Kami</p>
               <br />
-              <p class="fs-5">GARUT, INDONESIA</p>
+              <p class="fs-5">SIDOARJO, INDONESIA</p>
               <p class="text-body-contact">
-                Cileles, RT.01/RW.04, Cibunar, Cibatu, <br />
-                Kabupaten Garut, Jawa Barat
+                Prasungtani, RT.06/RW.03, Kec. Buduran, <br />
+                Kabupaten Sidoarjo, Jawa Timur
               </p>
               <p class="fw-bold">Jam Operasional:</p>
               <p class="text-body-contact">
@@ -1897,12 +1812,14 @@
             </div>
             <div class="col-md-5">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7918.7618159554495!2d107.97457356817475!3d-7.081763443134665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b58bb3c8e6f3%3A0xbc02d51135a3d198!2sJl.%20Keresek%20-%20Cibatu%20No.109%2C%20Cibunar%2C%20Kec.%20Cibatu%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat%2044185!5e0!3m2!1sid!2sid!4v1727330651958!5m2!1sid!2sid"
-                class="w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.343102183342!2d112.74563789999999!3d-7.427230400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e50060e4b36f%3A0x8128f3d4d5a3a2d8!2sJUAL%20MADU%20HUTAN%20LIAR%20MURNI%20ASLI%20%7C%20MADULIARKU!5e0!3m2!1sid!2sid!4v1727507835693!5m2!1sid!2sid"
+                width="600"
+                height="450"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                class="w-100 h-100"
               ></iframe>
             </div>
           </div>
@@ -1921,23 +1838,22 @@
       <div class="container">
         <div class="row text-white">
           <div class="col-md-3">
-            <p class="fs-1 fw-bold">MaduTava</p>
+            <p class="fs-1 fw-bold">MaduLiarku</p>
             <p class="fs-6 fw-medium">
-              Madutava menyediakan madu 100% murni dari peternak lebah
-              terpercaya, dipanen langsung dari alam tanpa campuran bahan kimia
+              MaduLiarku ini memiliki keunikan tersendiri karena lebah-lebah penghasilnya mengumpulkan nektar dari berbagai jenis tumbuhan liar yang tumbuh alami di hutan.
             </p>
           </div>
           <div class="col-md-3 d-md-flex flex-column">
             <div class="align-self-end">
               <p class="fs-4 fw-bold">Contact Person</p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-telephone"></i> +6285732268223
+                <i class="bi bi-telephone"></i> +6285931099065
               </p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-envelope"></i> madutava@gmail.com
+                <i class="bi bi-envelope"></i> MaduLiarku@gmail.com
               </p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-whatsapp"></i> +6285732268223
+                <i class="bi bi-whatsapp"></i> +6285931099065
               </p>
             </div>
           </div>
@@ -1965,13 +1881,13 @@
             <div class="align-self-end">
               <p class="fs-4 fw-bold">Social Media</p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-facebook"></i> Madutava
+                <i class="bi bi-facebook"></i> MaduLiarku
               </p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-instagram"></i> @madutava
+                <i class="bi bi-instagram"></i> @maduliarku
               </p>
               <p class="fs-6 fw-medium">
-                <i class="bi bi-twitter"></i> Madutava
+                <i class="bi bi-twitter"></i> MaduLiarku
               </p>
             </div>
           </div>
@@ -1986,22 +1902,8 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("scroll", (e) => {
-        const bgNavbar = document.querySelector(".navbar");
-
-        console.log(bgNavbar);
-        if (window.scrollY > 1) {
-          bgNavbar.style.backgroundColor = "#bb752b";
-          bgNavbar.classList.add("shadow-lg");
-          bgNavbar.style.transition = ".5s";
-        } else {
-          bgNavbar.removeAttribute("style");
-          bgNavbar.classList.remove("shadow-lg");
-          bgNavbar.style.transition = ".5s";
-        }
-      });
-    </script>
+    
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script>
       AOS.init();
