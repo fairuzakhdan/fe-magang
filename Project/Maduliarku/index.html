@@ -109,9 +109,11 @@
     </nav>
 
     <section id="home" class="home">
-      <div class="d-flex text-white justify-content-between">
+      <div class="overflow-hidden">
+      <div class="row text-white justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row flex-lg-row
+      ">
         <div
-          class="d-flex justify-content-center align-content-center flex-wrap flex-column mx-5 p-3"
+          class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-content-center flex-wrap flex-column mx-5 p-3"
         >
           <p class="display-5 fw-bold">
             Natural Honey <br />
@@ -141,15 +143,16 @@
             >Dapatkan Sekarang</a
           >
         </div>
-        <div class="d-flex me-3">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 d-flex d-md-flex d-md-flex ms-3">
           <img
             src="img/background.jpeg"
             alt="bg"
-            class="img-fluid rounded-bottom-pill me-3"
-            style="height: 100vh; width: 77vh; background-color: #8b6235"
+            class="img-fluid rounded-bottom-pill bg-home ms-4"
+            style="height: 100vh; width: 75vh; background-color: #8b6235"
           />
         </div>
       </div>
+    </div>
     </section>
 
     <div class="w-100 position-absolute" style="height: 100px">
@@ -164,21 +167,17 @@
 
     <section id="about">
       <div class="position-relative overflow-hidden d-flex">
-        <div class="row justify-content-around">
-          <div class="col-md-5 about-images" data-aos="fade-right">
+        <div class="row justify-content-center column-gap-3 ">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 about-images" data-aos="fade-right">
             <img
-              src="img/about.png"
+              src="img/aboutremove.png"
               alt="about"
-              style="width: 110vh; height: 75vh"
+              style="width: auto; height: 76vh"
+             class="img-about"
             />
-            <div
-              class="position-absolute mt-5 ms-5"
-              style="left: 30px; bottom: 0"
-            >
-              <img src="img/thumb.png" alt="thumb" width="200px" />
-            </div>
+        
           </div>
-          <div class="col-md-6" data-aos="fade-left">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 teks-about" data-aos="fade-left">
             <a href="#products" type="button" class="btn btn-warning ps-3"
               >About Us</a
             >
@@ -186,7 +185,7 @@
               Fresh Forest <br />
               Honey Up To 58% Off
             </p>
-            <p class="pe-4">
+            <p class="">
               Selamat datang di Maduliarku, sumber madu hutan asli yang
               diperoleh melalui dedikasi dan keberanian para pemburu madu
               sejati. Kami menghadirkan madu berkualitas tinggi yang didapatkan
@@ -318,9 +317,7 @@
                   >Extra Large (XL)</a
                 >
               </div>
-              <div class="col pt-4">
-                <img src="img/bee.png" alt="beeimg" class="img-fluid " width="70%">
-              </div>
+           
             </div>
           </div>
 
@@ -1321,12 +1318,12 @@
     </section>
 
     <div class="bee" data-aos="zoom-in">
-      <div style="background-color: #bb752b; height: 250px;margin-top: 3%;">
+      <div style="background-color: #bb752b; margin-top: 3%;">
         <div class="container">
           <div
-            class="row column-gap-3 text-center justify-content-end align-items-center pt-3"
+            class="row gap-3 flex-row text-center justify-content-center align-items-center p-3"
           >
-            <div class="col border border-2 py-4">
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
               <img
                 src="img/icon1.png"
                 alt="icon1"
@@ -1337,7 +1334,7 @@
                 Flowers Produce Nectar and Attract Our Bees
               </p>
             </div>
-            <div class="col border border-2 py-4">
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
               <img
                 src="img/icon2.png"
                 alt="icon2"
@@ -1348,7 +1345,7 @@
                 Bees Collect the Nectar and Carry It to The Hive
               </p>
             </div>
-            <div class="col border border-2 py-4">
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
               <img
                 src="img/icon3.png"
                 alt="icon3"
@@ -1359,7 +1356,7 @@
                 Bees Seal Cells With Wax and Honey Ripens
               </p>
             </div>
-            <div class="col border border-2 py-4">
+            <div class="col-md-3 col-lg-3 col-5 col-sm-5 border border-2 py-4">
               <img
                 src="img/icon4.png"
                 alt="icon4"
