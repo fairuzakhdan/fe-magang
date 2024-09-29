@@ -12,18 +12,17 @@
   background-color: #bb752b;
 }
 
-.sm:hover, 
+.sm:hover,
 .medium:hover,
 .large:hover,
 .extraLarge:hover {
   border: 2px solid #bb752b;
   cursor: pointer;
-  
 }
 
-.btn-next:hover, 
+.btn-next:hover,
 .btn-prev:hover {
-  background-color: darkgray; 
+  background-color: darkgray;
 }
 
 #about,
@@ -31,7 +30,8 @@
 #testimoni,
 #faq,
 #contact,
-#process {
+#process,
+#galeri {
   padding-top: 80px;
 }
 
@@ -41,7 +41,6 @@
   border-radius: 50%;
   background-color: #bb752b;
 }
-
 
 .d-md-flex .card {
   margin-top: 5px;
@@ -55,10 +54,10 @@
   padding: 5px 10px;
   border-radius: 10px;
   border: 1px solid #bb752b;
-  -webkit-border-radius: 10PX;
-  -moz-border-radius: 10PX;
-  -ms-border-radius: 10PX;
-  -o-border-radius: 10PX;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 /* .size-s {
   background-color: rgb(201, 152, 152);
@@ -102,11 +101,11 @@
 }
 
 .accordion-button.collapsed .custom-icon::before {
-  content: "\002B"; 
+  content: "\002B";
 }
 
 .accordion-button:not(.collapsed) .custom-icon::before {
-  content: "\2212"; 
+  content: "\2212";
 }
 
 .contact-us {
@@ -119,7 +118,7 @@
   padding: 15px;
 }
 
-.teks-contact  {
+.teks-contact {
   color: #bb752b;
 }
 
@@ -128,4 +127,72 @@
 }
 .footer {
   background-color: #bb752b;
+}
+
+.galeri1,
+.galeri2,
+.galeri3,
+.galeri4,
+.galeri5,
+.galeri6,
+.galeri7,
+.galeri8 {
+  cursor: pointer;
+}
+
+/* .galeri1:hover, .galeri2:hover, .galeri3:hover, .galeri4:hover, .galeri5:hover, .galeri6:hover, .galeri7:hover, .galeri8:hover {
+  transform: scale(1.1);
+  
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+} */
+
+.img-galeri .col-lg-3 span {
+  position: absolute;
+  width: 23.5%;
+  background-color: rgba(94, 90, 90, 0.5);
+  height: 47%;
+  display: block;
+  gap: 10px;
+  cursor: pointer;
+  line-height: 250px;
+  text-align: center;
+  border: 5px solid black;
+  /* top: 0; */
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.img-galeri .col-lg-3 span:hover {
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+}
+
+@keyframes animasiGaleri {
+  0% {
+    height: -10%;
+    width: 23.5%;
+  } 
+  50% {
+    height: 50%;
+    width: 23.5%;
+  }
+  100% {
+    height: 47%;
+    width: 23.5%;
+  }
 }
