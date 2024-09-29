@@ -9,13 +9,12 @@
 } */
 
 .navbar-nav a:hover{
- color: rgb(0, 0, 0) !important;
-text-shadow: 2px 2px 20px rgb(0, 0, 0);
+ text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
 .navbar-nav a.active{ 
-  color: rgb(0, 0, 0) !important;
-  text-shadow: 2px 2px 20px rgb(0, 0, 0);
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
 .home {
@@ -41,7 +40,8 @@ text-shadow: 2px 2px 20px rgb(0, 0, 0);
 #faq,
 #contact,
 #process,
-#galeri {
+#galeri,
+#parallax {
   padding-top: 80px;
 }
 
@@ -69,18 +69,6 @@ text-shadow: 2px 2px 20px rgb(0, 0, 0);
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-/* .size-s {
-  background-color: rgb(201, 152, 152);
-}
-.size-m {
-  background-color: rgb(88, 131, 172);
-}
-.size-l {
-  background-color: rgb(202, 196, 138);
-}
-.size-xl {
-  background-color: rgb(135, 189, 140);
-} */
 
 .modal-content {
   background-color: #bb752b;
@@ -181,4 +169,19 @@ text-shadow: 2px 2px 20px rgb(0, 0, 0);
   -moz-transform: translate(0,0);
   -ms-transform: translate(0,0);
   -o-transform: translate(0,0);
+}
+
+.parallax-container {
+  height: 250px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax {
+  background-image: url('img/parallax.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
