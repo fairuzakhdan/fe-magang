@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Maduliarku</title>
+         <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+.navbar-nav a:hover {
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.navbar-nav a.active {
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.home {
+  background-color: #bb752b;
+}
+
+.sm:hover,
+.medium:hover,
+.large:hover,
+.extraLarge:hover {
+  border: 2px solid #bb752b;
+  cursor: pointer;
+}
+
+.btn-next:hover,
+.btn-prev:hover {
+  background-color: darkgray;
+}
+
+#about,
+#product,
+#testimoni,
+#faq,
+#contact,
+#process,
+#galeri,
+#parallax {
+  padding-top: 80px;
+}
+
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bb752b;
+}
+
+.card-cs .card {
+  margin-top: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px #bb752b;
+  font-size: 1.1em;
+  color: #000000;
+}
+
+.size-product {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #bb752b;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.modal-content {
+  background-color: #bb752b;
+}
+
+.text-natural {
+  font-size: 0.9em;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button {
+  font-size: 0.5em;
+}
+
+.faq-item {
+  box-shadow: 1px 1px 5px #868585;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button.collapsed .custom-icon::before {
+  content: "\002B";
+}
+
+.accordion-button:not(.collapsed) .custom-icon::before {
+  content: "\2212";
+}
+
+.contact-us {
+  background-color: #bb752b;
+}
+.link-contact {
+  color: #bb752b;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.teks-contact {
+  color: #bb752b;
+}
+
+.text-body-contact {
+  font-size: 1.1em;
+}
+.footer {
+  background-color: #bb752b;
+}
+
+.galeri1,
+.galeri2,
+.galeri3,
+.galeri4,
+.galeri5,
+.galeri6,
+.galeri7,
+.galeri8 {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.span-gl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-weight: bold;
+  font-size: calc(1em + 0.5vw);
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.col-lg-3 {
+  position: relative;
+}
+
+.col-lg-3:hover .span-gl {
+  opacity: 1;
+}
+
+.col-lg-3:hover img {
+  cursor: pointer;
+  opacity: 0.8;
+  border: 5px solid black;
+}
+
+.img-galeri .col-lg-3 span2 {
+  position: absolute;
+  width: 23.5%;
+  background-color: rgba(94, 90, 90, 0.5);
+  height: 47%;
+  display: block;
+  gap: 10px;
+
+  line-height: 250px;
+  text-align: center;
+  border: 5px solid black;
+  /* top: 0; */
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.img-galeri .col-lg-3 spans:hover {
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+}
+
+.parallax-container {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax {
+  background-image: url("img/parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .bg-home {
+    height: 300px !important;
+    padding: 0 !important;
+    margin-left: -17px !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .img-about {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .teks-about {
+    text-align: justify !important;
+    padding: 0 25px !important;
+  }
+  .teks-parallax {
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .teks-parallax p {
+    margin: 0 !important;
+  }
+  .contact-group {
+    margin: 10px !important;
+  }
+}
+
+    </style>
+    </head>
+    <body>
+    <nav
+      class="navbar navbar-expand-lg p-1 fixed-top d-none d-lg-block d-sm-none d-md-block"
+    >
+      <div class="container-fluid mx-5 pt-1">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="assets/logo"
+            alt="logo"
+            class="img-fluid"
+            style="width: 170px; height: 50px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse d-flex justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bold">
+            <li class="nav-item navbar-nav">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item navbar-nav">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item navbar-nav">
+              <a class="nav-link text-white" href="#product">Product</a>
+            </li>
+            <li class="nav-item navbar-nav">
+              <a class="nav-link text-white" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item navbar-nav">
+              <a class="nav-link text-white" href="#faq">F.A.Q</a>
+            </li>
+            <li class="nav-item navbar-nav">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end align-items-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav mb-2 mb-lg-0 fs-6 fw-bold d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link text-white fs-6 d-flex align-items-center gap-2"
+                href="#contact"
+              >
+                <i
+                  class="bi bi-telephone-inbound-fill text-dark fs-4 rounded-circle px-2 py-1 bg-light"
+                >
+                </i>
+                (0) 123456789
+              </a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a class="nav-link text-white" href="#product">
+                <i class="bi bi-basket2 text-white fs-3 rounded-circle"></i>
+              </a>
+            </li>
+
+            <li class="nav-item mx-3">
+              <a
+                class="btn btn-warning fw-bold fs-6 rounded-pill px-4 py-2"
+                href="#contact"
+                >Order Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav
+    class="navbar navbar-dark fixed-top d-lg-none d-md-block shadow-lg" style="background-color: #bb752b;"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand text-black fw-semibold" href="#home"><img src="assets/logo" alt="logo" class="img-fluid" width="170px"></a>
+      <button
+        class="navbar-toggler border-dark"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end w-50 text-bg-dark"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <section id="home" class="home">
+      <div class="overflow-hidden">
+        <div
+          class="row text-white justify-content-between flex-sm-column-reverse flex-column-reverse flex-md-row flex-lg-row"
+        >
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-content-center flex-wrap flex-column mx-5 p-3"
+          >
+            <p class="display-5 fw-bold">
+              Natural Honey <br />
+              & Beekeeping
+            </p>
+            <img
+              src="assets/lebah"
+              alt="logo4"
+              class="img-fluid position-absolute bottom-50"
+              width="7%"
+              style="left: 400px"
+            />
+            <p class="fs-5" style="color: #3a2604">
+              Rasakan kemurnian dan keaslian madu kami,<br />
+              yang dihasilkan oleh lebah pilihan dari lingkungan terbaik.
+            </p>
+            <a
+              type="button"
+              class="btn px-3 py-2 fw-bold text-white"
+              href="#product"
+              style="
+                width: 200px;
+                background-color: rgb(255, 187, 0);
+                letter-spacing: 0.3px;
+                box-shadow: 1px 1px 5px black;
+              "
+              >Dapatkan Sekarang</a
+            >
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-5 col-lg-5 d-flex d-md-flex d-md-flex ms-3"
+          >
+            <img
+              src="assets/bg"
+              alt="bg"
+              class="img-fluid rounded-bottom-pill bg-home ms-4"
+              style="height: 100vh; width: 75vh; background-color: #8b6235"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="w-100 position-absolute" style="height: 100px">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#bb752b"
+          fill-opacity="1"
+          d="M0,288L48,282.7C96,277,192,267,288,261.3C384,256,480,256,576,213.3C672,171,768,85,864,53.3C960,21,1056,43,1152,48C1248,53,1344,43,1392,37.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <section id="about">
+      <div class="position-relative overflow-hidden d-flex">
+        <div class="row justify-content-center column-gap-3">
+          <div
+            class="col-12 col-sm-12 col-md-5 col-lg-5 about-images"
+            data-aos="fade-right"
+          >
+            <img
+              src="assets/about"
+              alt="about"
+              style="width: auto; height: 76vh"
+              class="img-about"
+            />
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-6 col-lg-6 teks-about"
+            data-aos="fade-left"
+          >
+            <a href="#products" type="button" class="btn btn-warning ps-3"
+              >About Us</a
+            >
+            <p class="display-5 fw-semibold">
+              Fresh Forest <br />
+              Honey Up To 58% Off
+            </p>
+            <p class="">
+              Selamat datang di Maduliarku, sumber madu hutan asli yang
+              diperoleh melalui dedikasi dan keberanian para pemburu madu
+              sejati. Kami menghadirkan madu berkualitas tinggi yang didapatkan
+              dari sarang lebah liar di dalam hutan belantara, melalui proses
+              perburuan yang menantang dan penuh petualangan. Nikmati diskon
+              hingga 58% untuk setiap pembelian. Rasakan manisnya madu yang
+              dihasilkan dari kerja keras dan semangat para pemburu madu hutan!
+            </p>
+
+            <div class="row">
+              <span class="col-6 d-flex align-items-center fw-semibold">
+                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i> Madu
+                Hutan Liar & Segar Terbaik
+              </span>
+              <span class="col-6 d-flex align-items-center fw-semibold">
+                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
+                100% Madu Hutan Asli
+              </span>
+              <span class="col-6 d-flex align-items-center fw-semibold">
+                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
+                Hasil Perburuan Tradisional
+              </span>
+              <span class="col-6 d-flex align-items-center fw-semibold">
+                <i class="bi bi-check-circle text-warning fs-4 pe-2"></i>
+                Menghargai Dedikasi Para Pemburu
+              </span>
+              <span class="mt-4"
+                ><a
+                  href="#product"
+                  type="button"
+                  class="btn btn-secondary px-3 py-2 rounded-pill"
+                  >MORE ABOUT US</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="container" data-aos="fade-up" data-aos-offset="300">
+        <div class="row">
+          <div class="col-md-3 list-group">
+            <div class="row flex-column">
+              <div class="col">
+                <button
+                  type="button"
+                  class="p-2 btn px-3 bg-warning"
+                  style="background-color: #bb752b"
+                >
+                  <i class="bi bi-tags"></i> Product Category
+                </button>
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
+                  aria-current="true"
+                >
+                  Price
+                </a>
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('all')"
+                  >All</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('40000')"
+                  >Rp. 30000 - Rp. 50000</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('75000')"
+                  ><span class="fw-bold fs-5">></span>Rp. 50000 - Rp. 100000</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('150000')"
+                  ><span class="fw-bold fs-5">></span>Rp. 100000 - Rp. 200000</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterPrices('200000')"
+                  ><span class="text-decoration-underline fw-bold fs-5">></span>
+                  Rp. 200000</a
+                >
+              </div>
+              <div class="col">
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
+                  aria-current="true"
+                >
+                  Size
+                </a>
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('all')"
+                  >All</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('sm')"
+                  >Small (S)</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('medium')"
+                  >Medium (M)</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('large')"
+                  >Large (L)</a
+                >
+                <a
+                  href="#product"
+                  class="list-group-item list-group-item-action"
+                  onclick="filterProducts('extraLarge')"
+                  >Extra Large (XL)</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="row flex-wrap gap-1 justify-content-center">
+              <div
+                class="col-md-2 card p-0 products large 200000"
+                style="width: 13rem"
+              >
+                <img src="assets/p1" class="card-img-top" alt="card1" />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div
+                    class="d-flex justify-content-between align-content-between"
+                  >
+                    <p class="card-text fw-bold">Forest Honey 1000gram</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p1"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp. 225000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp. 250000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+                                        <span class="size-product size-s"
+                                          >L | 1000gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.225000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.250000
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-md-2 card p-0 products medium 150000"
+                style="width: 13rem"
+              >
+                <img src="assets/p2" class="card-img-top" alt="card2" />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey 500gram</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal2"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal2Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p2"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp.125000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp.150000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-m"
+                                          >M | 500gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.125000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.150000
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-md-2 card p-0 products medium 75000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p3"
+                  class="card-img-top img-fluid"
+                  alt="card3"
+                />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey 250gram</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal3"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal3Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p3"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp.75000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp.90000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-m"
+                                          >M | 250gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.75000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.90000
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-md-2 card p-0 products sm 40000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p4"
+                  class="card-img-top img-fluid"
+                  alt="card4"
+                />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey 110gram</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal4"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal4"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal4Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p4"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp. 40000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp. 49000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+                                        <span class="size-product size-s"
+                                          >S | 110gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp. 40000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.49000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-2 card p-0 products extraLarge 200000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p5"
+                  class="card-img-top img-fluid"
+                  alt="card4"
+                />
+
+                <div
+                  class="d-flex flex-column align-items-between justify-content-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey 1300gram</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal5"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal5"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal5Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p5"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp.290000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp.350000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-xl"
+                                          >XL | 1300gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.290000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.350000
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-md-2 card p-0 products large 200000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p6"
+                  class="card-img-top img-fluid"
+                  alt="card4"
+                />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey Paket Ekstra</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal6"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal6"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal6Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p6"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp.275000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp. 300000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-l"
+                                          >L | 1250gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.275000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.300000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-2 card p-0 products medium 150000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p7"
+                  class="card-img-top img-fluid"
+                  alt="card4"
+                />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey Paket Hemat</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal7"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal7"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal7Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p7"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp. 130000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp. 150000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-m"
+                                          >M | 500gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp. 130000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.150000
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-2 card p-0 products extraLarge 200000"
+                style="width: 13rem"
+              >
+                <img
+                  src="assets/p8"
+                  class="card-img-top img-fluid"
+                  alt="card4"
+                />
+
+                <div
+                  class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
+                >
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text fw-bold">Forest Honey Paket Super</p>
+                    <div class="d-block">
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal8"
+                        class="card-text rounded-circle btn btn-dark text-white"
+                      >
+                        <i class="bi bi-eye"></i>
+                      </button>
+
+                      <div
+                        class="modal fade"
+                        id="exampleModal8"
+                        tabindex="-1"
+                        aria-labelledby="exampleModal8Label"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered modal-lg"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="card mb-3">
+                                <div class="row g-0">
+                                  <div class="col-md-4">
+                                    <img
+                                      src="assets/p8"
+                                      class="img-fluid rounded-start"
+                                      alt="card1"
+                                    />
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h4 class="card-title fw-bold">
+                                        Forest Honey
+                                      </h4>
+                                      <h5 class="text-danger">
+                                        Rp.425000
+                                        <span
+                                          class="text-decoration-line-through text-secondary"
+                                        >
+                                          Rp. 465000</span
+                                        >
+                                      </h5>
+                                      <img
+                                        src="assets/star"
+                                        alt="star"
+                                        width="90px"
+                                        height="25px"
+                                      />
+                                      <p class="card-text">
+                                        Madu hutan, yang juga dikenal sebagai
+                                        madu liar, merupakan produk alami yang
+                                        dihasilkan oleh lebah yang mengumpulkan
+                                        nektar dari berbagai jenis bunga liar
+                                        dan pohon di hutan. Madu ini memiliki
+                                        karakteristik yang unik, baik dari segi
+                                        rasa maupun warna.Madu hutan biasanya
+                                        lebih gelap dan memiliki cita rasa yang
+                                        lebih kompleks.
+                                      </p>
+                                      <p class="fs-5 fw-bold">
+                                        Size :
+
+                                        <span class="size-product size-xl"
+                                          >XL | 1860gram</span
+                                        >
+                                      </p>
+                                      <p class="card-text">
+                                        <small class="text-body-secondary"
+                                          >Last updated 30 mins ago</small
+                                        >
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-dark"
+                                data-bs-dismiss="modal"
+                              >
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between">
+                    <p class="text-danger">Rp.425000</p>
+                    <p class="text-secondary text-decoration-line-through">
+                      Rp.465000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bee" data-aos="zoom-in">
+      <div style="background-color: #bb752b; margin-top: 3%">
+        <div class="container">
+          <div
+            class="row gap-3 flex-row text-center justify-content-center align-items-center p-3"
+          >
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
+              <img
+                src="assets/icon1"
+                alt="icon1"
+                class="img-fluid"
+                style="width: 100px; height: 100px"
+              />
+              <p class="fw-bold text-white">
+                Flowers Produce Nectar and Attract Our Bees
+              </p>
+            </div>
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
+              <img
+                src="assets/icon2"
+                alt="icon2"
+                class="img-fluid"
+                style="width: 100px; height: 100px"
+              />
+              <p class="fw-bold text-white">
+                Bees Collect the Nectar and Carry It to The Hive
+              </p>
+            </div>
+            <div class="col-md col-lg col-5 col-sm-5 border border-2 py-4">
+              <img
+                src="assets/icon3"
+                alt="icon3"
+                class="img-fluid"
+                style="width: 100px; height: 100px"
+              />
+              <p class="fw-bold text-white">
+                Bees Seal Cells With Wax and Honey Ripens
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-5 col-sm-5 border border-2 py-4">
+              <img
+                src="assets/icon4"
+                alt="icon4"
+                class="img-fluid"
+                style="width: 100px; height: 100px"
+              />
+              <p class="fw-bold text-white">
+                We Collect the Product and Transfer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="testimoni">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div
+            class="col-md-12 d-flex justify-content-center flex-column align-items-center"
+          >
+            <p class="fs-4" style="color: #bb752b">Testimonials</p>
+            <p class="display-6 text-black fw-bold">Our Clients Reviews</p>
+            <p>
+              Hear What They Have to Say: Genuine Testimonials from Those Who
+              Have Experienced Our Services!
+            </p>
+          </div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active rounded-circle border border-2 border-black"
+              aria-current="true"
+              aria-label="Slide 1"
+              style="width: 12px; height: 12px"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              style="width: 12px; height: 12px"
+              class="rounded-circle border border-2 border-black"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner my-3">
+            <div class="mb-5 carousel-item active">
+              <div class="row justify-content-center gap-3 card-cs">
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Tasty!</h5>
+
+                    <p class="card-text text-center">
+                      "Saya baru saja menerima madu saya hari ini, madu murni
+                      yang luar biasa! Saya belum pernah mencicipi sesuatu yang
+                      begitu lezat sebelumnya!"
+                    </p>
+                    <img
+                      src="assets/cs1"
+                      alt="person1"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Linda Zahira</p>
+                  </div>
+                </div>
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Benefit!</h5>
+
+                    <p class="card-text text-center">
+                      “Saya dulu memiliki alergi parah pada kulit dan sejak saya
+                      mulai menggunakan produk ini, alergi saya hilang semua.
+                      Terima kasih."
+                    </p>
+                    <img
+                      src="assets/cs2"
+                      alt="person2"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Annisa Ashari</p>
+                  </div>
+                </div>
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Healthy!</h5>
+
+                    <p class="card-text text-center">
+                      "Saya sudah memberitahu banyak orang tentang bagaimana
+                      madu ini memengaruhi kadar gula saya.Terima kasih."
+                    </p>
+                    <img
+                      src="assets/cs3"
+                      alt="person3"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Jessica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-5 carousel-item">
+              <div class="row justify-content-center gap-3 card-cs">
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Delivery!</h5>
+
+                    <p class="card-text text-center">
+                      “Pelayanan yang ramah dan pengiriman yang cepat membuat
+                      pengalaman belanja semakin menyenangkan. Sukses Selalu
+                      MaduLiarku!”
+                    </p>
+                    <img
+                      src="assets/cs4"
+                      alt="person1"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Hendra Kurniawan</p>
+                  </div>
+                </div>
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Affordable Prices!</h5>
+
+                    <p class="card-text text-center">
+                      “Harga yang ditawarkan sangat terjangkau untuk kualitas
+                      yang diberikan, dan sering ada promo menarik. Sukses Terus
+                      MaduLiarku!”
+                    </p>
+                    <img
+                      src="assets/cs5"
+                      alt="person1"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Putri Rahmawati</p>
+                  </div>
+                </div>
+                <div
+                  class="card col-lg-5 col-md-5 col-sm-12 col-12"
+                  style="width: 20rem"
+                >
+                  <div
+                    class="card-body d-flex row-gap-3 flex-column justify-content-center align-items-center"
+                  >
+                    <img
+                      src="assets/star"
+                      alt="star"
+                      width="90px"
+                      height="25px"
+                    />
+                    <h5 class="card-title fw-bold">Quality!</h5>
+
+                    <p class="card-text text-center">
+                      "Saya sangat senang dengan madu dari toko ini! Kualitasnya
+                      luar biasa rasanya alami dan pelayanan yang ramah. Terima
+                      kasih MaduLiarku!"
+                    </p>
+                    <img
+                      src="assets/cs6"
+                      alt="person1"
+                      class="img-fluid rounded-circle"
+                      width="20%"
+                    />
+                    <p class="fw-bold">Rangga Alfarizi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon p bg-black opacity-25 btn-prev"
+                style="margin-right: 120px"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon p bg-black opacity-25 btn-next"
+                style="margin-left: 120px"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="process" class="container" data-aos="zoom-in-down">
+      <div class="row">
+        <div
+          class="col d-flex justify-content-center align-items-center flex-column"
+        >
+          <p class="fw-bold">
+            <img src="assets/honey" alt="honey" width="40px" height="40px" />
+            How Does it Works?
+          </p>
+          <p class="display-6 text-center fw-bold">
+            Natural <span class="text-warning">Ingredients</span> & Fine <br />
+            Quality Honey
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-md-flex justify-content-center">
+          <div class="row flex-column">
+            <div class="col text-center">
+              <img src="assets/sarang" alt="sarang" />
+              <p class="fs-5 fw-bold">Persiapan Tim Pemburu</p>
+              <p class="text-natural">
+                Proses berburu madu hutan liar dimulai dengan persiapan tim
+                pemburu yang terdiri dari individu-individu berpengalaman. Tim
+                ini akan melakukan briefing untuk mendiskusikan lokasi perburuan
+                yang telah ditentukan, teknik pengambilan yang akan digunakan,
+                serta protokol keselamatan yang harus diikuti selama berada di
+                hutan.
+              </p>
+            </div>
+            <div class="col text-center">
+              <img src="assets/panen" alt="panen" />
+              <p class="fs-5 fw-bold">Pengolahan Madu</p>
+              <p class="text-natural">
+                Madu yang telah diambil kemudian diproses untuk menghilangkan
+                kotoran dan sisa-sisa sarang. Proses ini dilakukan dengan
+                menyaring madu agar tetap bersih dan murni. Penting untuk
+                menghindari pemanasan berlebih, agar sifat alami dan nutrisi
+                yang terkandung dalam madu tetap terjaga dengan baik.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-md-flex justify-content-center">
+          <img src="assets/faq" alt="honey" class="img-fluid" />
+        </div>
+        <div class="col-md-4 d-md-flex justify-content-center">
+          <div class="row flex-column">
+            <div class="col text-center">
+              <img src="assets/nectar" alt="nectar" />
+              <p class="fs-5 fw-bold">Pencarian Sarang Lebah</p>
+              <p class="text-natural">
+                Setelah persiapan selesai, tim mulai menjelajahi hutan dengan
+                penuh ketelitian. Mereka mencari sarang lebah liar dengan
+                mengamati tanda-tanda kehadiran lebah, seperti suara buzzing
+                yang khas dan aktivitas lebah yang tampak di sekitar pohon-pohon
+                tinggi atau gua-gua tersembunyi.
+              </p>
+            </div>
+            <div class="col text-center">
+              <img src="assets/kemasan" alt="kemasan" />
+              <p class="fs-5 fw-bold">Penyaringan dan Pengemasan</p>
+              <p class="text-natural">
+                Proses pengemasan dilakukan dengan menggunakan kemasan yang
+                sesuai, seperti botol kaca atau plastik yang aman dan kedap
+                udara. Pada setiap kemasan, label yang berisi informasi mengenai
+                produk, asal usul, manfaat kesehatan, serta cara penyimpanan
+                ditambahkan, sehingga konsumen dapat mengetahui lebih banyak
+                tentang madu yang mereka beli.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="galeri" data-aos="fade-up" data-aos-duration="1000">
+      <h1 class="text-center display-6 text-center fw-bold galeri">
+        <i class="bi bi-images"></i> Galeri
+        <span class="text-warning">Madu</span>Liarku
+      </h1>
+
+      <div class="container">
+        <div class="row g-3 position-relative img-galeri">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Persiapan Tim Pemburu</span>
+            <img
+              src="assets/galeri1"
+              alt="galeri1"
+              class="img-fluid galeri1"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Pencarian Sarang <br />Lebah</span>
+            <img
+              src="assets/galeri2"
+              alt="galeri2"
+              class="img-fluid galeri2"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Pengambilan Madu</span>
+            <img
+              src="assets/galeri3"
+              alt="galeri3"
+              class="img-fluid galeri3"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Pengolahan Madu</span>
+            <img
+              src="assets/galeri4"
+              alt="galeri4"
+              class="img-fluid galeri4"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Penyimpanan Madu</span>
+            <img
+              src="assets/galeri5"
+              alt="galeri5"
+              class="img-fluid galeri5"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Pengujian Kualitas</span>
+            <img
+              src="assets/galeri6"
+              alt="galeri6"
+              class="img-fluid galeri6"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Pengemasan Produk</span>
+            <img
+              src="assets/galeri7"
+              alt="galeri7"
+              class="img-fluid galeri7"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+            <span class="span-gl">Distribusi dan Penjualan</span>
+            <img
+              src="assets/galeri8"
+              alt="galeri8"
+              class="img-fluid galeri8"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="faq">
+      <div class="container" data-aos="flip-down" data-aos-duration="1000">
+        <div class="text-center mb-4">
+          <p class="fs-4" style="color: #bb752b">Our Faq</p>
+          <p class="display-6 text-black fw-bold">Friquently Ask Questions</p>
+        </div>
+        <div
+          class="accordion accordion-flush d-md-flex flex-column gap-2"
+          id="accordionFlushExample"
+        >
+          <div class="faq-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-light text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Apakah madu yang dijual 100% alami dan tanpa campuran?
+                  <span class="custom-icon ms-auto fs-3 text-dark"></span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="px-5">
+                    Ya, semua produk madu yang kami jual adalah 100% alami,
+                    tanpa bahan tambahan atau campuran. Kami menjaga kualitas
+                    produk agar tetap murni dan bebas dari bahan pengawet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-light text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Apakah madu ini aman untuk penderita diabetes?
+                  <span class="custom-icon ms-auto fs-3 text-dark"></span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="px-5">
+                    Madu bisa dikonsumsi oleh penderita diabetes dalam jumlah
+                    yang terbatas, tetapi kami menyarankan untuk berkonsultasi
+                    dengan dokter terlebih dahulu. Beberapa penelitian
+                    menunjukkan madu dapat membantu mengatur kadar gula darah,
+                    namun setiap orang memiliki kondisi yang berbeda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-light text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Apakah ada promo atau diskon yang tersedia?
+                  <span class="custom-icon ms-auto fs-3 text-dark"></span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="px-5">
+                    Kami sering mengadakan promo dan diskon menarik, terutama
+                    untuk pembelian dalam jumlah besar atau pelanggan yang
+                    berlangganan newsletter kami. Pastikan untuk selalu
+                    memeriksa halaman website kami untuk informasi terbaru.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-light text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Berapa lama waktu pengiriman dan apakah tersedia pengiriman ke
+                  seluruh Indonesia?
+                  <span class="custom-icon ms-auto fs-3 text-dark"></span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="px-5">
+                    Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung
+                    lokasi Anda. Kami menyediakan pengiriman ke seluruh wilayah
+                    Indonesia, dan Anda akan mendapatkan nomor resi setelah
+                    pesanan diproses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed bg-light text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Apakah produk ini cocok untuk anak-anak?
+                  <span class="custom-icon ms-auto fs-3 text-dark"></span>
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <p class="px-5">
+                    Madu sangat baik untuk anak-anak di atas usia 1 tahun.
+                    Namun, madu tidak dianjurkan untuk bayi di bawah 1 tahun
+                    karena risiko botulisme. Untuk anak-anak yang lebih tua,
+                    madu dapat menjadi suplemen alami yang bermanfaat bagi
+                    kesehatan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parallax">
+      <div class="parallax-container">
+        <div class="parallax">
+          <div class="container">
+            <div class="row gap-3 position-relative text-center text-white justify-content-center pt-3 align-items-center" style="height: 100%;">
+              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+                <p class="display-1 fw-bold">100+</p>
+            <p class="fw-bold fs-3">Hunting Team</p>
+              </div>
+              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+                <p class="display-1 fw-bold">20K+</p>
+                <p class="fw-bold fs-3">Customers</p>
+              </div>
+              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+                <p class="display-1 fw-bold">33+</p>
+                <p class="fw-bold fs-3">Shop</p>
+              </div>
+              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+                <p class="display-1 fw-bold">15+</p>
+                <p class="fw-bold fs-3">Professionals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-group" data-aos="fade-up" data-aos-duration="1000">
+        <p class="teks-contact fs-4">
+          <i class="bi bi-geo-alt-fill"></i>Contact Us
+        </p>
+        <div class="row row-gap-3">
+          <div class="row contact-us text-light justify-content-between p-4">
+            <div class="col-md-6 col-lg-6 col-12 col-sm-12 ">
+              <p class="display-6 fw-bold">Come Discuss With Us</p>
+              <p>
+                Come discuss with us See what we can offer you. Contact us now,
+                and start making something extraordinary with MaduLiarku
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-3 col-12 col-sm-12 d-flex align-items-center justify-content-center">
+              <a
+                href="https://wa.me/6285931099065"
+                target="_blank"
+                class="link-contact rounded-2 fw-bold fs-5 text-center"
+                >CONTACT US MORE
+              </a>
+            </div>
+          </div>
+          <div class="row shadow-lg justify-content-between py-4">
+            <div class="col-md-7">
+              <p class="fs-2 fw-bold">Lokasi Kami</p>
+              <br />
+              <p class="fs-5">SIDOARJO, INDONESIA</p>
+              <p class="text-body-contact">
+                Prasungtani, RT.06/RW.03, Kec. Buduran, <br />
+                Kabupaten Sidoarjo, Jawa Timur
+              </p>
+              <p class="fw-bold">Jam Operasional:</p>
+              <p class="text-body-contact">
+                Senin - Sabtu (09:00 -17:00)
+                <br />
+                Minggu (12:00 -17:00)
+              </p>
+            </div>
+            <div class="col-md-5">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.343102183342!2d112.74563789999999!3d-7.427230400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e50060e4b36f%3A0x8128f3d4d5a3a2d8!2sJUAL%20MADU%20HUTAN%20LIAR%20MURNI%20ASLI%20%7C%20MADULIARKU!5e0!3m2!1sid!2sid!4v1727507835693!5m2!1sid!2sid"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-100 h-100"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#bb752b"
+        fill-opacity="1"
+        d="M0,256L40,240C80,224,160,192,240,202.7C320,213,400,267,480,277.3C560,288,640,256,720,229.3C800,203,880,181,960,186.7C1040,192,1120,224,1200,218.7C1280,213,1360,171,1400,149.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    </svg>
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-white pt-3 pb-4">
+          <div class="col-md-3 col-lg-3 col-12 col-sm-12">
+            <p class="fs-1 fw-bold">Maduliarku</p>
+            <p class="fs-6 fw-medium m-0">
+              MaduLiarku ini memiliki keunikan tersendiri karena lebah-lebah
+              penghasilnya mengumpulkan nektar dari berbagai jenis tumbuhan liar
+              yang tumbuh alami di hutan.
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-12 col-sm-12 d-md-flex flex-column">
+            <div class="align-self-end">
+              <p class="fs-4 fw-bold">Contact Person</p>
+              <p class="fs-6 fw-medium">
+                <i class="bi bi-telephone"></i> +6285931099065
+              </p>
+              <p class="fs-6 fw-medium">
+                <i class="bi bi-envelope"></i> MaduLiarku@gmail.com
+              </p>
+              <p class="fs-6 fw-medium">
+                <i class="bi bi-whatsapp"></i> +6285931099065
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-6 col-sm-6 d-md-flex flex-column">
+            <div class="align-self-end">
+              <p class="fs-4 fw-bold">Quick Links</p>
+              <a
+                href="#home"
+                class="d-block text-decoration-none text-white fs-6 fw-medium"
+                >Home</a
+              >
+              <a
+                href="#about"
+                class="d-block text-decoration-none text-white fs-6 fw-medium"
+                >About</a
+              >
+              <a
+                href="#product"
+                class="d-block text-decoration-none text-white fs-6 fw-medium"
+                >Product</a
+              >
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-6 col-sm-6 d-md-flex flex-column">
+            <div class="align-self-end">
+              <p class="fs-4 fw-bold">Social Media</p>
+              <a
+                href="https://www.instagram.com/maduliarku?igsh=MWxtbmZwcWd2bGFsNA=="
+                target="_blank"
+                class="d-block fs-6 fw-medium text-decoration-none text-white"
+              >
+                <i class="bi bi-facebook"></i> MaduLiarku
+              </a>
+              <a
+                href="https://www.instagram.com/maduliarku?igsh=MWxtbmZwcWd2bGFsNA=="
+                target="_blank"
+                class="d-block fs-6 fw-medium text-decoration-none text-white"
+              >
+                <i class="bi bi-instagram"></i> @maduliarku
+              </a>
+              <a
+                href="https://www.instagram.com/maduliarku?igsh=MWxtbmZwcWd2bGFsNA=="
+                target="_blank"
+                class="d-block fs-6 fw-medium text-decoration-none text-white"
+              >
+                <i class="bi bi-twitter"></i> MaduLiarku
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-white text-center">
+          <div class="col">
+            <p class="border-light border-opacity-25 border-top pb-2 pt-4">
+              © 2024 Reserved by Fairuz Akhdan | Powered by Gamelab.id
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      let section = document.querySelectorAll("section");
+      let navLinks = document.querySelectorAll(".navbar-nav a");
+
+      window.onscroll = () => {
+        section.forEach((sec) => {
+          let top = window.scrollY;
+          let offset = sec.offsetTop - 50;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute("id");
+          if (top >= offset && top < offset + height) {
+            navLinks.forEach((links) => {
+              links.classList.remove("active");
+              document
+                .querySelector('.navbar-nav a[href*="' + id + '"]')
+                .classList.add("active");
+            });
+          }
+        });
+      };
+
+      document.addEventListener("scroll", (e) => {
+        const bgNavbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 1) {
+          bgNavbar.style.backgroundColor = "#bb752b";
+          bgNavbar.classList.add("shadow-lg");
+          bgNavbar.style.transition = ".5s";
+        } else {
+          bgNavbar.removeAttribute("style");
+          bgNavbar.classList.remove("shadow-lg");
+          bgNavbar.style.transition = ".5s";
+        }
+      });
+
+      const filterProducts = (size) => {
+        const products = document.querySelectorAll(".products");
+        for (let product of products) {
+          if (size === "all" || product.classList.contains(size)) {
+            product.style.display = "block";
+          } else {
+            product.style.display = "none";
+          }
+        }
+      };
+
+      const filterPrices = (price) => {
+        const products = document.querySelectorAll(".products");
+        for (let product of products) {
+          if (price === "all" || product.classList.contains(price)) {
+            product.style.display = "block";
+          } else {
+            product.style.display = "none";
+          }
+        }
+      };
+
+      filterProducts("all");
+      filterPrices("all");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>-->
+    <!--<script>-->
+    <!--  AOS.init();-->
+    <!--</script>-->
+  </body>
+</html>
