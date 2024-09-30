@@ -4,12 +4,11 @@
   font-family: "Poppins";
 }
 
-
-.navbar-nav a:hover{
- text-shadow: 3px 3px 5px rgb(0, 0, 0);
+.navbar-nav a:hover {
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
-.navbar-nav a.active{ 
+.navbar-nav a.active {
   color: rgb(255, 255, 255) !important;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
@@ -132,17 +131,55 @@
 .galeri6,
 .galeri7,
 .galeri8 {
-  cursor: pointer;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
 }
 
-.img-galeri .col-lg-3 span {
+.span-gl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-weight: bold;
+  font-size: calc(1em + 0.5vw);
+  color: #ffffff;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.col-lg-3 {
+  position: relative;
+}
+
+.col-lg-3:hover .span-gl {
+  opacity: 1;
+}
+
+.col-lg-3:hover img {
+  cursor: pointer;
+  opacity: 0.8;
+  border: 5px solid black;
+}
+
+.img-galeri .col-lg-3 span2 {
   position: absolute;
   width: 23.5%;
   background-color: rgba(94, 90, 90, 0.5);
   height: 47%;
   display: block;
   gap: 10px;
-  
+
   line-height: 250px;
   text-align: center;
   border: 5px solid black;
@@ -156,26 +193,26 @@
   -o-transition: 0.5s;
 }
 
-.img-galeri .col-lg-3 span:hover {
+.img-galeri .col-lg-3 spans:hover {
   opacity: 1;
   font-weight: bold;
   font-size: 1.2em;
   color: #ffffff;
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
 }
 
 .parallax-container {
-  height: 250px; 
+  height: 250px;
   overflow: hidden;
   position: relative;
 }
 
 .parallax {
-  background-image: url('img/parallax.jpg');
+  background-image: url("img/parallax.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -189,22 +226,31 @@
     padding: 0 !important;
     margin-left: -17px !important;
     border-radius: 0 !important;
-    -webkit-border-radius: 0 ;
-    -moz-border-radius: 0 ;
-    -ms-border-radius: 0 ;
-    -o-border-radius: 0 ;
-}
-.img-about {
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 0 !important;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-}
-.teks-about {
-  text-align: justify !important;
-  padding: 0 25px !important;
-}
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .img-about {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .teks-about {
+    text-align: justify !important;
+    padding: 0 25px !important;
+  }
+  .teks-parallax {
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column;
+    margin: 0 !important;
+  }
+  .teks-parallax p {
+    margin: 0 !important;
+  }
 }
