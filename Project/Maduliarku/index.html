@@ -17,7 +17,7 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg p-1 fixed-top d-md-none d-lg-flex d-sm-none d-none"
+      class="navbar navbar-expand-lg p-1 fixed-top d-none d-lg-block d-sm-none d-md-block"
     >
       <div class="container-fluid mx-5 pt-1">
         <a class="navbar-brand" href="#"
@@ -71,7 +71,7 @@
         </div>
 
         <div
-          class="collapse navbar-collapse d-flex justify-content-end align-items-center"
+          class="collapse navbar-collapse d-flex justify-content-start ps-5 align-items-center"
           id="navbarSupportedContent"
         >
           <ul
@@ -104,6 +104,70 @@
               >
             </li>
           </ul>
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-dark fixed-top d-lg-none d-md-block shadow-lg"
+      style="background-color: #bb752b"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-black fw-semibold" href="#home"
+          ><img
+            src="img/removologo.png"
+            alt="logo"
+            class="img-fluid"
+            width="170px"
+        /></a>
+        <button
+          class="navbar-toggler border-dark"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end w-50 text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimoni">Testimoni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -1956,20 +2020,31 @@
       <div class="parallax-container">
         <div class="parallax">
           <div class="container">
-            <div class="row gap-3 position-relative text-center text-white justify-content-center pt-3 align-items-center" style="height: 100%;">
-              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+            <div
+              class="row gap-3 position-relative text-center text-white justify-content-center pt-3 align-items-center"
+              style="height: 100%"
+            >
+              <div
+                class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4"
+              >
                 <p class="display-1 fw-bold">100+</p>
-            <p class="fw-bold fs-3">Hunting Team</p>
+                <p class="fw-bold fs-3">Hunting Team</p>
               </div>
-              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+              <div
+                class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4"
+              >
                 <p class="display-1 fw-bold">20K+</p>
                 <p class="fw-bold fs-3">Customers</p>
               </div>
-              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+              <div
+                class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4"
+              >
                 <p class="display-1 fw-bold">33+</p>
                 <p class="fw-bold fs-3">Shop</p>
               </div>
-              <div class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4">
+              <div
+                class="col-md col-lg col-5 col-sm-5 d-flex d-sm-flex d-md-block d-lg-block border border-2 teks-parallax mt-4"
+              >
                 <p class="display-1 fw-bold">15+</p>
                 <p class="fw-bold fs-3">Professionals</p>
               </div>
@@ -1980,24 +2055,30 @@
     </section>
 
     <section id="contact">
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        class="container contact-group"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <p class="teks-contact fs-4">
           <i class="bi bi-geo-alt-fill"></i>Contact Us
         </p>
         <div class="row row-gap-3">
           <div class="row contact-us text-light justify-content-between p-4">
-            <div class="col-6">
+            <div class="col-md-6 col-lg-6 col-12 col-sm-12">
               <p class="display-6 fw-bold">Come Discuss With Us</p>
               <p>
                 Come discuss with us See what we can offer you. Contact us now,
                 and start making something extraordinary with MaduLiarku
               </p>
             </div>
-            <div class="col-3 d-flex align-items-center justify-content-center">
+            <div
+              class="col-md-3 col-lg-3 col-12 col-sm-12 d-flex align-items-center justify-content-center"
+            >
               <a
                 href="https://wa.me/6285931099065"
                 target="_blank"
-                class="link-contact rounded-2 fw-bold fs-5"
+                class="link-contact rounded-2 fw-bold fs-5 text-center"
                 >CONTACT US MORE
               </a>
             </div>
@@ -2045,7 +2126,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row text-white pt-3 pb-4">
-          <div class="col-md-3">
+          <div class="col-md-3 col-lg-3 col-12 col-sm-12">
             <p class="fs-1 fw-bold">Maduliarku</p>
             <p class="fs-6 fw-medium m-0">
               MaduLiarku ini memiliki keunikan tersendiri karena lebah-lebah
@@ -2053,7 +2134,7 @@
               yang tumbuh alami di hutan.
             </p>
           </div>
-          <div class="col-md-3 d-md-flex flex-column">
+          <div class="col-md-3 col-lg-3 col-12 col-sm-12 d-md-flex flex-column">
             <div class="align-self-end">
               <p class="fs-4 fw-bold">Contact Person</p>
               <p class="fs-6 fw-medium">
@@ -2067,7 +2148,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3 d-md-flex flex-column">
+          <div class="col-md-3 col-lg-3 col-6 col-sm-6 d-md-flex flex-column">
             <div class="align-self-end">
               <p class="fs-4 fw-bold">Quick Links</p>
               <a
@@ -2087,7 +2168,7 @@
               >
             </div>
           </div>
-          <div class="col-md-3 d-md-flex flex-column">
+          <div class="col-md-3 col-lg-3 col-6 col-sm-6 d-md-flex flex-column">
             <div class="align-self-end">
               <p class="fs-4 fw-bold">Social Media</p>
               <a
