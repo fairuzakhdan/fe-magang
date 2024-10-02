@@ -17,6 +17,28 @@
   background-color: #bb752b;
 }
 
+.teks-home {
+  overflow: hidden;
+}
+
+.teks-home::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color:#bb752b;
+  width: 100%;
+  z-index: 1;
+  animation: revealText 5s steps(101) forwards;
+}
+
+@keyframes revealText {
+  to {
+    left: 100%;
+  }
+}
+
 .sm:hover,
 .medium:hover,
 .large:hover,
@@ -171,7 +193,6 @@
   opacity: 0.8;
   border: 5px solid black;
 }
-
 
 .img-galeri .col-lg-3 spans:hover {
   opacity: 1;
