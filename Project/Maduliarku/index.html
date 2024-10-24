@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="w-100 position-absolute" style="height: 100px">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" #4e2b17" fill-opacity="1" d="M0,224L20,213.3C40,203,80,181,120,197.3C160,213,200,267,240,266.7C280,267,320,213,360,181.3C400,149,440,139,480,133.3C520,128,560,128,600,122.7C640,117,680,107,720,133.3C760,160,800,224,840,234.7C880,245,920,203,960,186.7C1000,171,1040,181,1080,192C1120,203,1160,213,1200,202.7C1240,192,1280,160,1320,122.7C1360,85,1400,43,1420,21.3L1440,0L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+    </div>
     <nav
       class="navbar navbar-expand-lg p-1 fixed-top d-none d-lg-block d-sm-none d-md-block"
     >
@@ -194,12 +197,9 @@
             <p
               class="fs-5 teks-home"
               style="color: #3a2604; position: relative"
-       
-            
-                >Rasakan kemurnian dan keaslian madu kami,<br />
-                yang dihasilkan oleh lebah pilihan dari lingkungan
-                terbaik.
-
+            >
+              Rasakan kemurnian dan keaslian madu kami,<br />
+              yang dihasilkan oleh lebah pilihan dari lingkungan terbaik.
             </p>
             <a
               type="button"
@@ -226,6 +226,11 @@
           </div>
         </div>
       </div>
+     
+        
+   
+      <img src="img/cloud.png" alt="abstract" class="w-25 position-absolute z-3 top-50 start-0 ms-5" style="margin-top: 5em;">
+     
     </section>
 
     <div class="w-100 position-absolute" style="height: 100px">
@@ -256,7 +261,11 @@
             class="col-12 col-sm-12 col-md-6 col-lg-6 teks-about"
             data-aos="fade-left"
           >
-            <a href="#products" type="button" class="btn btn-warning ps-3"
+            <a
+              href="#products"
+              type="button"
+              class="btn fs-4 fw-bold ms-5 ps-5"
+              style="color: #bb752b; text-shadow: 1px 1px gray"
               >About Us</a
             >
             <p class="display-5 fw-semibold">
@@ -309,14 +318,18 @@
         <div class="row">
           <div class="col-md-3 list-group">
             <div class="row flex-column">
-              <div class="col">
+              <div class="col product-link">
                 <button
                   type="button"
-                  class="p-2 btn px-3 bg-warning"
-                  style="background-color: #bb752b"
+                  class="p-2 btn px-3 bg-white fw-semibold fs-5"
                 >
-                  <i class="bi bi-tags"></i> Product Category
+                   Product By
+                  <span style="color: #bb752b; text-shadow: 1px 1px gray"
+                    >MaduLiarku</span
+                  >
+                  
                 </button>
+                <p class="bg-warning p-2 fw-bold rounded ps-3"><i class="bi bi-tags"></i> Product Category</p>
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
@@ -356,7 +369,7 @@
                   Rp. 200000</a
                 >
               </div>
-              <div class="col">
+              <div class="col product-link">
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
@@ -2234,6 +2247,13 @@
         });
       };
 
+      const pLink = document.querySelectorAll(".product-link a");
+      pLink.forEach((p) => {
+        p.addEventListener("click", (e) => {
+          pLink.forEach((link) => link.classList.remove("active-product"));
+          e.target.classList.add("active-product");
+        });
+      });
       document.addEventListener("scroll", (e) => {
         const bgNavbar = document.querySelector(".navbar");
 

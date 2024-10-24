@@ -13,6 +13,26 @@
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
 }
 
+.card-body {
+  cursor:auto;
+}
+
+.active-product {
+  background-color: #bb752b;
+}
+.active-product:hover {
+  background-color: #bb752b;
+}
+
+.products img {
+  opacity: 1;
+}
+
+.products:hover img {
+  transform: scale(0.9);
+  cursor:auto;
+}
+
 .home {
   background-color: #bb752b;
 }
@@ -27,7 +47,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background-color:#bb752b;
+  background-color: #bb752b;
   width: 100%;
   z-index: 1;
   animation: revealText 5s steps(101) forwards;
@@ -90,6 +110,7 @@
 
 .modal-content {
   background-color: #bb752b;
+  cursor: auto;
 }
 
 .text-natural {
