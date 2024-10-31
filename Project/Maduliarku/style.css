@@ -14,7 +14,7 @@
 }
 
 .card-body {
-  cursor:auto;
+  cursor: auto;
 }
 
 .active-product {
@@ -30,7 +30,7 @@
 
 .products:hover img {
   transform: scale(0.9);
-  cursor:auto;
+  cursor: auto;
 }
 
 .home {
@@ -240,6 +240,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.btn-about:hover {
+  background-color: #bb752b;
 }
 
 @media (max-width: 768px) {

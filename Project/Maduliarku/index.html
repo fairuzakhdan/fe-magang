@@ -16,14 +16,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="position-absolute w-100" style="left: -40vw;">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" width="100%" height="100%">
-          <path fill="#7e3206" fill-opacity="1" d="M0,224L20,213.3C40,203,80,181,120,197.3C160,213,200,267,240,266.7C280,267,320,213,360,181.3C400,149,440,139,480,133.3C520,128,560,128,600,122.7C640,117,680,107,720,133.3C760,160,800,224,840,234.7C880,245,920,203,960,186.7C1000,171,1040,181,1080,192C1120,203,1160,213,1200,202.7C1240,192,1280,160,1320,122.7C1360,85,1400,43,1420,21.3L1440,0L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path>
+    <div class="position-absolute w-100" style="left: -40vw">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+        width="100%"
+        height="100%"
+      >
+        <path
+          fill="#7e3206"
+          fill-opacity="1"
+          d="M0,224L20,213.3C40,203,80,181,120,197.3C160,213,200,267,240,266.7C280,267,320,213,360,181.3C400,149,440,139,480,133.3C520,128,560,128,600,122.7C640,117,680,107,720,133.3C760,160,800,224,840,234.7C880,245,920,203,960,186.7C1000,171,1040,181,1080,192C1120,203,1160,213,1200,202.7C1240,192,1280,160,1320,122.7C1360,85,1400,43,1420,21.3L1440,0L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"
+        ></path>
       </svg>
-  </div>
-  
+    </div>
+
     <nav
-      class="navbar navbar-expand-lg p-1 fixed-top d-none d-lg-block d-sm-none d-md-block"
+      class="navbar navbar-expand-lg p-1 fixed-top d-none d-sm-none d-md-none d-lg-flex justify-content-center"
     >
       <div class="container-fluid mx-5 pt-1">
         <a class="navbar-brand" href="#"
@@ -206,10 +216,10 @@
             </p>
             <a
               type="button"
-              class="btn px-3 py-2 fw-bold text-white fs-5"
+              class="btn px-3 py-2 fw-bold text-white fs-5 rounded-pill"
               href="#product"
               style="
-               width: 270px;
+                width: 270px;
                 background-color: rgb(255, 187, 0);
                 letter-spacing: 0.3px;
                 box-shadow: 1px 1px 5px black;
@@ -229,11 +239,6 @@
           </div>
         </div>
       </div>
-     
-        
-   
-     
-     
     </section>
 
     <div class="w-100 position-absolute" style="height: 100px">
@@ -261,18 +266,18 @@
             />
           </div>
           <div
-            class="col-12 col-sm-12 col-md-6 col-lg-6 teks-about"
+            class="col-12 col-sm-12 col-md-6 col-lg-6 teks-about ps-5"
             data-aos="fade-left"
           >
             <a
               href="#products"
               type="button"
               class="btn fs-4 fw-bold ms-5 ps-5"
-              style="color: #bb752b; text-shadow: 1px 1px gray"
-              >About Us</a
+              style="color: #bb752b; text-shadow: 1px 1px rgb(128, 128, 128)"
+              ><span class="text-warning">About</span> Us</a
             >
-            <p class="display-5 fw-semibold">
-              Fresh Forest <br />
+            <p class="display-5 fw-semibold text-black">
+              <span class="text-black">Fresh Forest</span> <br />
               Honey Up To 58% Off
             </p>
             <p class="">
@@ -306,7 +311,7 @@
                 ><a
                   href="#product"
                   type="button"
-                  class="btn btn-secondary px-3 py-2 rounded-pill"
+                  class="btn btn-secondary px-3 py-2 rounded-pill btn-about"
                   >MORE ABOUT US</a
                 ></span
               >
@@ -318,21 +323,21 @@
 
     <section id="product">
       <div class="container" data-aos="fade-up" data-aos-offset="300">
+        <div class="text-center mb-5">
+          <p class="fs-4" style="color: #bb752b">Our Products</p>
+          <p class="display-6 text-black fw-bold">
+            Selected Natural Honey, from <span class="text-warning">Madu</span>Liarku
+          </p>
+          <p>Pure, natural honey from MaduLiarku authentic flavor in every drop.</p>
+        </div>
+
         <div class="row">
           <div class="col-md-3 list-group">
             <div class="row flex-column">
               <div class="col product-link">
-                <button
-                  type="button"
-                  class="p-2 btn px-3 bg-white fw-semibold fs-5"
-                >
-                   Product By
-                  <span style="color: #bb752b; text-shadow: 1px 1px gray"
-                    >MaduLiarku</span
-                  >
-                  
-                </button>
-                <p class="bg-warning p-2 fw-bold rounded ps-3"><i class="bi bi-tags"></i> Product Category</p>
+                <p class="bg-warning p-2 fw-bold rounded ps-3">
+                  <i class="bi bi-tags"></i> Product Category
+                </p>
                 <a
                   href="#product"
                   class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
@@ -1472,7 +1477,7 @@
             class="col-md-12 d-flex justify-content-center flex-column align-items-center"
           >
             <p class="fs-4" style="color: #bb752b">Testimonials</p>
-            <p class="display-6 text-black fw-bold">Our Clients Reviews</p>
+            <p class="display-6 text-black fw-bold">Our Clients <span class="text-warning">Reviews</span></p>
             <p>
               Hear What They Have to Say: Genuine Testimonials from Those Who
               Have Experienced Our Services!
@@ -1871,7 +1876,7 @@
       <div class="container" data-aos="flip-down" data-aos-duration="1000">
         <div class="text-center mb-4">
           <p class="fs-4" style="color: #bb752b">Our Faq</p>
-          <p class="display-6 text-black fw-bold">Friquently Ask Questions</p>
+          <p class="display-6 text-black fw-bold">Information About <span class="text-warning">Madu</span>Liarku Products</p>
         </div>
         <div
           class="accordion accordion-flush d-md-flex flex-column gap-2"
@@ -1881,7 +1886,8 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed bg-light text-black"
+                  class="accordion-button collapsed text-white"
+                  style="background-color:#bb752b ;"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
@@ -1911,14 +1917,15 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed bg-light text-black"
+                  class="accordion-button collapsed text-white"
+                  style="background-color:#bb752b ;"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  Apakah madu ini aman untuk penderita diabetes?
+                  Apakah Maduliarku ini aman untuk penderita diabetes?
                   <span class="custom-icon ms-auto fs-3 text-dark"></span>
                 </button>
               </h2>
@@ -1929,7 +1936,7 @@
               >
                 <div class="accordion-body">
                   <p class="px-5">
-                    Madu bisa dikonsumsi oleh penderita diabetes dalam jumlah
+                    Madu ini bisa dikonsumsi oleh penderita diabetes dalam jumlah
                     yang terbatas, tetapi kami menyarankan untuk berkonsultasi
                     dengan dokter terlebih dahulu. Beberapa penelitian
                     menunjukkan madu dapat membantu mengatur kadar gula darah,
@@ -1943,7 +1950,8 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed bg-light text-black"
+                  class="accordion-button collapsed text-white"
+                  style="background-color:#bb752b ;"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
@@ -1974,7 +1982,8 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed bg-light text-black"
+                  class="accordion-button collapsed text-white"
+                  style="background-color:#bb752b ;"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour"
@@ -2006,14 +2015,15 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed bg-light text-black"
+                  class="accordion-button collapsed text-white"
+                  style="background-color:#bb752b ;"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive"
                   aria-expanded="false"
                   aria-controls="flush-collapseFive"
                 >
-                  Apakah produk ini cocok untuk anak-anak?
+                  Apakah produk Maduliarku ini cocok untuk anak-anak?
                   <span class="custom-icon ms-auto fs-3 text-dark"></span>
                 </button>
               </h2>
@@ -2024,7 +2034,7 @@
               >
                 <div class="accordion-body">
                   <p class="px-5">
-                    Madu sangat baik untuk anak-anak di atas usia 1 tahun.
+                    Maduliarku sangat baik untuk anak-anak di atas usia 1 tahun.
                     Namun, madu tidak dianjurkan untuk bayi di bawah 1 tahun
                     karena risiko botulisme. Untuk anak-anak yang lebih tua,
                     madu dapat menjadi suplemen alami yang bermanfaat bagi
