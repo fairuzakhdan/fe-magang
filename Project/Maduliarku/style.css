@@ -26,16 +26,11 @@
 
 .products img {
   opacity: 1;
-  overflow: hidden !important;
 }
 
-.products {
-  overflow: hidden !important;
-}
 
 .products:hover img {
-  transform: scale(.9);
-  overflow: hidden !important;
+  transform: scale(0.9);
   cursor: auto;
 }
 
@@ -63,6 +58,20 @@
   to {
     left: 100%;
   }
+}
+
+.sm,
+.medium,
+.large,
+.extraLarge {
+  padding: -2px !important;
+  border: 2px solid #6c757d;
+  /* overflow: hidden !important; */
+  cursor: auto;
+}
+
+.b-border {
+  border-bottom: 1px solid #6c757d ;
 }
 
 .sm:hover,
