@@ -26,13 +26,25 @@
 
 .products img {
   opacity: 1;
+  transition: .9s;
+  overflow: hidden !important;
+  padding: 10px !important;
+  border-radius: 15px !important;
 }
 
 
 .products:hover img {
-  transform: scale(0.9);
+  transform: scale(1.08);
   cursor: auto;
+  transition: .9s;
+  overflow: hidden !important;
 }
+
+
+.products {
+  overflow: hidden !important;
+}
+
 
 .home {
   background-color: #bb752b;
@@ -68,6 +80,7 @@
   border: 2px solid #6c757d;
   /* overflow: hidden !important; */
   cursor: auto;
+  
 }
 
 .b-border {
@@ -113,8 +126,15 @@
   color: #000000;
 }
 
+.btn-footer{
+  box-shadow: 3px 3px black;
+  padding: 10px 25px !important;
+}
+
 .btn-footer:hover {
   background-color: #ffc107 !important;
+  transition: .7s ;
+  box-shadow: 2px 2px black;
 }
 
 .size-product {
@@ -128,7 +148,7 @@
 }
 
 .modal-content {
-  background-color: #bb752b;
+  background-color: #6c757d;
   cursor: auto;
 }
 
