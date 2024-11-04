@@ -335,15 +335,16 @@
         </div>
 
         <div class="row">
-          <div class="col-md-3 list-group">
+          <div class="col-md-3 list-group ">
             <div class="row flex-column">
-              <div class="col product-link">
-                <p class="bg-warning p-2 fw-bold rounded ps-3">
+              <div class="col product-link ">
+                <p class="bg-warning p-2 fw-bold rounded ps-3 box-category">
                   <i class="bi bi-tags"></i> Product Category
                 </p>
-                <a
+                <div class="rounded box-price">
+                  <a
                   href="#product"
-                  class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
+                  class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3 text-white"
                   aria-current="true"
                 >
                   Price
@@ -378,46 +379,48 @@
                   onclick="filterPrices('200000')"
                   ><span class="text-decoration-underline fw-bold fs-5">></span>
                   Rp. 200000</a
-                >
+                ></div>
               </div>
-              <div class="col product-link">
+              <div class="col product-link  ">
+               <div class="rounded box-size">
                 <a
-                  href="#product"
-                  class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3"
-                  aria-current="true"
-                >
-                  Size
-                </a>
-                <a
-                  href="#product"
-                  class="list-group-item list-group-item-action"
-                  onclick="filterProducts('all')"
-                  >All</a
-                >
-                <a
-                  href="#product"
-                  class="list-group-item list-group-item-action"
-                  onclick="filterProducts('sm')"
-                  >Small (S)</a
-                >
-                <a
-                  href="#product"
-                  class="list-group-item list-group-item-action"
-                  onclick="filterProducts('medium')"
-                  >Medium (M)</a
-                >
-                <a
-                  href="#product"
-                  class="list-group-item list-group-item-action"
-                  onclick="filterProducts('large')"
-                  >Large (L)</a
-                >
-                <a
-                  href="#product"
-                  class="list-group-item list-group-item-action"
-                  onclick="filterProducts('extraLarge')"
-                  >Extra Large (XL)</a
-                >
+                href="#product"
+                class="list-group-item list-group-item-action bg-secondary bg-opacity-30 mt-3 text-white"
+                aria-current="true"
+              >
+                Size
+              </a>
+              <a
+                href="#product"
+                class="list-group-item list-group-item-action"
+                onclick="filterProducts('all')"
+                >All</a
+              >
+              <a
+                href="#product"
+                class="list-group-item list-group-item-action"
+                onclick="filterProducts('sm')"
+                >Small (S)</a
+              >
+              <a
+                href="#product"
+                class="list-group-item list-group-item-action"
+                onclick="filterProducts('medium')"
+                >Medium (M)</a
+              >
+              <a
+                href="#product"
+                class="list-group-item list-group-item-action"
+                onclick="filterProducts('large')"
+                >Large (L)</a
+              >
+              <a
+                href="#product"
+                class="list-group-item list-group-item-action"
+                onclick="filterProducts('extraLarge')"
+                >Extra Large (XL)</a
+              >
+               </div>
               </div>
             </div>
           </div>
@@ -436,7 +439,7 @@
                   <div
                     class="d-flex justify-content-between align-content-between"
                   >
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> 1000gram</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br><span class="text-warning fw-bold">1000gram</span> </p>
           
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 4.8</p>
                   </div>
@@ -599,7 +602,7 @@
                                       src="img/iconStar.png"
                                       alt="star"
                                       width="100px"
-                                      height="50px"
+                                      height="30px"
                                     />
                                     <p class="card-text">
                                       Madu hutan, yang juga dikenal sebagai
@@ -663,7 +666,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> 500gram</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br><span class="text-warning fw-bold">500gram</span>  </p>
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 4.6</p>
                     <!-- <div class="d-block">
                       <button
@@ -823,7 +826,7 @@
                                   src="img/iconStar.png"
                                   alt="star"
                                    width="100px"
-                                   height="50px"
+                                   height="30px"
                                 />
                                 <p class="card-text">
                                   Madu hutan, yang juga dikenal sebagai
@@ -892,7 +895,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> 250gram</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br><span class="text-warning fw-bold">250gram</span>   </p>
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 4.7</p>
                     <!-- <div class="d-block">
                       <button
@@ -1053,7 +1056,7 @@
                                 src="img/iconStar.png"
                                 alt="star"
                                 width="100px"
-                                   height="50px"
+                                   height="30px"
                               />
                               <p class="card-text">
                                 Madu hutan, yang juga dikenal sebagai
@@ -1121,7 +1124,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> 110gram</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br><span class="text-warning fw-bold">110gram</span>  </p>
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 4.7</p>
                     <!-- <div class="d-block">
                       <button
@@ -1279,7 +1282,7 @@
                                         src="img/iconStar.png"
                                         alt="star"
                                         width="100px"
-                                   height="50px"
+                                   height="30px"
                                       />
                                       <p class="card-text">
                                         Madu hutan, yang juga dikenal sebagai
@@ -1346,7 +1349,7 @@
                   class="d-flex flex-column align-items-between justify-content-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> 1300gram</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br><span class="text-warning fw-bold">1300gram</span> </p>
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 4.9</p>
                     <!-- <div class="d-block">
                       <button
@@ -1507,7 +1510,7 @@
                                       src="img/iconStar.png"
                                       alt="star"
                                       width="100px"
-                                   height="50px"
+                                   height="30px"
                                     />
                                     <p class="card-text">
                                       Madu hutan, yang juga dikenal sebagai
@@ -1764,8 +1767,8 @@
                                 <img
                                   src="img/iconStar.png"
                                   alt="star"
-                                                                        height="50px"
-                                                                        height="50px"
+                                                                        height="30px"
+                                                                        height="30px"
                                 />
                                 <p class="card-text">
                                   Madu hutan, yang juga dikenal sebagai
@@ -1833,7 +1836,7 @@
                   class="d-flex flex-column justify-content-between align-items-between row-gap-2 px-3 py-1 card-body bg-secondary bg-opacity-25"
                 >
                   <div class="d-flex justify-content-between">
-                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> Paket Super</p>
+                    <p class="card-text fw-bold p-0 m-0">Forest Honey <br> <span class="text-warning fw-bold">Paket Hemat</span> </p>
                     <p class="text-warning d-flex align-items-center h5 p-0 m-0"><i class="bi bi-star-fill"></i> 5.0</p>
                     <!-- <div class="d-block">
                       <button
@@ -1992,7 +1995,7 @@
                                         src="img/iconStar.png"
                                         alt="star"
                                         width="100px"
-                                        height="50px"
+                                        height="30px"
                                       />
                                       <p class="card-text">
                                         Madu hutan, yang juga dikenal sebagai

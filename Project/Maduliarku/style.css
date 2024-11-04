@@ -18,13 +18,18 @@
 }
 
 .active-product {
-  background-color: #bb752b;
+  background-color: rgba(210, 215, 211,1) ;
 }
 .active-product:hover {
-  background-color: #bb752b;
+  background-color: rgba(210, 215, 211,1) ;
 }
 
-.products img {
+.box-price, .box-size ,.box-category {
+  box-shadow: 3px 2px 3px black;
+}
+
+
+.products .card-img-top {
   opacity: 1;
   transition: .9s;
   overflow: hidden !important;
@@ -33,7 +38,7 @@
 }
 
 
-.products:hover img {
+.products:hover .card-img-top {
   transform: scale(1.08);
   cursor: auto;
   transition: .9s;
@@ -78,6 +83,7 @@
 .extraLarge {
   padding: -2px !important;
   border: 2px solid #6c757d;
+  box-shadow: 1px 2px 3px black;
   /* overflow: hidden !important; */
   cursor: auto;
 }
