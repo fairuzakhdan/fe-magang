@@ -45,6 +45,10 @@
   overflow: hidden !important;
 }
 
+.btn-box-home:hover {
+  background-color: #7e3206 !important;
+  color: black !important;
+}
 
 .products {
   overflow: hidden !important;
