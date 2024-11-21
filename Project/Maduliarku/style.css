@@ -18,30 +18,34 @@
 }
 
 .active-product {
-  background-color: rgba(210, 215, 211,1) ;
+  background-color: #ffc107;
 }
 .active-product:hover {
-  background-color: rgba(210, 215, 211,1) ;
+  background-color: #ffc107;
 }
 
-.box-price, .box-size ,.box-category {
+.box-price,
+.box-size,
+.box-category {
   box-shadow: 3px 2px 3px black;
 }
 
+.box-price [aria-current="true"], .box-size [aria-current="true"]{
+  background-color: #bb752b;
+}
 
 .products .card-img-top {
   opacity: 1;
-  transition: .9s;
+  transition: 0.9s;
   overflow: hidden !important;
   padding: 10px !important;
   border-radius: 15px !important;
 }
 
-
 .products:hover .card-img-top {
   transform: scale(1.08);
   cursor: auto;
-  transition: .9s;
+  transition: 0.9s;
   overflow: hidden !important;
 }
 
@@ -53,7 +57,6 @@
 .products {
   overflow: hidden !important;
 }
-
 
 .home {
   background-color: #bb752b;
@@ -92,7 +95,7 @@
 }
 
 .b-border {
-  border-bottom: 1px solid #6c757d ;
+  border-bottom: 1px solid #6c757d;
 }
 
 .sm:hover,
@@ -107,6 +110,31 @@
 .btn-prev:hover {
   background-color: darkgray;
 }
+
+.flower1:hover,
+.flower2:hover,
+.flower3:hover,
+.flower4:hover {
+  transform: scale(1.1) !important;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.6s;
+}
+
+.bee-parallax {
+  margin-top: 4%;
+  /* height: 100vh; Tinggi penuh viewport */
+  background-image: url("img/hdbee.jpg");
+  background-attachment: fixed; /* Efek parallax */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Tidak mengulang gambar */
+  background-size: cover; /* Menutupi seluruh elemn */
+}
+
 
 #about,
 #product,
@@ -134,14 +162,14 @@
   color: #000000;
 }
 
-.btn-footer{
+.btn-footer {
   box-shadow: 3px 3px black;
   padding: 10px 25px !important;
 }
 
 .btn-footer:hover {
   background-color: #ffc107 !important;
-  transition: .7s ;
+  transition: 0.7s;
   box-shadow: 2px 2px black;
 }
 
