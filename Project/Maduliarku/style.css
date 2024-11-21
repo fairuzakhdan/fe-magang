@@ -137,10 +137,10 @@
 .bee-parallax {
   margin-top: 4%;
   background-image: url("img/hdbee.jpg");
-  background-attachment: fixed; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #about,
@@ -331,9 +331,7 @@
 .box1:hover,
 .box2:hover,
 .box3:hover,
-.box4:hover
-
- {
+.box4:hover {
   color: black;
   background: rgba(255, 255, 255, 0.24);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
