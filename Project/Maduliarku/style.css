@@ -137,7 +137,7 @@
 .bee-parallax {
   margin-top: 4%;
   background-image: url("img/hdbee.jpg");
-  background-attachment: fixed; /* Efek parallax */
+  background-attachment: fixed; 
   background-position: center; /* Memusatkan gambar */
   background-repeat: no-repeat; /* Tidak mengulang gambar */
   background-size: cover; /* Menutupi seluruh elemn */
