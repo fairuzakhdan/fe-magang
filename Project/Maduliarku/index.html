@@ -342,39 +342,40 @@
                   <i class="bi bi-tags"></i> Product Category
                 </p>
                 <div class="rounded box-price">
-                  <a
-                  href="#product"
+                  <div class="rounded-top"><a
+                  
                   class="list-group-item list-group-item-action bg-opacity-30 mt-3 text-white border border-black"
                   aria-current="true"
                 >
                   Price
                 </a>
+                </div>
                 <a
-                  href="#product"
+                
                   class="list-group-item list-group-item-action border border-black"
                   onclick="filterPrices('all')"
                   >All</a
                 >
                 <a
-                  href="#product"
+                  
                   class="list-group-item list-group-item-action border border-black"
                   onclick="filterPrices('40000')"
                   >Rp. 30000 - Rp. 50000</a
                 >
                 <a
-                  href="#product"
+                  
                   class="list-group-item list-group-item-action border border-black"
                   onclick="filterPrices('75000')"
                   ><span class="fw-bold fs-5">></span>Rp. 50000 - Rp. 100000</a
                 >
                 <a
-                  href="#product"
+                 
                   class="list-group-item list-group-item-action border border-black"
                   onclick="filterPrices('150000')"
                   ><span class="fw-bold fs-5">></span>Rp. 100000 - Rp. 200000</a
                 >
                 <a
-                  href="#product"
+                 
                   class="list-group-item list-group-item-action border border-black"
                   onclick="filterPrices('200000')"
                   ><span class="text-decoration-underline fw-bold fs-5">></span>
@@ -383,39 +384,40 @@
               </div>
               <div class="col product-link  ">
                <div class="rounded box-size">
+                <div class="rounded-top">
                 <a
-                href="#product"
                 class="list-group-item list-group-item-action  bg-opacity-30 mt-3 text-white border border-black"
                 aria-current="true"
               >
                 Size
               </a>
+            </div>
               <a
-                href="#product"
+                
                 class="list-group-item list-group-item-action border border-black"
                 onclick="filterProducts('all')"
                 >All</a
               >
               <a
-                href="#product"
+                
                 class="list-group-item list-group-item-action border border-black"
                 onclick="filterProducts('sm')"
                 >Small (S)</a
               >
               <a
-                href="#product"
+                
                 class="list-group-item list-group-item-action border border-black"
                 onclick="filterProducts('medium')"
                 >Medium (M)</a
               >
               <a
-                href="#product"
+             
                 class="list-group-item list-group-item-action border border-black"
                 onclick="filterProducts('large')"
                 >Large (L)</a
               >
               <a
-                href="#product"
+                
                 class="list-group-item list-group-item-action border border-black"
                 onclick="filterProducts('extraLarge')"
                 >Extra Large (XL)</a
@@ -516,17 +518,22 @@
                                       lebih gelap dan memiliki cita rasa yang
                                       lebih kompleks.
                                     </p>
-                                    <p class="fs-5 fw-bold">
-                                      Size :
-                                      <span class="size-product size-s"
-                                        >L | 1000gram</span
-                                      >
+                                    <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                                    <button type="button" class="btn btn-warning position-relative ">
+                                      1000gram
+                                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        L
+                                      </span>
+                                    </button>
                                     </p>
-                                    <p class="card-text">
-                                      <small class="text-body-secondary"
-                                        >Last updated 30 mins ago</small
-                                      >
-                                    </p>
+                                    <div class="d-flex  column-gap-3">
+                                      <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                      <div class="input-group" style="max-width: 150px;">
+                                        <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                        <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                        <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -642,18 +649,24 @@
                                   lebih gelap dan memiliki cita rasa yang
                                   lebih kompleks.
                                 </p>
-                                <p class="fs-5 fw-bold">
-                                  Size :
-
-                                  <span class="size-product size-m"
-                                    >M | 500gram</span
-                                  >
-                                </p>
-                                <p class="card-text">
-                                  <small class="text-body-secondary"
-                                    >Last updated 30 mins ago</small
-                                  >
-                                </p>
+                              
+                                <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                                    <button type="button" class="btn btn-warning position-relative ">
+                                      500gram
+                                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        M
+                                      
+                                      </span>
+                                    </button>
+                                    </p>
+                                    <div class="d-flex  column-gap-3">
+                                      <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                      <div class="input-group" style="max-width: 150px;">
+                                        <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                        <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                        <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                      </div>
+                                    </div>
                               </div>
                             </div>
                           </div>
@@ -872,18 +885,23 @@
                                 lebih gelap dan memiliki cita rasa yang
                                 lebih kompleks.
                               </p>
-                              <p class="fs-5 fw-bold">
-                                Size :
-
-                                <span class="size-product size-m"
-                                  >M | 250gram</span
-                                >
+                              
+                              <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                              <button type="button" class="btn btn-warning position-relative ">
+                                250gram
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                  M
+                                </span>
+                              </button>
                               </p>
-                              <p class="card-text">
-                                <small class="text-body-secondary"
-                                  >Last updated 30 mins ago</small
-                                >
-                              </p>
+                              <div class="d-flex  column-gap-3">
+                                <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                <div class="input-group" style="max-width: 150px;">
+                                  <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                  <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                  <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1098,17 +1116,23 @@
                                         lebih gelap dan memiliki cita rasa yang
                                         lebih kompleks.
                                       </p>
-                                      <p class="fs-5 fw-bold">
-                                        Size :
-                                        <span class="size-product size-s"
-                                          >S | 110gram</span
-                                        >
+                                      
+                                      <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                                      <button type="button" class="btn btn-warning position-relative ">
+                                        110gram
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                          S
+                                        </span>
+                                      </button>
                                       </p>
-                                      <p class="card-text">
-                                        <small class="text-body-secondary"
-                                          >Last updated 30 mins ago</small
-                                        >
-                                      </p>
+                                      <div class="d-flex  column-gap-3">
+                                        <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                        <div class="input-group" style="max-width: 150px;">
+                                          <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                          <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                          <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -1326,18 +1350,23 @@
                                       lebih gelap dan memiliki cita rasa yang
                                       lebih kompleks.
                                     </p>
-                                    <p class="fs-5 fw-bold">
-                                      Size :
-
-                                      <span class="size-product size-xl"
-                                        >XL | 1300gram</span
-                                      >
+                                 
+                                    <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                                    <button type="button" class="btn btn-warning position-relative ">
+                                      1300gram
+                                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        XL
+                                      </span>
+                                    </button>
                                     </p>
-                                    <p class="card-text">
-                                      <small class="text-body-secondary"
-                                        >Last updated 30 mins ago</small
-                                      >
-                                    </p>
+                                    <div class="d-flex  column-gap-3">
+                                      <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                      <div class="input-group" style="max-width: 150px;">
+                                        <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                        <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                        <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -1811,18 +1840,23 @@
                                         lebih gelap dan memiliki cita rasa yang
                                         lebih kompleks.
                                       </p>
-                                      <p class="fs-5 fw-bold">
-                                        Size :
-
-                                        <span class="size-product size-xl"
-                                          >XL | 1860gram</span
-                                        >
+                                      
+                                      <label for="btn-size" class="fw-semibold fs-5">Size :</label>
+                                      <button type="button" class="btn btn-warning position-relative ">
+                                        1860gram
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                          XL
+                                        </span>
+                                      </button>
                                       </p>
-                                      <p class="card-text">
-                                        <small class="text-body-secondary"
-                                          >Last updated 30 mins ago</small
-                                        >
-                                      </p>
+                                      <div class="d-flex  column-gap-3">
+                                        <label for="btn-qty" class="fw-semibold fs-5">Quantity :</label>
+                                        <div class="input-group" style="max-width: 150px;">
+                                          <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                                          <input type="number" class="form-control text-center quantity" value="1" min="1">
+                                          <button class="btn btn-outline-secondary increment" type="button">+</button>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -2755,6 +2789,28 @@
 
       filterProducts("all");
       filterPrices("all");
+
+      const incrementBtns = document.querySelectorAll('.increment');
+      const decrementBtns = document.querySelectorAll('.decrement');
+      
+
+
+      for (let incrementBtn of incrementBtns) {
+        incrementBtn.addEventListener('click', (e) => {
+        const quantityInput = incrementBtn.closest('.input-group').querySelector('.quantity');
+      quantityInput.value = parseInt(quantityInput.value) + 1;
+    });
+  }
+
+  for (let decrementBtn of decrementBtns) {
+    decrementBtn.addEventListener('click', (e) => {
+      const quantityInput = decrementBtn.closest('.input-group').querySelector('.quantity');
+      if (quantityInput.value > 1) {
+        quantityInput.value = parseInt(quantityInput.value) - 1;
+      }
+    });
+  }
+  
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

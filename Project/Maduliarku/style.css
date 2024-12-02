@@ -37,6 +37,10 @@
   box-shadow: 1px 1px 3px 1px black;
 }
 
+.box-price > a:hover, .box-size > a:hover {
+  background-color: rgba(255, 193, 7, 0.4) !important;
+  cursor: pointer;
+}
 
 .box-price [aria-current="true"],
 .box-size [aria-current="true"] {
