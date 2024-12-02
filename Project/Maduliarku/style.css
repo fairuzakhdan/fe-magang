@@ -34,8 +34,9 @@
 .box-price,
 .box-size,
 .box-category {
-  box-shadow: 3px 2px 3px black;
+  box-shadow: 1px 1px 3px 1px black;
 }
+
 
 .box-price [aria-current="true"],
 .box-size [aria-current="true"] {
@@ -99,7 +100,7 @@
 .extraLarge {
   padding: -2px !important;
   border: 2px solid #bb752b;
-  box-shadow: 3px 1px 3px black;
+  box-shadow: 1px 1px 3px 1px black;
   cursor: auto;
 }
 
@@ -178,6 +179,7 @@
   background-color: #ffc107 !important;
   transition: 0.7s;
   box-shadow: 2px 2px black;
+  transform: scale(1.03);
 }
 
 .size-product {
