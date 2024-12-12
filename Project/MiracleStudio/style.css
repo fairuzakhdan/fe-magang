@@ -3,11 +3,23 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-.navbar-expand-lg {
-  background-color: #6c1db5;
+.img-variasi {
+    width: 62% !important;
 }
+/* .navbar-expand-lg {
+  background-color: #6c1db5;
+  color: #ffffff;
+} */
 .text-digital {
     color: #811b9e;
+    text-shadow: 4px 4px 1px #ffffff;
+}
+
+.text-digital-desc {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px  #dbd2d2;
+    text-align: justify;
+    font-size: 1.2rem;
 }
 
 .btn-free {
@@ -50,8 +62,4 @@
     max-width: 90% !important;
     height: auto !important;
   
-}
-
-#beranda {
-  background-color: #6c1db5 !important;
 }
