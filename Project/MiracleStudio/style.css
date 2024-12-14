@@ -54,11 +54,14 @@
 
 .nav-link:hover {
   color: #000000 !important;
-  
   transition: 0.5s !important;
   transform: scale(1.1) !important;
   transform-origin: center !important;
+}
 
+.dropdown-item:hover {
+  background-color: #540c70 !important;
+  color: white !important;
 }
 
 .img-hero {
