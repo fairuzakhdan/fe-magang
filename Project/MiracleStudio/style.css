@@ -51,11 +51,14 @@
   color: white !important;
 }
 
+
 .nav-link:hover {
   color: #000000 !important;
+  
   transition: 0.5s !important;
   transform: scale(1.1) !important;
   transform-origin: center !important;
+
 }
 
 .img-hero {
