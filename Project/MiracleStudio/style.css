@@ -3,23 +3,26 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+/* body {
+  height: 200vh !important;
+} */
 .img-variasi {
-    width: 62% !important;
+  width: 62% !important;
 }
 /* .navbar-expand-lg {
   background-color: #6c1db5;
   color: #ffffff;
 } */
 .text-digital {
-    color: #811b9e;
-    text-shadow: 4px 4px 1px #ffffff;
+  color: #811b9e;
+  text-shadow: 4px 4px 1px #ffffff;
 }
 
 .text-digital-desc {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px  #dbd2d2;
-    text-align: justify;
-    font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px #dbd2d2;
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 .btn-free {
@@ -35,7 +38,7 @@
 .btn-free-home {
   background-color: #811b9e !important;
   color: #ffffff !important;
-  border: 2px solid #811b9e  !important;
+  border: 2px solid #811b9e !important;
 }
 
 .btn-free-home:hover {
@@ -51,7 +54,6 @@
   color: white !important;
 }
 
-
 .nav-link:hover {
   color: #000000 !important;
   transition: 0.5s !important;
@@ -65,7 +67,49 @@
 }
 
 .img-hero {
-    max-width: 90% !important;
-    height: auto !important;
-  
+  max-width: 90% !important;
+  height: auto !important;
+}
+
+
+.nav-mobile {
+  width: auto !important;
+}
+
+#beranda {
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 90% !important;
+  }
+  .nav-mobile {
+    width: 100vw !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .nav-link {
+    padding-inline: 20px !important;
+  }
+  .nav-link:hover {
+    background-color: #cf84e4;
+    transform: scale(1.0) !important;
+    transform-origin: center !important;
+    -webkit-transform: scale(1.0) !important;
+    -moz-transform: scale(1.0) !important;
+    -ms-transform: scale(1.0) !important;
+    -o-transform: scale(1.0) !important;
+}
+  /* .navbar-nav-scroll {
+    position: absolute !important;
+    height: 100vh !important;
+    flex-direction: column !important;
+    top: 100% !important;
+    left: -100% !important;
+    width: 7rem !important;
+    background-color: rgb(255, 0, 0) !important;
+  } */
+  #berandaSection1 {
+    padding-top: 70px !important;
+  }
+
 }

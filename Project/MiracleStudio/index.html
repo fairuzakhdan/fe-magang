@@ -9,17 +9,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="position-relative">
-        <img src="img/variasi - Copy.png" alt="variasi" class="position-absolute img-variasi img-fluid vh-100">
+      <img
+        src="img/variasi - Copy.png"
+        alt="variasi"
+        class="position-absolute img-variasi img-fluid vh-100"
+      />
     </div>
     <header>
-        
-      <nav class="navbar navbar-expand-lg  m-0 p-0 ">
+      <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
         <div class="container-fluid p-2 container">
-          <div>
+          <div
+            class="nav-mobile d-sm-flex d-flex d-md-flex d-lg-block justify-content-sm-between justify-content-md-between"
+          >
             <a class="navbar-brand" href="#beranda"
               ><img
                 src="img/logo-remove.png"
@@ -27,15 +35,35 @@
                 style="background-color: transparent"
                 class="img-fluid"
             /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarOffcanvasLg"
+              aria-controls="navbarOffcanvasLg"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
 
-          <div class="collapse navbar-collapse " id="navbarScroll">
+          <div
+            class="collapse navbar-collapse offcanvas offcanvas-end w-50"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
+          >
             <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll d-flex justify-content-center gap-3 w-100 "
+              class="navbar-nav me-auto my-2 my-lg-0 d-flex justify-content-center gap-3 w-100"
               style="--bs-scroll-height: 100px"
             >
-              <li class="nav-item  ">
-                <a class="nav-link text-black " aria-current="page" href="#beranda">Beranda</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-black"
+                  aria-current="page"
+                  href="#beranda"
+                  >Beranda</a
+                >
               </li>
 
               <li class="nav-item dropdown">
@@ -49,54 +77,94 @@
                   Layanan
                 </a>
                 <ul class="dropdown-menu p-0">
-                  <li><a class="dropdown-item p-2" href="#">Web Development</a></li>
+                  <li>
+                    <a class="dropdown-item p-2" href="#">Web Development</a>
+                  </li>
                   <li>
                     <a class="dropdown-item p-2" href="#">Mobile Development</a>
                   </li>
-               
+
                   <li>
                     <a class="dropdown-item p-2" href="#">IT Consultant</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black " href="#">Portofolio</a>
+                <a class="nav-link text-black" href="#">Portofolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black " href="#">Tentang Kami</a>
+                <a class="nav-link text-black" href="#">Tentang Kami</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black " href="#">Blog</a>
+                <a class="nav-link text-black" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-black " href="#">Contact</a>
+                <a class="nav-link text-black" href="#">Contact</a>
               </li>
             </ul>
           </div>
-          <div>
-            <button type="button" class="btn  py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2">
-                <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
+          <div class="d-sm-none d-lg-block d-md-none d-none">
+            <button
+              type="button"
+              class="btn d-md-block d-none py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
             </button>
           </div>
         </div>
       </nav>
     </header>
     <main>
-        
-        <section id="beranda " class="container position-relative">
-            <div class="row justify-content-between align-items-center position-absolute">
-                <div class="col-md-6 ">
-                    <p class="display-3 fw-bold text-white">One Stop <span class="text-digital">Digital</span> Solution</p>
-                    <p class=" text-digital-desc ">Kami adalah Digital Agency Indonesia yang menghadirkan solusi kreatif untuk meningkatkan visibilitas dan daya tarik merek Anda melalui desain grafis, manajemen media sosial, produksi video, pembuatan website, dan kampanye iklan digital yang efektif</p>
-                    <button type="button" class="btn  py-1 px-2 fw-semibold btn-free-home   d-flex align-items-center gap-2">
-                        <i class="bi bi-whatsapp "></i> Konsultasi Gratis
-                    </button>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end pt-3">
-                    <img src="img/hero4.jpg" alt="img-hero" class="img-fluid img-hero">
-                </div>
+      <section id="berandaSection1" class="container position-relative">
+        <div class="row justify-content-between align-items-center vh-100">
+          <div class="col-md-6">
+            <p class="display-3 fw-bold text-white">
+              One Stop <span class="text-digital">Digital</span> Solution
+            </p>
+            <p class="text-digital-desc">
+              Kami adalah Digital Agency Indonesia yang berfokus pada
+              pengembangan teknologi, menyediakan layanan web development,
+              mobile development, dan IT consulting. Kami hadir untuk membantu
+              perusahaan Anda berinovasi dan mencapai efisiensi melalui solusi
+              aplikasi yang handal dan berkualitas.
+            </p>
+            <button
+              type="button"
+              class="btn py-1 px-2 fw-semibold btn-free-home d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-whatsapp"></i> Konsultasi Gratis
+            </button>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-sm-start justify-content-lg-end justify-content-md-end justify-content-start pt-3"
+          >
+            <img
+              src="img/hero4.jpg"
+              alt="img-hero"
+              class="img-fluid img-hero"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="berandaSection2">
+        <div class="container">
+          <div class="text-center">
+            <p>
+              Konsultasi Gratis, Eksklusif Design dan Solusi <br />
+              Modern adalah Layanan Terbaik Kami
+            </p>
+            <small
+              >Memberikan solusi sesuai dengan kebutuhan bisnis anda.
+              #makeITeasy</small
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="display-4 fw-bold text-digital">Layanan Kami</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
