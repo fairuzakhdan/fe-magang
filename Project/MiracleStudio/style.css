@@ -85,15 +85,20 @@
 .item-card {
   box-shadow: 2px 2px 5px #000000;
   color: white;
+  height: 100% !important;
 }
 .mobile-card {
   background-color: #871ee9;
+  opacity: 0.9;
 }
 .web-card {
-  background-color: #d21b6f;
+  
+  background-color: #f3b23e;
+  opacity: 0.9;
 }
 .it-card {
-  background-color: #f3b23e;
+  background-color: #d21b6f;
+  opacity: 0.9;
 }
 
 .desc-card {
