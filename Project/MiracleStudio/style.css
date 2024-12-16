@@ -84,9 +84,9 @@
 .bg-blur {
   width: 100%;
   height: 100%;
-  background-image: url(img/blur-remove.png) !important;
+  background-image: url(img/bb.jpg) !important;
   background-repeat: no-repeat !important;
-  top: 24% !important;
+  top: 5% !important;
   background-size: cover !important;
   filter: blur(4px);
   -webkit-filter: blur(4px);
@@ -96,6 +96,7 @@
   color: rgb(255, 250, 250);
   height: 100% !important;
 }
+
 .mobile-card {
   background-color: #871ee9;
   /* opacity: 0.8; */
@@ -139,7 +140,6 @@
 
 .button-64:active,
 .button-64:hover {
-  
   outline: 0;
 }
 
