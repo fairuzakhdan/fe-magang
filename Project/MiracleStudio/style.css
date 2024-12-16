@@ -18,7 +18,7 @@
   text-shadow: 4px 4px 1px #ffffff;
 }
 .text-span {
-  color: #811b9e; 
+  color: #811b9e;
 }
 
 .text-digital-desc {
@@ -74,7 +74,6 @@
   height: auto !important;
 }
 
-
 .nav-mobile {
   width: auto !important;
 }
@@ -82,9 +81,19 @@
 #berandaSection2 {
   margin-top: 5rem !important;
 }
+.bg-blur {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-image: url(img/blur2.avif) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: left !important;
+  filter: blur(8px); /* Atur tingkat blur sesuai keinginan */
+}
+
 .item-card {
   box-shadow: 2px 2px 5px #000000;
-  color: white;
+  color: rgb(255, 250, 250);
   height: 100% !important;
 }
 .mobile-card {
@@ -92,7 +101,6 @@
   opacity: 0.9;
 }
 .web-card {
-  
   background-color: #f3b23e;
   opacity: 0.9;
 }
@@ -105,15 +113,14 @@
   text-align: justify !important;
 }
 
-
 .button-64 {
   align-items: center;
-  background-image: linear-gradient(144deg,#c699e5, #8620b6 50%,#b190cf);
+  background-image: linear-gradient(144deg, #eef11a, #50075a 50%, #da1085);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   font-family: Phantomsans, sans-serif;
   font-size: 16px !important;
@@ -132,6 +139,7 @@
 
 .button-64:active,
 .button-64:hover {
+  border: 1px solid #6b0a63;
   outline: 0;
 }
 
@@ -162,13 +170,13 @@
   }
   .nav-link:hover {
     background-color: #cf84e4;
-    transform: scale(1.0) !important;
+    transform: scale(1) !important;
     transform-origin: center !important;
-    -webkit-transform: scale(1.0) !important;
-    -moz-transform: scale(1.0) !important;
-    -ms-transform: scale(1.0) !important;
-    -o-transform: scale(1.0) !important;
-}
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+  }
   /* .navbar-nav-scroll {
     position: absolute !important;
     height: 100vh !important;
@@ -186,5 +194,3 @@
     min-width: 196px;
   }
 }
-
-
