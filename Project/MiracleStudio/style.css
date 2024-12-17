@@ -108,6 +108,12 @@ body {
   color: rgb(255, 250, 250);
   height: 100% !important;
 }
+.step-item {
+  background-color: #540c70;
+  color: #ffffff !important;
+  /* border: 1px solid #540c70 !important; */
+  box-shadow: 2px 2px 5px #000000;
+}
 
 .mobile-card {
   background-color: #871ee9;
