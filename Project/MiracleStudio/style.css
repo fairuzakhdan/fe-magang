@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -92,6 +92,7 @@ body {
   position: relative !important;
   padding-top: 2rem !important;
   background-color: #811b9e;
+  height: 140vh !important;
 }
 .bg-blur {
   width: 100%;
@@ -111,21 +112,81 @@ body {
 .step-item {
   background-color: #540c70;
   color: #ffffff !important;
-  /* border: 1px solid #540c70 !important; */
   box-shadow: 2px 2px 5px #000000;
+}
+.step-item:hover {
+  background-color: #811b9e;
+  box-shadow: 2px 2px 10px 3px #b3a7a7;
+  transition: 0.5s;
+  transform: translate(-5px, -5px);
+  -webkit-transform: translate();
+  -moz-transform: translate();
+  -ms-transform: translate();
+  -o-transform: translate();
+}
+.righ-down {
+  transition: 0.8s;
+}
+
+.step-down:hover .righ-down {
+  transition: 0.8s;
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+.left-arrow {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.right-arrow {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.step-1:hover .left-arrow {
+  transform: skew(-20deg);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+}
+.step-2:hover .right-arrow {
+  transform: skew(20deg);
 }
 
 .mobile-card {
   background-color: #871ee9;
-  /* opacity: 0.8; */
+  transition: 1s;
+}
+.mobile-card:hover,
+.web-card:hover,
+.it-card:hover {
+  transform: scale(1.05);
+  transition: 1s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 .web-card {
   background-color: #f3b23e;
-  /* opacity: 0.8; */
+  transition: 1s;
 }
 .it-card {
   background-color: #d21b6f;
-  /* opacity: 0.8; */
+  transition: 1s;
 }
 
 .desc-card {
@@ -212,7 +273,8 @@ body {
     width: 7rem !important;
     background-color: rgb(255, 0, 0) !important;
   } */
-  #berandaSection1, #berandaSection2 {
+  #berandaSection1,
+  #berandaSection2 {
     padding-top: 70px !important;
   }
   .button-64 {
