@@ -39,7 +39,7 @@ body {
 
 .btn-free:hover {
   background-color: #811b9e !important;
-  border: 2px solid #ffffff !important;
+  border: 2px solid #000000 !important;
   color: #ffffff !important;
 }
 
