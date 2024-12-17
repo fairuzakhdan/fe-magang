@@ -4,9 +4,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-/* body {
+body {
   height: 300vh !important;
-} */
+}
 .img-variasi {
   width: 62% !important;
 }
@@ -85,8 +85,12 @@
 
 #berandaSection2 {
   margin-top: 3rem !important;
-}#berandaSection3 {
-  margin-top: 7rem !important;
+}
+#berandaSection3 {
+  margin-top: 6rem !important;
+  box-shadow: 0 -5px 10px 2px #ffffff;
+  position: relative !important;
+  padding-top: 2rem !important;
   background-color: #811b9e;
 }
 .bg-blur {
