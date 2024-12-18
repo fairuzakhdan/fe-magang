@@ -1,0 +1,99 @@
+
+  
+    <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
+      <div class="container-fluid p-2 container">
+        <div
+          class="nav-mobile d-sm-flex d-flex d-md-flex d-lg-block justify-content-sm-between justify-content-md-between"
+        >
+          <!-- <a class="navbar-brand" href="#" -->
+
+          <div class="d-flex align-items-center gap-1">
+            <img
+              src="img/wolf.png"
+              alt="logo"
+              class="img-fluid brand-logo"
+              style="background-color: transparent; width: 60px; height: auto"
+            />
+            <a class="m-0 p-0 text-logo fs-5 text-decoration-none" href="#"
+              >MIRACLE<br />STUDIO</a
+            >
+          </div>
+
+          <!-- </a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse offcanvas offcanvas-end w-50"
+          tabindex="-1"
+          id="navbarOffcanvasLg"
+          aria-labelledby="navbarOffcanvasLgLabel"
+        >
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 d-flex justify-content-center gap-3 w-100"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-black" aria-current="page" onclick="showPage('beranda')"
+                >Beranda</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Layanan
+              </a>
+              <ul class="dropdown-menu p-0">
+                <li>
+                  <a class="dropdown-item p-2" onclick="showPage('mobile')">Mobile Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item p-2" href="#">Web Development</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item p-2" href="#">IT Consultant</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-sm-none d-lg-flex d-md-none d-none">
+          <button
+            type="button"
+            class="btn d-md-block d-lg-flex d-none py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2"
+          >
+            <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
