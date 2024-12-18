@@ -8,7 +8,7 @@ body {
   height: 300vh !important;
 }
 .img-variasi {
-  width: 62% !important;
+  width: 70% !important;
 }
 /* .navbar-expand-lg {
   background-color: #6c1db5;
@@ -27,8 +27,8 @@ body {
 }
 
 .text-digital-desc {
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px #dbd2d2;
+  color: rgb(218, 209, 209);
+  text-shadow: 1px 2px #504b4b;
   text-align: justify;
   font-size: 1.2rem;
 }
@@ -168,12 +168,9 @@ body {
 .step-2:hover .right-arrow {
   transform: skew(20deg);
 }
-.bg-bullet {
-  background-color: #811b9e;
 
-}
 .mobile-card {
-  background-color: #871ee9;
+  background-color: #811b9e;
   transition: 1s;
 }
 .mobile-card:hover,
