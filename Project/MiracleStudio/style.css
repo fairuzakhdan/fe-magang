@@ -92,7 +92,10 @@ body {
   position: relative !important;
   padding-top: 2rem !important;
   background-color: #811b9e;
-  height: 135vh !important;
+  height: 140vh !important;
+}
+#berandaSection4 {
+  margin-top: 9rem !important;
 }
 .bg-blur {
   width: 100%;
@@ -165,7 +168,10 @@ body {
 .step-2:hover .right-arrow {
   transform: skew(20deg);
 }
+.bg-bullet {
+  background-color: #811b9e;
 
+}
 .mobile-card {
   background-color: #871ee9;
   transition: 1s;
