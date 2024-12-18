@@ -14,9 +14,12 @@ body {
   background-color: #6c1db5;
   color: #ffffff !important;
 } */
+ 
 
 .text-logo , .text-footer{
   font-family: "Bungee", cursive;
+  color: #811b9e !important;
+  text-shadow: 1px 1px  rgb(255, 255, 255), -1px -1px  rgb(255, 255, 255);
   
 }
 .text-digital {
@@ -62,6 +65,10 @@ body {
 
 .btn-free:hover .bi-whatsapp {
   color: white !important;
+}
+
+.nav-link {
+  cursor: pointer !important;
 }
 
 .nav-link:hover {
@@ -243,6 +250,36 @@ body {
 
 .bg-footer {
   background-color: #811b9e;
+}
+.icon-footer {
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.icon-footer:hover {
+  background-color: black !important;
+  transition: .7s;
+  color: white !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+.footer-link:hover {
+  color: black !important;
+  transition: .5s;
+  transform:scale(1.02);
+  -webkit-transform:scale(1.02);
+  -moz-transform:scale(1.02);
+  -ms-transform:scale(1.02);
+  -o-transform:scale(1.02);
 }
 
 @media only screen and (max-width: 990px) {

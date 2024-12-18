@@ -22,103 +22,11 @@
         class="position-absolute img-variasi img-fluid vh-100"
       />
     </div>
-    <header>
-      <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
-        <div class="container-fluid p-2 container">
-          <div
-            class="nav-mobile d-sm-flex d-flex d-md-flex d-lg-block justify-content-sm-between justify-content-md-between"
-          >
-            <!-- <a class="navbar-brand" href="#" -->
+    
 
-            <div class="d-flex align-items-center gap-1">
-              <img
-                src="img/wolf.png"
-                alt="logo"
-                class="img-fluid brand-logo"
-                style="background-color: transparent; width: 60px; height: auto"
-              />
-              <a class="m-0 p-0 text-logo fs-5 text-decoration-none" href="#"
-                >MIRACLE<br />STUDIO</a
-              >
-            </div>
+   <header class="navbar">
 
-            <!-- </a> -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#navbarOffcanvasLg"
-              aria-controls="navbarOffcanvasLg"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-
-          <div
-            class="collapse navbar-collapse offcanvas offcanvas-end w-50"
-            tabindex="-1"
-            id="navbarOffcanvasLg"
-            aria-labelledby="navbarOffcanvasLgLabel"
-          >
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 d-flex justify-content-center gap-3 w-100"
-              style="--bs-scroll-height: 100px"
-            >
-              <li class="nav-item">
-                <a class="nav-link text-black" aria-current="page" href="#"
-                  >Beranda</a
-                >
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-black"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Layanan
-                </a>
-                <ul class="dropdown-menu p-0">
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Mobile Development</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item p-2" href="#">Web Development</a>
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item p-2" href="#">IT Consultant</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Portofolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Tentang Kami</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-black" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-sm-none d-lg-flex d-md-none d-none">
-            <button
-              type="button"
-              class="btn d-md-block d-lg-flex d-none py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2"
-            >
-              <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
+   </header>
     <main>
       <section id="berandaSection1" class="container position-relative">
         <div class="row justify-content-between align-items-center vh-100">
@@ -430,10 +338,10 @@
             Keahlian kami dalam pembuatan aplikasi berbasis Website dan Mobile.
           </p>
           <div class="d-flex gap-3">
-            <p><i class="fa-brands fa-square-facebook bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></p>
-            <p><i class="fa-brands fa-square-instagram bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></p>
-            <p><i class="fa-brands fa-square-whatsapp bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></p>
-            <p><i class="fa-brands fa-linkedin bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></p>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-square-whatsapp bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
 
            
           </div>
@@ -441,25 +349,25 @@
         <div class="col-2 mt-5">
           <p class="fs-5 fw-bold mb-4">Sitemap</p>
           <div class="d-flex flex-column row-gap-4">
-            <a href="#portopolio" class="text-decoration-none text-white"
+            <a href="#portopolio" class="footer-link text-decoration-none text-white"
               >Portofolio</a
             >
-            <a href="#about" class="text-decoration-none text-white"
+            <a href="#about" class="footer-link text-decoration-none text-white"
               >Tentang Kami</a
             >
-            <a href="#blog" class="text-decoration-none text-white">Blog</a>
+            <a href="#blog" class="footer-link text-decoration-none text-white">Blog</a>
           </div>
         </div>
         <div class="col-2 mt-5">
           <p class="fs-5 fw-bold mb-4">Layanan</p>
           <div class="d-flex flex-column row-gap-4">
-            <a href="#mobile" class="text-decoration-none text-white"
+            <a href="#mobile" class="footer-link text-decoration-none text-white"
               >Mobile Development</a
             >
-            <a href="#web" class="text-decoration-none text-white"
+            <a href="#web" class="footer-link text-decoration-none text-white"
               >Web Development</a
             >
-            <a href="#it" class="text-decoration-none text-white"
+            <a href="#it" class="footer-link text-decoration-none text-white"
               >IT Consultant</a
             >
           </div>
