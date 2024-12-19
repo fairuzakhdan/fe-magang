@@ -291,6 +291,7 @@ body {
   -o-transform: scale(1.02);
 }
 
+
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;
