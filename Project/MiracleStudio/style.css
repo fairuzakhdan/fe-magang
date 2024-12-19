@@ -320,15 +320,7 @@ body {
     padding-inline: 15px !important;
   }
 
-  /* .navbar-nav-scroll {
-    position: absolute !important;
-    height: 100vh !important;
-    flex-direction: column !important;
-    top: 100% !important;
-    left: -100% !important;
-    width: 7rem !important;
-    background-color: rgb(255, 0, 0) !important;
-  } */
+
   #berandaSection1,
   #berandaSection2 {
     padding-top: 70px !important;
