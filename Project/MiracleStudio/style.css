@@ -264,6 +264,10 @@ body {
 .bg-footer {
   background-color: #811b9e;
 }
+.bg-section-mobile {
+  background-color: #811b9e;
+  padding-block: 50px !important;
+}
 .icon-footer {
   transition: 0.7s;
   -webkit-transition: 0.7s;
@@ -299,12 +303,27 @@ body {
   width: 80px;
   height: 80px;
   padding: 20px;
-  background-color: #811b9e;
+  transition: 1s;
+  background-color: #948d8d;
+  box-shadow: 1px 1px 1px #000000;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.item-tech:hover {
+  transition: 1s;
+  background-color: #cecaca;
+  transform: rotate(360deg) scale(1.08);
+  -webkit-transform: rotate(360deg) scale(1.08);
+  -moz-transform: rotate(360deg) scale(1.08);
+  -ms-transform: rotate(360deg) scale(1.08);
+  -o-transform: rotate(360deg) scale(1.08);
 }
 
 @media only screen and (max-width: 990px) {
