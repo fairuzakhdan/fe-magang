@@ -14,398 +14,153 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body>
-    <div class="position-relative">
-      <img
-        src="img/rb_2105.png"
-        alt="variasi"
-        class="position-absolute img-variasi img-fluid vh-100"
-      />
-    </div>
-    
+  <body >
+    <header class="navbar">
+      <nav class="navbar navbar-expand-lg m-0 p-0 fixed-top">
+        <div class="container-fluid p-2 container">
+          <div
+            class="nav-mobile d-sm-flex d-flex d-md-flex d-lg-block justify-content-sm-between justify-content-md-between"
+          >
+            <!-- <a class="navbar-brand" href="#" -->
 
-   <header class="navbar">
+            <div class="d-flex align-items-center gap-1">
+              <img
+                src="img/wolf.png"
+                alt="logo"
+                class="img-fluid brand-logo"
+                style="background-color: transparent; width: 60px; height: auto"
+              />
+              <a class="m-0 p-0 text-logo fs-5 text-decoration-none" href="#"
+                >MIRACLE<br />STUDIO</a
+              >
+            </div>
 
-   </header>
-    <main>
-      <section id="berandaSection1" class="container position-relative">
-        <div class="row justify-content-between align-items-center vh-100">
-          <div class="col-md-6">
-            <p class="display-3 fw-bold text-white">
-              One Stop <span class="text-digital">Digital</span> Solution
-            </p>
-            <p class="text-digital-desc">
-              Kami adalah Digital Agency Indonesia yang berfokus pada
-              pengembangan teknologi, menyediakan layanan web development,
-              mobile development, dan IT consulting. Kami hadir untuk membantu
-              perusahaan Anda berinovasi dan mencapai efisiensi melalui solusi
-              aplikasi yang handal dan berkualitas.
-            </p>
+            <!-- </a> -->
             <button
+              class="navbar-toggler"
               type="button"
-              class="btn py-1 px-2 fw-semibold btn-free-home d-flex align-items-center gap-2"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarOffcanvasLg"
+              aria-controls="navbarOffcanvasLg"
+              aria-label="Toggle navigation"
             >
-              <i class="bi bi-whatsapp"></i> Konsultasi Gratis
+              <span class="navbar-toggler-icon"></span>
             </button>
           </div>
+
           <div
-            class="col-md-6 d-flex justify-content-sm-start justify-content-lg-end justify-content-md-end justify-content-start pt-3"
+            class="collapse navbar-collapse offcanvas offcanvas-end w-50"
+            tabindex="-1"
+            id="navbarOffcanvasLg"
+            aria-labelledby="navbarOffcanvasLgLabel"
           >
-            <img
-              src="img/hero4.jpg"
-              alt="img-hero"
-              class="img-fluid img-hero"
-            />
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 d-flex justify-content-center gap-3 w-100"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link text-black link-item"
+                  aria-current="page"
+                  href="#"
+                  onclick="showPage('beranda.html')"
+                  >Beranda</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-black"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Layanan
+                </a>
+                <ul class="dropdown-menu p-0">
+                  <li>
+                    <a
+                      class="dropdown-item p-2 link-item"
+                      onclick="showPage('mobile.html')"
+                      >Mobile Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item p-2 link-item"
+                      onclick="showPage('web.html')"
+                      >Web Development</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item p-2 link-item"
+                      onclick="showPage('it.html')"
+                      >IT Consultant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-sm-none d-lg-flex d-md-none d-none">
+            <button
+              type="button"
+              class="btn d-md-block d-lg-flex d-none py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2"
+            >
+              <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
+            </button>
           </div>
         </div>
-      </section>
-      <section id="berandaSection2" class="position-relative">
-        <div class="bg-blur position-absolute"></div>
-        <div class="container position-relative">
-          <div class="text-center">
-            <p class="fs-3 fw-semibold">
-              <span class="text-span">Konsultasi</span> Gratis,
-              <span class="text-span">Eksklusif</span> Design dan
-              <span class="text-span">Solusi</span> <br />
-              Modern adalah Layanan Terbaik Kami
-            </p>
-            <small
-              >Memberikan solusi sesuai dengan kebutuhan bisnis<span
-                class="text-white"
-              >
-                anda. #makeITeasy</span
-              ></small
-            >
-          </div>
-          <div
-            class="row justify-content-evenly d-flex align-self-center mt-3 gap-sm-3 gap-3 gap-md-3 gap-lg-1 list-card"
-          >
-            <div
-              class="col-md-3 item-card mobile-card rounded-4 p-3 d-flex flex-column gap-3 h-100"
-            >
-              <div class="d-flex justify-content-evenly align-items-center">
-                <i class="fa-solid fa-mobile-screen display-4 mb-3"></i>
-                <p class="fs-4 fw-semibold">
-                  Mobile <br />
-                  Development
-                </p>
-              </div>
-              <p class="desc-card flex-grow-1">
-                Kami menyediakan jasa pembuatan aplikasi mobile (Android & iOS)
-                sesuai dengan kebutuhan, mulai dari desain yang menarik, hingga
-                integrasi teknologi terkini.
-              </p>
-              <button class="button-64" role="button">
-                <span class="text">Details</span>
-              </button>
-            </div>
+      </nav>
+    </header>
+    <main class="page " id="content"></main>
+    <footer class="overflow-hidden" id="footer"></footer>
 
-            <div
-              class="col-md-3 item-card web-card rounded-4 p-3 d-flex flex-column gap-3 h-100"
-            >
-              <div class="d-flex justify-content-evenly align-items-center">
-                <i class="fa-solid fa-laptop display-4 mb-3"></i>
+    <script>
+      const showPage = (page) => {
+        fetch(page)
+          .then((res) => {
+            if (!res.ok) throw new Error("Failed to load page");
+            return res.text();
+          })
+          .then((data) => {
+            document.getElementById("content").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading page:", error));
+      };
+      showPage("beranda.html");
+      const showFooter = () => {
+        fetch("footer.html")
+          .then((res) => {
+            if (!res.ok) throw new Error("Failed to load page");
+            return res.text();
+          })
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          })
+          .catch((err) => {
+            console.error("Error loading page:", err);
+          });
+      };
+      
 
-                <p class="fs-4 fw-semibold">
-                  Web <br />
-                  Development
-                </p>
-              </div>
-              <p class="desc-card flex-grow-1">
-                Kami mengerjakan berbagai macam model website mulai dari website
-                Company Profile hingga E-Commerce dan bahkan Custom Development
-                Website.
-              </p>
-              <button class="button-64" role="button">
-                <span class="text">Details</span>
-              </button>
-            </div>
-
-            <div
-              class="col-md-3 item-card it-card rounded-4 p-3 d-flex flex-column gap-3 h-100 align-content-between"
-            >
-              <div class="d-flex justify-content-evenly align-items-center">
-                <i class="fa-solid fa-handshake display-4 mb-3"></i>
-
-                <p class="fs-4 fw-semibold">
-                  IT <br />
-                  Consultant
-                </p>
-              </div>
-              <p class="desc-card flex-grow-1">
-                Anda dapat menuangkan semua ide gila soal IT untuk bisnis Anda,
-                dan konsultasikan ide Anda agar dapat diimplementasikan pada
-                bisnis dan teknologi.
-              </p>
-              <button class="button-64" role="button">
-                <span class="text">Details</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="berandaSection3">
-        <div class="container">
-          <div class="text-center text-white">
-            <p class="fs-3 fw-semibold">
-              Mari Memulai <span class="text-black">Project</span> atau
-              <span class="text-black">Produk</span> Anda Bersama Kami
-            </p>
-            <small
-              >Memberikan solusi sesuai dengan kebutuhan bisnis anda.
-              #makeITeasy</small
-            >
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div
-              class="col-5 fs-5 fw-semibold text-white d-flex flex-column step-down"
-            >
-              <p>
-                Kami percaya bahwa perencanaan yang baik adalah kunci
-                keberhasilan pengembangan aplikasi. <br />
-                <br />
-
-                Dengan fokus pada masalah yang sedang dihadapi, mencari solusi
-                dan mengimplementasi dengan konsep DIGITAL. <br />
-                <br />
-
-                Miracle Studio Telah memberikan banyak solusi yang efektif lebih
-                dari 10 tahun kepada Client-client kami.
-              </p>
-              <img
-                src="img/right-down.png"
-                alt="right-down"
-                class="img-fluid align-self-end me-4 righ-down"
-                style="width: 160px"
-              />
-            </div>
-            <div class="col-6 border p-4 rounded rounded-4 border-white">
-              <div class="step-item p-4 rounded-4 fs-6 fw-semibold mb-3">
-                <p>Nama Project : Tulis Nama Project Anda</p>
-                <p>Project Goals : Tulis Tujuan Project Anda</p>
-              </div>
-              <div class="d-flex gap-4 flex-column">
-                <div class="step-1 d-flex column-gap-4">
-                  <div class="step-item p-4 rounded-4">
-                    <p class="fw-semibold m-0">STEP 1</p>
-                    <p>
-                      Deskripsikan kondisi bisnis Anda<br />saat ini kepada
-                      Kami.
-                    </p>
-                  </div>
-                  <img
-                    src="img/right.png"
-                    alt="left-arrow"
-                    style="width: 120px; height: 130px"
-                    class="img-fluid left-arrow"
-                  />
-                </div>
-
-                <div class="step-2 d-flex column-gap-4">
-                  <img
-                    src="img/left.png"
-                    alt=""
-                    style="width: 120px; height: 130px"
-                    class="img-fluid right-arrow"
-                  />
-                  <div class="step-item p-4 rounded-4">
-                    <p class="fw-semibold m-0">STEP 2</p>
-                    <p>
-                      Rincikan permasalahan dan kenapa <br />
-                      ingin mendigitalisasi bisnis Anda.
-                    </p>
-                  </div>
-                </div>
-                <div class="step-3 d-flex justify-content-between">
-                  <div class="step-item p-4 rounded-4">
-                    <p class="fw-semibold m-0">STEP 3</p>
-                    <p>
-                      Ceritakan harapan dan ekspetasi Anda terhadap<br />permasalahan
-                      tersebut dalam bentuk digital.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container position-relative">
-          <div
-            class="box-card row text-center bg-white rounded shadow-lg position-absolute end-0 start-0 translate-middle-y py-3 bg-danger"
-          >
-            <div class="col-3 border-2 border-end text-span">
-              <p class="display-5 fw-bold">100 +</p>
-              <p class="fs-6 fw-semibold">Klien Internasional</p>
-            </div>
-            <div class="col-3 border-2 border-end text-span">
-              <p class="display-5 fw-bold">325 +</p>
-              <p class="fs-6 fw-semibold">Proyek Sukses</p>
-            </div>
-            <div class="col-3 border-2 border-end text-span">
-              <p class="display-5 fw-bold">5</p>
-              <p class="fs-6 fw-semibold">Client Ratings</p>
-            </div>
-            <div class="col-3 text-span">
-              <p class="display-5 fw-bold">15 +</p>
-              <p class="fs-6 fw-semibold">Tahun Berpengalaman</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="berandaSection4">
-        <div class="container">
-          <div class="row">
-            <div class="col-4">
-              <img
-                src="img/head.webp"
-                alt="bg-head"
-                class="img-fluid rounded rounded-5"
-              />
-            </div>
-            <div class="col-8">
-              <p class="fs-5 fw-semibold">Solusi</p>
-              <p class="fs-1 fw-semibold">
-                Dapatkan hasil memuaskan <br />
-                dibangun dengan kreatifitas
-              </p>
-              <p>
-                Dengan pendekatan inovatif dan solusi kreatif yang disesuaikan
-                dengan kebutuhan Anda, Digital Agency kami menghadirkan strategi
-                yang efektif dan desain yang memukau. Hasil kerja kami tidak
-                hanya menarik perhatian, tetapi juga memberikan dampak nyata dan
-                memuaskan, membangun koneksi yang kuat antara Anda dan audiens
-                Anda.
-              </p>
-              <div>
-                <div class="d-flex mb-3">
-                  <i
-                    class="bi bi-stars px-3 py-2 fs-2 bg-bullet text-black rounded-circle"
-                  ></i>
-
-                  <div>
-                    <p class="fw-medium">Kami Menakjubkan</p>
-                    <p>
-                      Setiap proyek yang kami kerjakan mencerminkan keunggulan
-                      dan dedikasi kami, memastikan Anda selalu terkesan dan
-                      puas dengan hasil yang melebihi ekspektasi.
-                    </p>
-                  </div>
-                </div>
-                <div class="d-flex">
-                  <i
-                    class="bi bi-luggage-fill px-3 py-2 fs-2 bg-bullet text-black rounded-circle"
-                  ></i>
-                  <div>
-                    <p class="fw-medium">Fast Respon</p>
-                    <p>
-                      Kami memahami bahwa kecepatan adalah kunci dalam dunia
-                      digital yang serba cepat. Itulah mengapa kami berkomitmen
-                      untuk memberikan respon cepat dalam setiap komunikasi dan
-                      permintaan Anda.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="overflow-hidden" id="footer">
-      <div class="row text-white bg-footer p-4 rounded-5 mx-4">
-        <div class="col-5 d-flex flex-column row-gap-3">
-          <div class="d-flex align-items-center gap-1">
-            <img
-              src="img/wolf.png"
-              alt="logo"
-              class="img-fluid brand-logo"
-              style="background-color: transparent; width: 60px; height: auto"
-            />
-            <a
-              class="m-0 p-0 fs-5 text-footer text-decoration-none text-white"
-              href="#"
-              >MIRACLE<br />STUDIO</a
-            >
-          </div>
-          <p>
-            <span class="fw-bold fs-6">Miracle Studio</span> berkomitmen untuk
-            memberikan dukungan maksimal solusi masalah Anda. Suatu kehormatan
-            bagi kami untuk selalu menyediakan produk dan layanan IT
-            komprehensif dan inovatif <br /><br />
-
-            Keahlian kami dalam pembuatan aplikasi berbasis Website dan Mobile.
-          </p>
-          <div class="d-flex gap-3">
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
-            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-square-whatsapp bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin bg-white text-black rounded-circle fs-4 p-2 icon-footer"></i></a>
-
-           
-          </div>
-        </div>
-        <div class="col-2 mt-5">
-          <p class="fs-5 fw-bold mb-4">Sitemap</p>
-          <div class="d-flex flex-column row-gap-4">
-            <a href="#portopolio" class="footer-link text-decoration-none text-white"
-              >Portofolio</a
-            >
-            <a href="#about" class="footer-link text-decoration-none text-white"
-              >Tentang Kami</a
-            >
-            <a href="#blog" class="footer-link text-decoration-none text-white">Blog</a>
-          </div>
-        </div>
-        <div class="col-2 mt-5">
-          <p class="fs-5 fw-bold mb-4">Layanan</p>
-          <div class="d-flex flex-column row-gap-4">
-            <a href="#mobile" class="footer-link text-decoration-none text-white"
-              >Mobile Development</a
-            >
-            <a href="#web" class="footer-link text-decoration-none text-white"
-              >Web Development</a
-            >
-            <a href="#it" class="footer-link text-decoration-none text-white"
-              >IT Consultant</a
-            >
-          </div>
-        </div>
-        <div class="col-3 mt-5 p-0">
-          <p class="fs-5 fw-bold mb-4">Kontak</p>
-          <div class="d-flex flex-column row-gap-4">
-            <div class="d-flex column-gap-3">
-              <i class="bi bi-geo-alt-fill fs-5 text-warning"></i>
-              <p class="text-white">
-                Jl. Keresek - Cibatu, Sindangsuka, Kec. Cibatu, Kabupaten <br />
-                Garut, Jawa Barat 44185
-              </p>
-            </div>
-            <div class="d-flex column-gap-3">
-              <i class="bi bi-telephone-fill fs-5 text-warning"></i>
-              <p class="text-white">
-                (021) 123-5656 /<br />
-                6285732268223
-              </p>
-            </div>
-            <div class="d-flex column-gap-3">
-              <i class="bi bi-envelope-fill fs-5 text-warning"></i>
-              <p class="text-white">@miraclestudio</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mx-4 mt-3 d-flex justify-content-between">
-        <p>
-          <small>Copyright ©2024 Miracle Studio, All rights reserved</small>
-        </p>
-        <a href="#" class="text-decoration-none text-dark"
-          ><small>Privacy Policy | Cookie Policy</small></a
-        >
-      </div>
-    </footer>
-
+      showFooter();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/80095f3050.js"

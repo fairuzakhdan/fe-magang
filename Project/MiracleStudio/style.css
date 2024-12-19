@@ -3,27 +3,29 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   height: 300vh !important;
 }
+
 .img-variasi {
-  width: 70% !important;
+  width: 72% !important;
 }
+
 /* .navbar-expand-lg {
   background-color: #6c1db5;
   color: #ffffff !important;
 } */
- 
 
-.text-logo{
+.text-logo {
   font-family: "Bungee", cursive;
   color: #811b9e !important;
-  text-shadow: 1px 1px  rgb(255, 255, 255), -1px -1px  rgb(255, 255, 255);
+  text-shadow: 1px 1px rgb(255, 255, 255), -1px -1px rgb(255, 255, 255);
 }
 .text-footer {
   font-family: "Bungee", cursive;
-  color:rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
 }
 .text-digital {
   color: #811b9e;
@@ -95,14 +97,15 @@ body {
   width: auto !important;
 }
 
-#berandaSection2, #footer {
+#berandaSection2,
+#footer {
   margin-top: 3rem !important;
 }
 #berandaSection3 {
   margin-top: 6rem !important;
   box-shadow: 0 -5px 10px 2px #ffffff;
   position: relative !important;
-  padding-top: 2rem !important;
+  padding-top: 3rem !important;
   background-color: #811b9e;
   height: 140vh !important;
 }
@@ -204,10 +207,13 @@ body {
   transition: 1s;
 }
 
+.header-content {
+  color: d21b6f;
+}
+
 .desc-card {
   text-align: justify !important;
 }
-
 
 .button-64 {
   align-items: center;
@@ -255,34 +261,34 @@ body {
   background-color: #811b9e;
 }
 .icon-footer {
-  transition: .7s;
-  -webkit-transition: .7s;
-  -moz-transition: .7s;
-  -ms-transition: .7s;
-  -o-transition: .7s;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
 }
 .icon-footer:hover {
   background-color: black !important;
-  transition: .7s;
+  transition: 0.7s;
   color: white !important;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-  -webkit-transition: .7s;
-  -moz-transition: .7s;
-  -ms-transition: .7s;
-  -o-transition: .7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
 }
 .footer-link:hover {
   color: black !important;
-  transition: .5s;
-  transform:scale(1.02);
-  -webkit-transform:scale(1.02);
-  -moz-transform:scale(1.02);
-  -ms-transform:scale(1.02);
-  -o-transform:scale(1.02);
+  transition: 0.5s;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
 }
 
 @media only screen and (max-width: 990px) {
