@@ -98,7 +98,8 @@ body {
 }
 
 #berandaSection2,
-#footer, #sectionMobile2 {
+#sectionMobile2,
+#footer {
   margin-top: 3rem !important;
 }
 #berandaSection3 {
@@ -291,7 +292,6 @@ body {
   -o-transform: scale(1.02);
 }
 
-
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;
@@ -320,7 +320,6 @@ body {
   .list-card {
     padding-inline: 15px !important;
   }
-
 
   #berandaSection1,
   #berandaSection2 {
