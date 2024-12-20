@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  // // Fetch navbar.html dan masukkan ke dalam elemen dengan id="navbar"
+  // // Fetch navbar.html dan masukkan ke dalam elemen den
   // const navbarContainer = document.querySelectorAll(".navbar");
   // navbarContainer.forEach((container) => {
   //   if (container) {
