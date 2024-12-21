@@ -327,6 +327,18 @@ body {
   -ms-transform: rotate(360deg) scale(1.08);
   -o-transform: rotate(360deg) scale(1.08);
 }
+.profit-mobile {
+  transition: 1s;
+}
+
+.profit-mobile:hover {
+  transition: 1s;
+  transform: scale(.8);
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -ms-transform: scale(.8);
+  -o-transform: scale(.8);
+}
 
 @media only screen and (max-width: 990px) {
   html {
