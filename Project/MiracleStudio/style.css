@@ -104,6 +104,7 @@ body {
 #sectionMobile3,
 #sectionMobile4,
 #sectionMobile5,
+#sectionMobile6,
 #footer {
   margin-top: 3rem !important;
 }
@@ -205,7 +206,7 @@ body {
   -o-transform: scale(1.05);
 }
 .web-card {
-  background-color: #f3b23e;
+  background-color: #f3b23e !important;
   transition: 1s;
 }
 .it-card {
@@ -327,17 +328,25 @@ body {
   -ms-transform: rotate(360deg) scale(1.08);
   -o-transform: rotate(360deg) scale(1.08);
 }
-.profit-mobile {
+.profit-mobile img {
   transition: 1s;
 }
 
-.profit-mobile:hover {
+.profit-mobile:hover img {
   transition: 1s;
   transform: scale(.8);
   -webkit-transform: scale(.8);
   -moz-transform: scale(.8);
   -ms-transform: scale(.8);
   -o-transform: scale(.8);
+}
+.bg-sectionMobile6 {
+  background-image: url(img/bg-hp.avif);
+  background-size: contain;
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
 }
 
 @media only screen and (max-width: 990px) {
