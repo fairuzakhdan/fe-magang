@@ -350,14 +350,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.bg-header-table th {
+.bg-header-table th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6){
+  border: 1px solid #811b9e !important;
   background-color: #811b9e !important;
   color: white !important;
   padding: 10px !important;
 }
 
 .table thead tr th , .table tbody tr td{
-  border: 1px solid gray;
+  border: 1px solid rgb(206, 201, 201);
 }
 
 
