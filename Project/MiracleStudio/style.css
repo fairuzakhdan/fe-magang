@@ -361,6 +361,25 @@ body {
   border: 1px solid rgb(206, 201, 201);
 }
 
+.btn-order {
+  background-color: #811b9e !important;
+  color: #ffffff !important;
+  transition: .9s;
+  -webkit-transition: .9s;
+  -moz-transition: .9s;
+  -ms-transition: .9s;
+  -o-transition: .9s;
+}
+
+.btn-order:hover {
+  background-color: #400a47 !important;
+  transform: scale(1.05);
+  transition: .9s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
 
 @media only screen and (max-width: 990px) {
   html {
