@@ -106,6 +106,7 @@ body {
 #sectionMobile5,
 #sectionMobile6,
 #sectionMobile7 ,
+#sectionMobile8,
 #footer {
   margin-top: 3rem !important;
 }
@@ -381,6 +382,30 @@ body {
   -o-transform: scale(1.05);
 }
 
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desc-cs {
+  text-align: justify !important;
+}
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;
