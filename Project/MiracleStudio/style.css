@@ -426,6 +426,24 @@ swiper-slide img {
   font-weight: bolder !important;
   color: #cf84e4 !important;
 }
+
+.btn-porto {
+  box-shadow: 2px 2px 2px #000000;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.btn-porto:hover {
+ color: white !important;
+ transition: 1s;
+ transform: scale(1.05);
+ -webkit-transform: scale();
+ -moz-transform: scale();
+ -ms-transform: scale();
+ -o-transform: scale();
+}
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;
