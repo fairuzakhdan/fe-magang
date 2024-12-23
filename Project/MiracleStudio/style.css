@@ -142,11 +142,12 @@
 }
 .bg-blur {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: url(img/bb.jpg) !important;
+  background-attachment: fixed !important;
   background-repeat: no-repeat !important;
-  top: 5% !important;
   background-size: cover !important;
+  background-position: center;
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -486,8 +487,7 @@ swiper-slide img {
     padding-inline: 15px !important;
   }
 
-  #berandaSection1,
-  #berandaSection2 {
+  #berandaSection1{
     padding-top: 70px !important;
   }
   .button-64 {
