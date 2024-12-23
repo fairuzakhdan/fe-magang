@@ -5,9 +5,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-body {
-  height: 300vh !important;
-}
+
 
 .img-variasi {
   width: 72% !important;
@@ -41,6 +39,10 @@ body {
 .text-span-yellow {
   color: #f3b23e;
 }
+.bg-yellow {
+  background-color: #f3b23e;
+}
+
 .text-digital-desc {
   color: rgb(196, 185, 185);
   text-shadow: 1px 2px #504b4b;
@@ -115,7 +117,7 @@ body {
 #sectionMobile4,
 #sectionMobile5,
 #sectionMobile6,
-#sectionfaq,
+#sectionCall,
 #sectionMobile7,
 #sectionMobile8,
 #sectionWeb3,
@@ -123,6 +125,7 @@ body {
 #sectionWeb5,
 #sectionWeb6,
 #sectionIt3,
+#sectionIt4,
 #footer {
   margin-top: 3rem !important;
 }
@@ -359,13 +362,21 @@ body {
   -ms-transform: scale(.8);
   -o-transform: scale(.8);
 }
-.bg-sectionfaq {
+.bg-sectionCall {
   background-image: url(img/bg-hp.avif);
   background-size: contain;
   background-position: left;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+.bg-sectionCallIT {
+  background-image: url(img/bg-hp.avif);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
 
 .bg-header-table th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6){
   border: 1px solid #811b9e !important;
