@@ -18,6 +18,10 @@ body {
   color: #ffffff !important;
 } */
 
+.bg-purple {
+  background-color: #811b9e !important;
+  color: white;
+}
 .text-logo {
   font-family: "Bungee", cursive;
   color: #811b9e !important;
@@ -113,6 +117,7 @@ body {
 #sectionMobile6,
 #sectionMobile7 ,
 #sectionMobile8,
+#sectionWeb2,
 #footer {
   margin-top: 3rem !important;
 }
@@ -411,6 +416,12 @@ swiper-slide img {
 
 .desc-cs {
   text-align: justify !important;
+}
+
+.header-web {
+  font-size: 10em !important;
+  font-weight: bolder !important;
+  color: #cf84e4 !important;
 }
 @media only screen and (max-width: 990px) {
   html {
