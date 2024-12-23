@@ -43,6 +43,12 @@ body {
   text-align: justify;
   font-size: 1.2rem;
 }
+.text-digital-desc-web {
+  color: rgb(196, 185, 185);
+  text-shadow: 1px 2px #504b4b;
+  text-align: justify;
+  font-size: 1rem;
+}
 
 .btn-free {
   background-color: #ffffff !important;
