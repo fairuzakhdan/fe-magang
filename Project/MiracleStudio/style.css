@@ -115,10 +115,12 @@ body {
 #sectionMobile4,
 #sectionMobile5,
 #sectionMobile6,
-#sectionMobile7 ,
+#sectionfaq,
 #sectionMobile8,
-#sectionWeb2,
 #sectionWeb3,
+#sectionWeb4,
+#sectionWeb5,
+#sectionWeb6,
 #footer {
   margin-top: 3rem !important;
 }
@@ -355,7 +357,7 @@ body {
   -ms-transform: scale(.8);
   -o-transform: scale(.8);
 }
-.bg-sectionMobile6 {
+.bg-sectionfaq {
   background-image: url(img/bg-hp.avif);
   background-size: contain;
   background-position: left;
