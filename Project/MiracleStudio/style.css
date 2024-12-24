@@ -25,7 +25,10 @@
   text-shadow: 1px 1px rgb(255, 255, 255), -1px -1px rgb(255, 255, 255);
 }
 .text-shadow {
-  text-shadow: 2px 2px 2px black !important;
+  text-shadow: 12px 12px 12px black !important;
+}
+.box-shadow {
+  box-shadow: 2px 2px 2px black;
 }
 .text-footer {
   font-family: "Bungee", cursive;
@@ -128,6 +131,7 @@
 #sectionWeb6,
 #sectionIt3,
 #sectionIt4,
+#sectionPorto2,
 #footer {
   margin-top: 3rem !important;
 }
