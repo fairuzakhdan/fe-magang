@@ -7,6 +7,13 @@
 }
 
 
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0 !important;
+
+}
+
 .img-variasi {
   width: 72% !important;
 }
@@ -458,6 +465,30 @@ swiper-slide img {
  -ms-transform: scale();
  -o-transform: scale();
 }
+
+.half-circle {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); /* Untuk kompatibilitas dengan browser */
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+
+
+/* .bg-banner {
+  background-image: url(img//4593083.jpg) !important;
+  background-color: #811b9e !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+  position: relative !important;
+ 
+} */
+
+
+
+
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;
