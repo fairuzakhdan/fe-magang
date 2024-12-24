@@ -6,11 +6,6 @@
   scroll-behavior: smooth;
 }
 
-section {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .img-variasi {
   width: 72% !important;
 }
@@ -28,6 +23,9 @@ section {
   font-family: "Bungee", cursive;
   color: #811b9e !important;
   text-shadow: 1px 1px rgb(255, 255, 255), -1px -1px rgb(255, 255, 255);
+}
+.text-shadow {
+  text-shadow: 2px 2px 2px black !important;
 }
 .text-footer {
   font-family: "Bungee", cursive;
