@@ -473,17 +473,22 @@ swiper-slide img {
   overflow: hidden;
 }
 
-
-
-/* .bg-banner {
-  background-image: url(img//4593083.jpg) !important;
-  background-color: #811b9e !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: left !important;
-  position: relative !important;
- 
-} */
+.card-proyek {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.card-proyek:hover {
+  transition: 1s;
+  box-shadow: 3px 3px 5px #635f5f  !important ;
+  transform:translate(0px, -10px);
+  -webkit-transform:translate();
+  -moz-transform:translate();
+  -ms-transform:translate();
+  -o-transform:translate();
+}
 
 
 
