@@ -134,6 +134,7 @@
 #sectionPorto2,
 #sectionAbout2,
 #sectionAbout4,
+#sectionAbout5,
 #footer {
   margin-top: 3rem !important;
 }
@@ -294,8 +295,8 @@
   background: none;
 }
 
-.bg-footer{
-  background-color: #811b9e ;
+.bg-footer {
+  background-color: #811b9e;
 }
 
 .bg-section-mobile {
@@ -365,11 +366,11 @@
 
 .profit-mobile:hover img {
   transition: 1s;
-  transform: scale(.8);
-  -webkit-transform: scale(.8);
-  -moz-transform: scale(.8);
-  -ms-transform: scale(.8);
-  -o-transform: scale(.8);
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
 }
 .bg-sectionCall {
   background-image: url(img/bg-hp.avif);
@@ -386,32 +387,36 @@
   background-repeat: no-repeat;
 }
 
-
-.bg-header-table th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6){
+.bg-header-table th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5),
+th:nth-child(6) {
   border: 1px solid #811b9e !important;
   background-color: #811b9e !important;
   color: white !important;
   padding: 10px !important;
 }
 
-.table thead tr th , .table tbody tr td{
+.table thead tr th,
+.table tbody tr td {
   border: 1px solid rgb(206, 201, 201);
 }
 
 .btn-order {
   background-color: #811b9e !important;
   color: #ffffff !important;
-  transition: .9s;
-  -webkit-transition: .9s;
-  -moz-transition: .9s;
-  -ms-transition: .9s;
-  -o-transition: .9s;
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
 }
 
 .btn-order:hover {
   background-color: #400a47 !important;
   transform: scale(1.05);
-  transition: .9s;
+  transition: 0.9s;
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -458,18 +463,23 @@ swiper-slide img {
   -o-transition: 1s;
 }
 .btn-porto:hover {
- color: white !important;
- transition: 1s;
- transform: scale(1.05);
- -webkit-transform: scale();
- -moz-transform: scale();
- -ms-transform: scale();
- -o-transform: scale();
+  color: white !important;
+  transition: 1s;
+  transform: scale(1.05);
+  -webkit-transform: scale();
+  -moz-transform: scale();
+  -ms-transform: scale();
+  -o-transform: scale();
 }
 
 .half-circle {
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); /* Untuk kompatibilitas dengan browser */
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 50%,
+    0% 50%
+  ); /* Untuk kompatibilitas dengan browser */
   height: auto;
   width: auto;
   overflow: hidden;
@@ -484,16 +494,23 @@ swiper-slide img {
 }
 .card-proyek:hover {
   transition: 1s;
-  box-shadow: 3px 3px 5px #635f5f  !important ;
-  transform:translate(0px, -10px);
-  -webkit-transform:translate();
-  -moz-transform:translate();
-  -ms-transform:translate();
-  -o-transform:translate();
+  box-shadow: 3px 3px 5px #635f5f !important ;
+  transform: translate(0px, -10px);
+  -webkit-transform: translate();
+  -moz-transform: translate();
+  -ms-transform: translate();
+  -o-transform: translate();
 }
 
-
-
+.bg-polygon {
+  background-image: url(img/abot-polygon.png) !important;
+  position: relative !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 270px !important;
+  height: 270px !important;
+}
 
 @media only screen and (max-width: 990px) {
   html {
@@ -524,7 +541,7 @@ swiper-slide img {
     padding-inline: 15px !important;
   }
 
-  #berandaSection1{
+  #berandaSection1 {
     padding-top: 70px !important;
   }
   .button-64 {
