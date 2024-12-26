@@ -143,18 +143,22 @@
     <footer class="overflow-hidden" id="footer"></footer>
 
     <script>
+
+
       const showPage = (page) => {
         fetch(page)
           .then((res) => {
+            
             if (!res.ok) throw new Error("Failed to load page");
             return res.text();
           })
           .then((data) => {
             document.getElementById("content").innerHTML = data;
+
+            
           })
           .catch((error) => console.error("Error loading page:", error));
       };
-      showPage("beranda.html");
       const showFooter = () => {
         fetch("footer.html")
           .then((res) => {
@@ -171,6 +175,57 @@
       
 
       showFooter();
+
+      
+
+      const showBlog = () => {
+    fetch("blog.html")
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load page");
+        return res.text();
+      })
+      .then((data) => {
+        document.getElementById("content").innerHTML = data;
+  
+        // Event delegation for navigation links
+        const content = document.getElementById("content");
+        content.addEventListener("click", (e) => {
+          const target = e.target;
+  
+          if (target.id === "web-blog") {
+            e.preventDefault();
+            showSection("web");
+          } else if (target.id === 'all-blog') {
+            e.preventDefault()
+            showSection("all")
+          }else if (target.id === "trick-blog") {
+            e.preventDefault();
+            showSection("tips");
+          } else if (target.id === "update-blog") {
+            e.preventDefault();
+            showSection("update");
+          }
+        });
+      })
+      .catch((err) => {
+        console.error("Error:", err.message);
+      });
+  };
+  
+  const showSection = (sectionId) => {
+    const sections = ["tips", "web", "update"];
+    
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.style.display = sectionId === "all" || id === sectionId ? "block" : "none";
+      }
+    });
+  };
+  showBlog()
+  showPage("beranda.html");
+
+      
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
