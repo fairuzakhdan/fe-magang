@@ -512,36 +512,28 @@ swiper-slide img {
   height: 270px !important;
 }
 .bg-contact {
-  top: -280px !important;
-  height: 120vh !important;
-  right: 0 !important;
-  left: 0 !important;
+  top: -340px !important;
+  height: 140vh !important;
   object-fit: cover !important;
-  background-position: center !important;
   z-index: 1 !important;
   position: absolute !important;
+  filter:opacity(0.8) grayscale(10%);
+  -webkit-filter:opacity(0.8) grayscale(10%);
 }
 
 .hero-mobile {
   position: relative;
   width: 100%;
-  height: 100vh; /* Memastikan elemen mengambil tinggi penuh layar */
-  overflow: hidden; /* Menghindari elemen keluar dari kontainer */
+  height: 100vh; 
+  overflow: hidden; 
 }
 
 .hero-mobile svg {
   position: absolute;
-  top: 0; /* Menempatkan SVG pada bagian atas */
-  left: 0; /* Menempatkan SVG pada bagian kiri */
+  top: 120px !important; 
+  left: 0; 
   width: 100%;
-  height: 100%; /* Memastikan SVG mengisi seluruh tinggi layar */
-}
-
-.bg-danger {
-  position: absolute;
-  bottom: 0; /* Menempatkan path SVG di bagian bawah */
-  left: 0;
-  width: 100%;
+  height: 100%; 
 }
 
 
