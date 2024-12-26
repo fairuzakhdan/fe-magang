@@ -551,6 +551,8 @@ swiper-slide img {
   transition: 1s;
 }
 
+
+
 @media only screen and (max-width: 990px) {
   html {
     font-size: 90% !important;

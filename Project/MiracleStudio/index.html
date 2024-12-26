@@ -128,13 +128,23 @@
               </li>
             </ul>
           </div>
-          <div class="d-sm-none d-lg-flex d-md-none d-none">
+          <div class="d-sm-none d-lg-flex d-md-none d-none align-items-lg-center column-gap-4">
             <button
               type="button"
               class="btn d-md-block d-lg-flex d-none py-1 px-2 fw-semibold btn-free border border-2 border-black text-dark d-flex align-items-center gap-2"
             >
               <i class="bi bi-whatsapp nav-wa"></i> Konsultasi Gratis
             </button>
+            <div class="btn-group">
+              <button type="button" class="btn bg-purple text-white dropdown-toggle fs-5" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <i class="bi bi-person-circle"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end mt-2">
+                <li><a href="auth/login.html" class="dropdown-item" type="button"><i class="bi bi-box-arrow-in-right me-2"></i> Login</a></li>
+                <li><button class="dropdown-item" type="button"><i class="bi bi-person-plus-fill me-2"></i> Register</button></li>
+              </ul>
+            </div>
+           
           </div>
         </div>
       </nav>
