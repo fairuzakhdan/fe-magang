@@ -5,16 +5,17 @@
         <li class="nav-item">
           <a
             class="nav-link text-span blog-item"
+            id="update-blog"
             aria-current="true"
             href="#update"
             >Update</a
           >
         </li>
         <li class="nav-item">
-            <a class="nav-link text-span blog-item" href="#web">Web</a>
+            <a class="nav-link text-span blog-item" id="web-blog" href="#web">Web</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-span blog-item" href="#tips">Tips dan Trick</a>
+          <a class="nav-link text-span blog-item" id="trick-blog" href="#tips">Tips dan Trick</a>
         </li>
       </ul>
     </div>
@@ -169,3 +170,11 @@
     </section>
   </div>
 </div>
+
+
+<script>
+    const webLink = document.getElementById('web-blog')
+    const updateLink = document.getElementById('update-blog')
+    const trickLink = document.getElementById('trick-blog')
+    
+</script>
