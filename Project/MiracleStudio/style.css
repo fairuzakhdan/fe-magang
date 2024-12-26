@@ -517,8 +517,8 @@ swiper-slide img {
   object-fit: cover !important;
   z-index: 1 !important;
   position: absolute !important;
-  filter:opacity(0.8) grayscale(10%);
-  -webkit-filter:opacity(0.8) grayscale(10%);
+  filter:drop-shadow(5px 5px 5px #000000) opacity(.9);
+  -webkit-filter:drop-shadow(5px 5px 5px #000000) opacity(.9);
 }
 
 .hero-mobile {
