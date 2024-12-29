@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //         .then((data) => {
   //           container.innerHTML = data;
 
-  //         })
   
   
 });
