@@ -42,6 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //           container.innerHTML = data;
 
   //         })
-  //         .catch((error) => console.error("Error loading navbar:", error));
+  
   
 });
