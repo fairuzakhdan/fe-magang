@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //           if (!res.ok) throw new Error("Failed to load navbar");
   //           return res.text();
   //         })
-  //         .then((data) => {
 
   
   
