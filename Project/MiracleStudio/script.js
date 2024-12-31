@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //       fetch("navbar.html")
   //         .then((res) => {
   //           if (!res.ok) throw new Error("Failed to load navbar");
-  //           return res.text();
 
   
   
