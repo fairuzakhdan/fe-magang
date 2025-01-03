@@ -35,6 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
   //   if (container) {
   //       fetch("navbar.html")
   //         .then((res) => {
-  //           if (!res.ok)
 
 });
