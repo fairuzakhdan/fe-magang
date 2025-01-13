@@ -17,14 +17,14 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg fixed-top shadow-lg d-none d-lg-block d-sm-none d-md-block bg-warning"
+      class="navbar navbar-expand-lg fixed-top shadow-lg d-none d-lg-block d-sm-none d-md-block "
     >
       <div class="container-fluid">
         <a class="navbar-brand ps-4" href="#"
           ><img
             src="img/logo2.png"
             alt="logo"
-            class="img-fluid d-none d-lg-block rounded-circle"
+            class="img-fluid d-none d-lg-block rounded-circle text-white"
             style="width: 10vh"
         /></a>
         <button
@@ -42,7 +42,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#home"
                 >Home</a
@@ -50,7 +50,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#products"
                 >Products</a
@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#about"
                 >About</a
@@ -66,7 +66,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#customers"
                 >Reviews</a
@@ -74,7 +74,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#contact"
                 >Contact</a
@@ -82,7 +82,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active fs-5 fw-semibold"
+                class="nav-link active fs-5 fw-semibold text-white"
                 aria-current="page"
                 href="#faq"
                 >FAQ</a
@@ -751,15 +751,31 @@
     </footer>
 
     <script>
-      const nav = document.getElementById("nav-container");
-      console.log(nav);
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 600) {
-          nav.classList.add("bg-warning");
-        } else {
-          nav.classList.remove("bg-warning");
-        }
-      });
+   // Ambil elemen navbar
+const nav = document.querySelector(".navbar-expand-lg");
+const navLink = document.querySelectorAll(".nav-link");
+
+// Pastikan elemen navbar ditemukan
+if (nav) {
+  // Tambahkan event listener untuk scroll
+  window.addEventListener("scroll", () => {
+    // Periksa posisi scroll
+    if (window.scrollY > 1) {
+      // Tambahkan kelas bg-warning jika scroll lebih dari 1px
+      nav.classList.add("bg-warning");
+      nav.classList.add("text-black")
+      nav.style.transition = ".5s"
+    } else {
+      // Hapus kelas bg-warning jika scroll kurang atau sama dengan 1px
+      nav.classList.remove("bg-warning");
+      nav.classList.add("text-white")
+       nav.style.transition = ".5s"
+    }
+  });
+} else {
+  console.error('Element with ID "navbar-expand-lg" not found.');
+}
+
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
