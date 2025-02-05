@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
   const teksLogo = document.querySelector(".text-logo");
   const navbar = document.querySelector(".navbar-expand-lg");
 
