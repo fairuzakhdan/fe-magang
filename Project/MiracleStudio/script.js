@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (teksLogo) {
     teksLogo.style.color = "white";
   }
-
   if (navbar) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 1) {
