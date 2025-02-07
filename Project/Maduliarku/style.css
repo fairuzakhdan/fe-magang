@@ -41,7 +41,6 @@
   background-color: rgba(255, 193, 7, 0.4) !important;
   cursor: pointer;
 }
-
 .box-price [aria-current="true"],
 .box-size [aria-current="true"] {
   background-color: #bb752b;
