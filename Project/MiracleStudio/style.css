@@ -402,7 +402,6 @@ th:nth-child(6) {
   color: white !important;
   padding: 10px !important;
 }
-
 .table thead tr th,
 .table tbody tr td {
   border: 1px solid rgb(206, 201, 201);
