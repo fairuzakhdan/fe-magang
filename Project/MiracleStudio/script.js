@@ -30,5 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
   //   if (container) {
   //       fetch("navbar.html")
   //         .then((res) => {
-
 });
