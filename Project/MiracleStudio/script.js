@@ -28,5 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // navbarContainer.forEach((container) => {
   //   if (container) {
   //       fetch("navbar.html")
-  //         .then((res) => {
+  //         .then((res) => 
 });
