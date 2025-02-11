@@ -27,5 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // const navbarContainer = document.querySelectorAll(".navbar");
   // navbarContainer.forEach((container) => {
   //   if (container) {
-  //       fetch("navbar.htm
+  //       fetch("nav
 });
