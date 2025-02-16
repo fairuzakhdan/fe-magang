@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  // const navbarContainer = document.querySelectorAll(".n
+  // const navbarContainer = document.querySelectorAll("
 });
