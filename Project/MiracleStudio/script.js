@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  // const navbarContainer = document.querySele
+  // const navbarContainer = document.querySel
 });
