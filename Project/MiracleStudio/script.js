@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  // const navbarContainer = documen
+  // const navbarContainer = docume
 });
