@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  // cons
+  // con
 });
